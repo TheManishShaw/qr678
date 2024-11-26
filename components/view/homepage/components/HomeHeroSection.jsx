@@ -36,7 +36,7 @@ const HomeHeroSection = () => {
               Learn More
             </Link>
           </div>
-          <div className="relative w-full  bg-[#EEEEEF]  h-full py-12 md:py-16 lg:py-20">
+          <div className="relative w-full  bg-[#EEEEEF]  h-full py-12 md:py-16 lg:py-36">
             <Image
               src="/assets/svg/homepage/home-hero-section-image.svg"
               alt="Product collection"

@@ -1,0 +1,11 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/app/page": [
+      "static/media/Helvetica-s.p.8248aa15.ttf",
+      "static/media/Helvetica_Bold-s.p.3e411a3d.ttf"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}

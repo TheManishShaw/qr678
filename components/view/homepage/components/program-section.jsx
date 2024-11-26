@@ -1,6 +1,6 @@
 export default function ProgramSection() {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-16 border-t border-[#AEA6A6]">
       <div className="container mx-auto px-4 space-y-8">
         <div className=" rounded-lg p-8  border-secondary border-[1px]">
           <h2 className="text-5xl mb-4 text-primary">
@@ -31,7 +31,7 @@ export default function ProgramSection() {
           <p className="text-primary mb-6 text-4xl">
             Your Expertise + OR678®&apos;s Proven Solution
           </p>
-          <p cla className="text-xl text-primary">
+          <p className="text-xl text-primary">
             Androgenetic Alopecia, or hair loss, affects millions of people
             worldwide, leading to emotional and psychological stress. By helping
             them regain their hair, you become a part of something greater -

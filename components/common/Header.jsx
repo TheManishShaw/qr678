@@ -211,7 +211,7 @@ const Header = () => {
                         One of the best hair regrowth product.
                       </p>
                       <Image
-                        src="/assets/svg/neo-product-image.svg"
+                        src="/assets/svg/homepage/neo-product-image.svg"
                         alt="Product Image"
                         height={200}
                         width={200}
@@ -229,7 +229,7 @@ const Header = () => {
                       </p>
                       <Image
                         className="mt-10"
-                        src="/assets/svg/suite-product-image.svg"
+                        src="/assets/svg/homepage/suite-product-image.svg"
                         alt="Product Image"
                         height={240}
                         width={240}

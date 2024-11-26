@@ -1,0 +1,26 @@
+/* [project]/app/geistmono_fb081b08.module.css [app-client] (css) */
+@font-face {
+  font-family: geistMono;
+  src: url("/_next/static/media/Helvetica_Bold-s.p.3e411a3d.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: geistMono Fallback;
+  src: local(Arial);
+  ascent-override: 71.17%;
+  descent-override: 21.26%;
+  line-gap-override: 0.0%;
+  size-adjust: 108.19%;
+}
+
+.geistmono_fb081b08-module__3w2qma__className {
+  font-family: geistMono, geistMono Fallback;
+}
+
+.geistmono_fb081b08-module__3w2qma__variable {
+  --font-geist-mono: "geistMono", "geistMono Fallback";
+}
+
+/*# sourceMappingURL=app_geistmono_fb081b08_module_b52d8e.css.map*/
