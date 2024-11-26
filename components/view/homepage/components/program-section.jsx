@@ -2,7 +2,7 @@ export default function ProgramSection() {
   return (
     <section className="bg-white py-16 border-t border-[#AEA6A6]">
       <div className="container mx-auto px-4 space-y-8">
-        <div className=" rounded-lg p-8  border-secondary border-[1px]">
+        <div className=" rounded-lg p-8  border-secondary border-[1.5px]">
           <h2 className="text-5xl mb-4 text-primary">
             Join the{" "}
             <span className="text-secondary font-bold">
@@ -24,7 +24,7 @@ export default function ProgramSection() {
           </button>
         </div>
 
-        <div className=" rounded-lg p-8  border-secondary border-[1px]">
+        <div className=" rounded-lg p-8  border-secondary border-[1.5px]">
           <h2 className=" mb-4 text-primary text-5xl">
             Be a <span className="text-secondary font-bold">Superhairo!</span>
           </h2>

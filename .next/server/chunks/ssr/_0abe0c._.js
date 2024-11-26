@@ -39,7 +39,7 @@ const HomeHeroSection = ()=>{
                                     }, this),
                                     " ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-primary",
+                                        className: "text-primary font-light",
                                         children: "hair & skin professionals"
                                     }, void 0, false, {
                                         fileName: "[project]/components/view/homepage/components/HomeHeroSection.jsx",
@@ -48,11 +48,11 @@ const HomeHeroSection = ()=>{
                                     }, this),
                                     " ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-primary",
+                                        className: "text-primary font-light",
                                         children: "with"
                                     }, void 0, false, {
                                         fileName: "[project]/components/view/homepage/components/HomeHeroSection.jsx",
-                                        lineNumber: 14,
+                                        lineNumber: 16,
                                         columnNumber: 15
                                     }, this),
                                     " ",
@@ -61,23 +61,23 @@ const HomeHeroSection = ()=>{
                                         children: "science"
                                     }, void 0, false, {
                                         fileName: "[project]/components/view/homepage/components/HomeHeroSection.jsx",
-                                        lineNumber: 15,
+                                        lineNumber: 17,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-primary",
+                                        className: "text-primary font-light",
                                         children: [
                                             " ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                 fileName: "[project]/components/view/homepage/components/HomeHeroSection.jsx",
-                                                lineNumber: 18,
+                                                lineNumber: 20,
                                                 columnNumber: 17
                                             }, this),
                                             " to make"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/view/homepage/components/HomeHeroSection.jsx",
-                                        lineNumber: 16,
+                                        lineNumber: 18,
                                         columnNumber: 15
                                     }, this),
                                     " ",
@@ -86,23 +86,23 @@ const HomeHeroSection = ()=>{
                                         children: "better decisions"
                                     }, void 0, false, {
                                         fileName: "[project]/components/view/homepage/components/HomeHeroSection.jsx",
-                                        lineNumber: 20,
+                                        lineNumber: 22,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-primary",
+                                        className: "text-primary font-light",
                                         children: [
                                             " ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                 fileName: "[project]/components/view/homepage/components/HomeHeroSection.jsx",
-                                                lineNumber: 23,
+                                                lineNumber: 25,
                                                 columnNumber: 17
                                             }, this),
                                             " for their patients & practice"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/view/homepage/components/HomeHeroSection.jsx",
-                                        lineNumber: 21,
+                                        lineNumber: 23,
                                         columnNumber: 15
                                     }, this),
                                     " "
@@ -114,11 +114,11 @@ const HomeHeroSection = ()=>{
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                 href: "#",
-                                className: "inline-block bg-primary text-white px-6 md:px-8 py-2 md:py-3  rounded-sm hover:bg-[#2a3572] transition-colors",
+                                className: "inline-block bg-primary text-white px-6 md:px-16 py-2 md:py-3  rounded-sm hover:bg-[#2a3572] transition-colors",
                                 children: "Learn More"
                             }, void 0, false, {
                                 fileName: "[project]/components/view/homepage/components/HomeHeroSection.jsx",
-                                lineNumber: 32,
+                                lineNumber: 34,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -128,7 +128,7 @@ const HomeHeroSection = ()=>{
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative w-full  bg-[#EEEEEF]  h-full py-12 md:py-16 lg:py-36",
+                        className: "relative w-full  bg-white  h-full py-12 md:py-16 lg:py-36",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                             src: "/assets/svg/homepage/home-hero-section-image.svg",
                             alt: "Product collection",
@@ -137,12 +137,12 @@ const HomeHeroSection = ()=>{
                             className: "object-contain mx-auto"
                         }, void 0, false, {
                             fileName: "[project]/components/view/homepage/components/HomeHeroSection.jsx",
-                            lineNumber: 40,
+                            lineNumber: 42,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/view/homepage/components/HomeHeroSection.jsx",
-                        lineNumber: 39,
+                        lineNumber: 41,
                         columnNumber: 11
                     }, this)
                 ]
@@ -436,7 +436,7 @@ function ProductSection() {
         className: "w-full max-w-7xl mx-auto px-4 py-12",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                className: "text-center text-4xl md:text-5xl font-medium mb-12 text-[#B38B59]",
+                className: "text-center text-4xl md:text-5xl font-bold mb-12 text-[#B38B59]",
                 children: "Products That Make Lives Better"
             }, void 0, false, {
                 fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
@@ -452,209 +452,239 @@ function ProductSection() {
                             children: item.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$carousel$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CarouselItem"], {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
-                                            className: "border-[#B38B59]/20",
+                                            className: "border-secondary",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
                                                 className: "p-6 md:p-8",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "grid md:grid-cols-2 gap-8",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex items-center justify-center",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                                src: "/assets/png/Products-That-Make-Lives-Better.png",
-                                                                alt: "QR678 Neo Product",
-                                                                width: 400,
-                                                                height: 400,
-                                                                className: "object-contain"
-                                                            }, void 0, false, {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "mb-12",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                                className: "text-5xl font-bold text-secondary",
+                                                                children: [
+                                                                    "QR678 Neo",
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("sup", {
+                                                                        className: " text-2xl",
+                                                                        children: "®"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                        lineNumber: 45,
+                                                                        columnNumber: 36
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
                                                                 fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                lineNumber: 45,
-                                                                columnNumber: 27
+                                                                lineNumber: 44,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "text-gray-600 leading-relaxed",
+                                                                children: [
+                                                                    "QR678 Neo",
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("sup", {
+                                                                        children: "®"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                        lineNumber: 48,
+                                                                        columnNumber: 36
+                                                                    }, this),
+                                                                    " is a patented, clinically-proven hair regrowth therapy designed to combat hair loss and stimulate new hair growth. Unlike traditional methods, QR678 Neo",
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("sup", {
+                                                                        children: "®"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                        lineNumber: 51,
+                                                                        columnNumber: 36
+                                                                    }, this),
+                                                                    " uses a unique, non-surgical formulation of six specific biomimetic polypeptides that is injected painlessly into the scalp, targeting hair follicles for optimal results."
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                lineNumber: 47,
+                                                                columnNumber: 25
                                                             }, this)
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                            lineNumber: 44,
-                                                            columnNumber: 25
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "space-y-6",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                                    className: "text-3xl font-medium text-[#B38B59]",
-                                                                    children: [
-                                                                        "QR678 Neo",
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("sup", {
-                                                                            children: "®"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                            lineNumber: 55,
-                                                                            columnNumber: 38
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                    lineNumber: 54,
-                                                                    columnNumber: 27
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                    className: "text-gray-600 leading-relaxed",
-                                                                    children: "QR678 Neo® is a patented, clinically-proven hair regrowth therapy designed to combat hair loss and stimulate new hair growth. Unlike traditional methods, QR678 Neo® uses a unique, non-surgical formulation of six specific biomimetic polypeptides that is injected painlessly into the scalp, targeting hair follicles for optimal results."
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                        lineNumber: 43,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "grid md:grid-cols-2 gap-8 ",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "flex items-start justify-start",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                                    src: "/assets/png/Products-That-Make-Lives-Better.png",
+                                                                    alt: "QR678 Neo Product",
+                                                                    width: 310,
+                                                                    height: 200,
+                                                                    className: "object-contain"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                    lineNumber: 57,
+                                                                    lineNumber: 59,
                                                                     columnNumber: 27
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "grid gap-4 grid-cols-2",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "flex items-center gap-3",
-                                                                            children: [
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                    className: "h-6 w-6 rounded-full bg-green-100 flex items-center justify-center",
-                                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
-                                                                                        className: "h-4 w-4 text-green-600 rounded-s-sm "
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                lineNumber: 58,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "space-y-6 ",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "grid gap-4 grid-cols-2 items-start",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "flex items-center gap-3",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                        className: "h-6 w-6 rounded-full bg-green-100 flex items-center justify-center",
+                                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
+                                                                                            className: "h-4 w-4 text-green-600 rounded-s-sm "
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                                            lineNumber: 71,
+                                                                                            columnNumber: 33
+                                                                                        }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
                                                                                         lineNumber: 70,
-                                                                                        columnNumber: 33
+                                                                                        columnNumber: 31
+                                                                                    }, this),
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        children: "Follicular level action"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                                        lineNumber: 73,
+                                                                                        columnNumber: 31
                                                                                     }, this)
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                                    lineNumber: 69,
-                                                                                    columnNumber: 31
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    children: "Follicular level action"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                                    lineNumber: 72,
-                                                                                    columnNumber: 31
-                                                                                }, this)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                            lineNumber: 68,
-                                                                            columnNumber: 29
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "flex items-center gap-3",
-                                                                            children: [
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                    className: "h-6 w-6 rounded-full bg-green-100 flex items-center justify-center",
-                                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
-                                                                                        className: "h-4 w-4 text-green-600"
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                                lineNumber: 69,
+                                                                                columnNumber: 29
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "flex items-center gap-3",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                        className: "h-6 w-6 rounded-full bg-green-100 flex items-center justify-center",
+                                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
+                                                                                            className: "h-4 w-4 text-green-600"
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                                            lineNumber: 77,
+                                                                                            columnNumber: 33
+                                                                                        }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
                                                                                         lineNumber: 76,
-                                                                                        columnNumber: 33
+                                                                                        columnNumber: 31
+                                                                                    }, this),
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        children: "Negligible pain"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                                        lineNumber: 79,
+                                                                                        columnNumber: 31
                                                                                     }, this)
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                                    lineNumber: 75,
-                                                                                    columnNumber: 31
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    children: "Negligible pain"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                                    lineNumber: 78,
-                                                                                    columnNumber: 31
-                                                                                }, this)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                            lineNumber: 74,
-                                                                            columnNumber: 29
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "flex items-center gap-3",
-                                                                            children: [
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                    className: "h-6 w-6 rounded-full bg-green-100 flex items-center justify-center",
-                                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
-                                                                                        className: "h-4 w-4 text-green-600"
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                                lineNumber: 75,
+                                                                                columnNumber: 29
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "flex items-center gap-3",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                        className: "h-6 w-6 rounded-full bg-green-100 flex items-center justify-center",
+                                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
+                                                                                            className: "h-4 w-4 text-green-600"
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                                            lineNumber: 83,
+                                                                                            columnNumber: 33
+                                                                                        }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
                                                                                         lineNumber: 82,
-                                                                                        columnNumber: 33
+                                                                                        columnNumber: 31
+                                                                                    }, this),
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        children: "Works on all etiologies of hair loss"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                                        lineNumber: 85,
+                                                                                        columnNumber: 31
                                                                                     }, this)
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                                    lineNumber: 81,
-                                                                                    columnNumber: 31
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    children: "Works on all etiologies of hair loss"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                                    lineNumber: 84,
-                                                                                    columnNumber: 31
-                                                                                }, this)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                            lineNumber: 80,
-                                                                            columnNumber: 29
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "flex items-center gap-3",
-                                                                            children: [
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                    className: "h-6 w-6 rounded-full bg-green-100 flex items-center justify-center",
-                                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
-                                                                                        className: "h-4 w-4 text-green-600"
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                                lineNumber: 81,
+                                                                                columnNumber: 29
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "flex items-center gap-3",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                        className: "h-6 w-6 rounded-full bg-green-100 flex items-center justify-center",
+                                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
+                                                                                            className: "h-4 w-4 text-green-600"
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                                            lineNumber: 90,
+                                                                                            columnNumber: 33
+                                                                                        }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
                                                                                         lineNumber: 89,
-                                                                                        columnNumber: 33
+                                                                                        columnNumber: 31
+                                                                                    }, this),
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        children: "Visible results in 8-10 sessions"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                                        lineNumber: 92,
+                                                                                        columnNumber: 31
                                                                                     }, this)
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                                    lineNumber: 88,
-                                                                                    columnNumber: 31
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    children: "Visible results in 8-10 sessions"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                                    lineNumber: 91,
-                                                                                    columnNumber: 31
-                                                                                }, this)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                            lineNumber: 87,
-                                                                            columnNumber: 29
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                    lineNumber: 67,
-                                                                    columnNumber: 27
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
-                                                                    variant: "outline",
-                                                                    className: "mt-4 border-[#B38B59] text-[#B38B59] hover:bg-[#B38B59] hover:text-white",
-                                                                    children: "Know More"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                                    lineNumber: 95,
-                                                                    columnNumber: 27
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                            lineNumber: 53,
-                                                            columnNumber: 25
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                                    lineNumber: 43,
-                                                    columnNumber: 23
-                                                }, this)
-                                            }, void 0, false, {
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                                lineNumber: 88,
+                                                                                columnNumber: 29
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                        lineNumber: 68,
+                                                                        columnNumber: 27
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
+                                                                        variant: "outline",
+                                                                        className: "mt-4 border-[#B38B59] text-[#B38B59] hover:bg-[#B38B59] hover:text-white",
+                                                                        children: "Know More"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                        lineNumber: 96,
+                                                                        columnNumber: 27
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                                lineNumber: 67,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
+                                                        lineNumber: 57,
+                                                        columnNumber: 23
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
                                                 lineNumber: 42,
                                                 columnNumber: 21
@@ -679,7 +709,7 @@ function ProductSection() {
                             className: "self-center pt-6"
                         }, void 0, false, {
                             fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                            lineNumber: 109,
+                            lineNumber: 110,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -691,25 +721,25 @@ function ProductSection() {
                                         className: "relative inset-0 translate-y-0 hover:border hover:border-secondary"
                                     }, void 0, false, {
                                         fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                        lineNumber: 112,
+                                        lineNumber: 113,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$carousel$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CarouselNext"], {
                                         className: "relative inset-0 translate-y-0 hover:border hover:border-secondary"
                                     }, void 0, false, {
                                         fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                        lineNumber: 113,
+                                        lineNumber: 114,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                                lineNumber: 111,
+                                lineNumber: 112,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/view/homepage/components/ProductSection.jsx",
-                            lineNumber: 110,
+                            lineNumber: 111,
                             columnNumber: 11
                         }, this)
                     ]
@@ -751,9 +781,9 @@ function ResearchSection() {
             className: "relative min-h-[740px] w-full",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "absolute inset-0 bg-[url('/assets/svg/homepage/home-research-banner.svg')] bg-cover bg-center",
+                    className: "absolute inset-0 bg-[url('/assets/svg/homepage/home-research-banner.svg')] bg-cover mix-blend-multiply bg-center",
                     style: {
-                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/svg/homepage/home-research-banner.svg')`
+                        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/assets/svg/homepage/home-research-banner.svg')`
                     }
                 }, void 0, false, {
                     fileName: "[project]/components/view/homepage/components/ResearchSection.jsx",
@@ -785,7 +815,7 @@ function ResearchSection() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-base sm:text-lg md:text-xl text-gray-200",
+                                        className: "text-base sm:text-lg md:text-xl text-gray-200 font-[200] ",
                                         children: "Our aesthetic products are backed by"
                                     }, void 0, false, {
                                         fileName: "[project]/components/view/homepage/components/ResearchSection.jsx",
@@ -793,9 +823,9 @@ function ResearchSection() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "inline-block bg-[#FFD481] px-3 py-1 sm:px-4 sm:py-2 ",
+                                        className: "inline-block bg-[#FFD481] px-3 py-1 sm:px-4 sm:py-1 ",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-sm sm:text-base text-gray-900 font-medium",
+                                            className: "text-sm sm:text-base text-gray-900 font-bold",
                                             children: "13+ clinical studies"
                                         }, void 0, false, {
                                             fileName: "[project]/components/view/homepage/components/ResearchSection.jsx",
@@ -816,7 +846,7 @@ function ResearchSection() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Button"], {
                                 variant: "outline",
                                 size: "lg",
-                                className: "mt-6 sm:mt-8 bg-white text-primary font-bold  text-sm sm:text-base",
+                                className: "mt-6 sm:mt-8 bg-white text-primary rounded-lg font-bold  text-sm sm:text-base",
                                 children: "QR678 Research"
                             }, void 0, false, {
                                 fileName: "[project]/components/view/homepage/components/ResearchSection.jsx",
@@ -1035,7 +1065,7 @@ function UntappedSection() {
             className: "container mx-auto px-4",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                    className: "text-center mb-12",
+                    className: "text-center mb-16",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "bg-[#FFE4B5] px-4 py-1 pt-2 pl-6 pr-6 pb-2 font-bold text-5xl mb-3 text-primary",
@@ -1125,12 +1155,12 @@ function UntappedSection() {
 }
 const metrics = [
     {
-        value: "XX Billion",
+        value: "XX Billion ",
         icon: "/assets/svg/homepage/home-untapped-xx.svg",
         description: "worth of total worldwide impact"
     },
     {
-        value: "XY Billion",
+        value: "XY Billion  ",
         icon: "/assets/svg/homepage/home-untapped-yy.svg",
         description: "worth of total hair & healthcare market"
     },
@@ -1158,7 +1188,7 @@ function ProgramSection() {
             className: "container mx-auto px-4 space-y-8",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: " rounded-lg p-8  border-secondary border-[1px]",
+                    className: " rounded-lg p-8  border-secondary border-[1.5px]",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-5xl mb-4 text-primary",
@@ -1245,7 +1275,7 @@ function ProgramSection() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: " rounded-lg p-8  border-secondary border-[1px]",
+                    className: " rounded-lg p-8  border-secondary border-[1.5px]",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: " mb-4 text-primary text-5xl",
@@ -1327,49 +1357,49 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 const testimonials = [
     {
         id: 1,
-        name: "Dr. Viezh Robert",
+        name: "Dr. Viezh R",
         location: "Warsaw, Poland",
         quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
         image: "/assets/png/testimonials.png"
     },
     {
         id: 2,
-        name: "Dr. Viezh Robert",
+        name: "Dr. Viezh Ro",
         location: "Warsaw, Poland",
         quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
         image: "/assets/png/testimonials.png"
     },
     {
         id: 3,
-        name: "Dr. Viezh Robert",
+        name: "Dr. Viezh Rob",
         location: "Warsaw, Poland",
         quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
         image: "/assets/png/testimonials.png"
     },
     {
         id: 4,
-        name: "Dr. Viezh Robert",
+        name: "Dr. Viezh Robe",
         location: "Warsaw, Poland",
         quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
         image: "/assets/png/testimonials.png"
     },
     {
         id: 5,
-        name: "Dr. Viezh Robert",
+        name: "Dr. Viezh Rober",
         location: "Warsaw, Poland",
         quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
         image: "/assets/png/testimonials.png"
     },
     {
         id: 6,
-        name: "Dr. Viezh Robert",
+        name: "Dr. Viezh",
         location: "Warsaw, Poland",
         quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
         image: "/assets/png/testimonials.png"
     },
     {
         id: 7,
-        name: "Dr. Viezh Robert",
+        name: "Dr. Viezh S",
         location: "Warsaw, Poland",
         quote: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
         image: "/assets/png/testimonials.png"
@@ -1398,7 +1428,7 @@ function TestimonialsSection() {
                                 className: "w-full max-w-7xl mx-auto px-4 py-8 ",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-3xl md:text-4xl font-bold text-primary mb-8 text-start",
+                                        className: "text-3xl md:text-4xl  font-medium text-primary mb-8 text-start",
                                         children: "Experts said it"
                                     }, void 0, false, {
                                         fileName: "[project]/components/view/homepage/components/testimonials-section.jsx",
@@ -1554,7 +1584,7 @@ function TestimonialsSection() {
                                 className: "w-full max-w-7xl mx-auto px-4 py-8 ",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-3xl md:text-4xl font-bold text-primary mb-8 text-start",
+                                        className: "text-3xl md:text-4xl font-medium text-primary mb-8 text-start",
                                         children: "Users felt it"
                                     }, void 0, false, {
                                         fileName: "[project]/components/view/homepage/components/testimonials-section.jsx",

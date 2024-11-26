@@ -3,22 +3,6 @@
     "[project]/app/page": [
       "static/media/Helvetica-s.p.8248aa15.ttf",
       "static/media/Helvetica_Bold-s.p.3e411a3d.ttf"
-    ],
-    "[project]/app/_not-found/page": [
-      "static/media/Helvetica-s.p.8248aa15.ttf",
-      "static/media/Helvetica_Bold-s.p.3e411a3d.ttf"
-    ],
-    "[project]/app/events/page": [
-      "static/media/Helvetica-s.p.8248aa15.ttf",
-      "static/media/Helvetica_Bold-s.p.3e411a3d.ttf"
-    ],
-    "[project]/app/aboutUs/page": [
-      "static/media/Helvetica-s.p.8248aa15.ttf",
-      "static/media/Helvetica_Bold-s.p.3e411a3d.ttf"
-    ],
-    "[project]/app/contactUs/page": [
-      "static/media/Helvetica-s.p.8248aa15.ttf",
-      "static/media/Helvetica_Bold-s.p.3e411a3d.ttf"
     ]
   },
   "appUsingSizeAdjust": true,

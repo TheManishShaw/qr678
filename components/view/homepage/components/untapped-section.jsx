@@ -4,7 +4,7 @@ export default function UntappedSection() {
   return (
     <section className="bg-background py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-center mb-12">
+        <h2 className="text-center mb-16">
           <span className="bg-[#FFE4B5] px-4 py-1 pt-2 pl-6 pr-6 pb-2 font-bold text-5xl mb-3 text-primary">
             UNTAPPED.
           </span>
@@ -41,12 +41,12 @@ export default function UntappedSection() {
 
 const metrics = [
   {
-    value: "XX Billion",
+    value: "XX Billion ",
     icon: "/assets/svg/homepage/home-untapped-xx.svg",
     description: "worth of total worldwide impact",
   },
   {
-    value: "XY Billion",
+    value: "XY Billion  ",
     icon: "/assets/svg/homepage/home-untapped-yy.svg",
     description: "worth of total hair & healthcare market",
   },

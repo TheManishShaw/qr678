@@ -12,7 +12,7 @@ import Image from "next/image";
 const testimonials = [
   {
     id: 1,
-    name: "Dr. Viezh Robert",
+    name: "Dr. Viezh R",
     location: "Warsaw, Poland",
     quote:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
@@ -20,7 +20,7 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Dr. Viezh Robert",
+    name: "Dr. Viezh Ro",
     location: "Warsaw, Poland",
     quote:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
@@ -28,7 +28,7 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Dr. Viezh Robert",
+    name: "Dr. Viezh Rob",
     location: "Warsaw, Poland",
     quote:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
@@ -36,7 +36,7 @@ const testimonials = [
   },
   {
     id: 4,
-    name: "Dr. Viezh Robert",
+    name: "Dr. Viezh Robe",
     location: "Warsaw, Poland",
     quote:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
@@ -44,7 +44,7 @@ const testimonials = [
   },
   {
     id: 5,
-    name: "Dr. Viezh Robert",
+    name: "Dr. Viezh Rober",
     location: "Warsaw, Poland",
     quote:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
@@ -52,7 +52,7 @@ const testimonials = [
   },
   {
     id: 6,
-    name: "Dr. Viezh Robert",
+    name: "Dr. Viezh",
     location: "Warsaw, Poland",
     quote:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
@@ -60,7 +60,7 @@ const testimonials = [
   },
   {
     id: 7,
-    name: "Dr. Viezh Robert",
+    name: "Dr. Viezh S",
     location: "Warsaw, Poland",
     quote:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
@@ -78,7 +78,7 @@ export default function TestimonialsSection() {
         <div className="space-y-12 ">
           <Card className="p-6 border border-secondary">
             <div className="w-full max-w-7xl mx-auto px-4 py-8 ">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-start">
+              <h2 className="text-3xl md:text-4xl  font-medium text-primary mb-8 text-start">
                 Experts said it
               </h2>
 
@@ -134,7 +134,7 @@ export default function TestimonialsSection() {
           </Card>
           <Card className="p-6 border border-secondary">
             <div className="w-full max-w-7xl mx-auto px-4 py-8 ">
-              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-start">
+              <h2 className="text-3xl md:text-4xl font-medium text-primary mb-8 text-start">
                 Users felt it
               </h2>
 

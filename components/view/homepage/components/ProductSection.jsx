@@ -29,7 +29,7 @@ export default function ProductSection() {
   ];
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-12">
-      <h1 className="text-center text-4xl md:text-5xl font-medium mb-12 text-[#B38B59]">
+      <h1 className="text-center text-4xl md:text-5xl font-bold mb-12 text-[#B38B59]">
         Products That Make Lives Better
       </h1>
       <Card className="p-10">
@@ -38,33 +38,34 @@ export default function ProductSection() {
             {item.map((item, index) => (
               <>
                 <CarouselItem key={index}>
-                  <Card className="border-[#B38B59]/20">
+                  <Card className="border-secondary">
                     <CardContent className="p-6 md:p-8">
-                      <div className="grid md:grid-cols-2 gap-8">
-                        <div className="flex items-center justify-center">
+                      <div className="mb-12">
+                        <h2 className="text-5xl font-bold text-secondary">
+                          QR678 Neo<sup className=" text-2xl">®</sup>
+                        </h2>
+                        <p className="text-gray-600 leading-relaxed">
+                          QR678 Neo<sup>®</sup> is a patented, clinically-proven
+                          hair regrowth therapy designed to combat hair loss and
+                          stimulate new hair growth. Unlike traditional methods,
+                          QR678 Neo<sup>®</sup> uses a unique, non-surgical
+                          formulation of six specific biomimetic polypeptides
+                          that is injected painlessly into the scalp, targeting
+                          hair follicles for optimal results.
+                        </p>
+                      </div>
+                      <div className="grid md:grid-cols-2 gap-8 ">
+                        <div className="flex items-start justify-start">
                           <Image
                             src="/assets/png/Products-That-Make-Lives-Better.png"
                             alt="QR678 Neo Product"
-                            width={400}
-                            height={400}
+                            width={310}
+                            height={200}
                             className="object-contain"
                           />
                         </div>
-                        <div className="space-y-6">
-                          <h2 className="text-3xl font-medium text-[#B38B59]">
-                            QR678 Neo<sup>®</sup>
-                          </h2>
-                          <p className="text-gray-600 leading-relaxed">
-                            QR678 Neo® is a patented, clinically-proven hair
-                            regrowth therapy designed to combat hair loss and
-                            stimulate new hair growth. Unlike traditional
-                            methods, QR678 Neo® uses a unique, non-surgical
-                            formulation of six specific biomimetic polypeptides
-                            that is injected painlessly into the scalp,
-                            targeting hair follicles for optimal results.
-                          </p>
-
-                          <div className="grid gap-4 grid-cols-2">
+                        <div className="space-y-6 ">
+                          <div className="grid gap-4 grid-cols-2 items-start">
                             <div className="flex items-center gap-3">
                               <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center">
                                 <Check className="h-4 w-4 text-green-600 rounded-s-sm " />
