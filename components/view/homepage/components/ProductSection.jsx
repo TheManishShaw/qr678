@@ -36,7 +36,7 @@ export default function ProductSection() {
         <Carousel className="w-full relative">
           <CarouselContent>
             {item.map((item, index) => (
-              <>
+              
                 <CarouselItem key={index}>
                   <Card className="border-secondary">
                     <CardContent className="p-6 md:p-8">
@@ -104,7 +104,7 @@ export default function ProductSection() {
                     </CardContent>
                   </Card>
                 </CarouselItem>
-              </>
+              
             ))}
           </CarouselContent>
           <CarouselDots className="self-center pt-6" />

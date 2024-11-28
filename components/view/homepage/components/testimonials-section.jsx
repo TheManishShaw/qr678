@@ -90,9 +90,9 @@ export default function TestimonialsSection() {
                 className="w-full"
               >
                 <CarouselContent className="-ml-2 md:-ml-3">
-                  {testimonials.map((testimonial) => (
+                  {testimonials.map((testimonial,index) => (
                     <CarouselItem
-                      key={testimonial.id}
+                      key={index}
                       className="pl-2 md:pl-3 md:basis-1/2 lg:basis-1/3"
                     >
                       <Card className="border-2 border-secondary rounded-lg shadow-sm p-6">
@@ -146,9 +146,9 @@ export default function TestimonialsSection() {
                 className="w-full"
               >
                 <CarouselContent className="-ml-2 md:-ml-3">
-                  {testimonials.map((testimonial) => (
+                  {testimonials.map((testimonial,index) => (
                     <CarouselItem
-                      key={testimonial.id}
+                      key={index}
                       className="pl-2 md:pl-3 md:basis-1/2 lg:basis-1/3"
                     >
                       <Card className="border-2 border-secondary rounded-lg shadow-sm p-6">

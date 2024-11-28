@@ -1,1 +1,11 @@
-{"pages":{},"app":{"/Users/macbookpro/Manish Projects/qr678/app/layout":["static/media/72fa72e55968327e-s.p.ttf","static/media/8a191867dda12122-s.p.ttf"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}
+{
+  "app": {
+    "[project]/app/contactUs/page": [
+      "static/media/Helvetica-s.p.8248aa15.ttf",
+      "static/media/Helvetica_Bold-s.p.3e411a3d.ttf"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}
