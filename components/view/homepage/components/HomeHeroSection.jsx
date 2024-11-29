@@ -6,7 +6,7 @@ const HomeHeroSection = () => {
   return (
     <>
       <section className="relative bg-white ">
-        <div className=" mx-auto  flex flex-col md:flex-row items-center justify-between">
+        <div className=" container mx-auto  flex flex-col md:flex-row items-center justify-between">
           <div className=" px-10 py-10 w-full mx-auto mb-8 md:mb-0">
             <h1 className="text-3xl md:text-[2.5rem] leading-[3rem] font-thin mb-4">
               <span className="text-secondary font-bold">Empowering</span>{" "}

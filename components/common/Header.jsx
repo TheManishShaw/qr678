@@ -1,5 +1,5 @@
 "use client";
-import React, { forwardRef, useState } from "react";
+import React, { useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -7,51 +7,17 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from "../ui/navigation-menu";
+} from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
+import { Menu } from 'lucide-react';
 
-const components = [
-  {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-];
-
-const ListItem = forwardRef(({ className, title, children, ...props }, ref) => {
+const ListItem = React.forwardRef
+(({ className, title, children, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
@@ -72,204 +38,267 @@ const ListItem = forwardRef(({ className, title, children, ...props }, ref) => {
     </li>
   );
 });
-
 ListItem.displayName = "ListItem";
-const Header = () => {
+
+const DesktopNav = () => {
   const path = usePathname();
+
   return (
-    <nav className="bg-white  shadow-md shadow-slate-500 border-b border-[#2D2D3099]">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <Image
-            src="/assets/svg/logo/logo.svg"
-            alt="Flowbite Logo"
-            height={100}
-            width={100}
-          />
-        </a>
-        <button
-          type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        >
-          <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
+    <NavigationMenu>
+      <NavigationMenuList className="hidden md:flex md:space-x-4">
+        <NavigationMenuItem>
+          <Link href="/" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-primary",
+                path === "/" ? "text-primary" : "text-muted-foreground"
+              )}
+            >
+              Home
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger
+            className={cn(
+              "text-sm font-medium transition-colors hover:text-primary",
+              path.startsWith("/product") ? "text-primary" : "text-muted-foreground"
+            )}
           >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
+            Product
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+          <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]  ">
+                    <a
+                      href="#"
+                      className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                    >
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-secondary ">
+                        QR678 Neo®
+                      </h5>
+                      <p className="font-normal text-primary">
+                        One of the best hair regrowth product.
+                      </p>
+                      <Image
+                        src="/assets/svg/homepage/neo-product-image.svg"
+                        alt="Product Image"
+                        height={200}
+                        width={200}
+                      />
+                    </a>
+                    <a
+                      href="#"
+                      className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                    >
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-secondary ">
+                        QR678 Suite®
+                      </h5>
+                      <p className="font-normal text-primary">
+                        One of the best hair regrowth product.
+                      </p>
+                      <Image
+                        className="mt-10"
+                        src="/assets/svg/homepage/suite-product-image.svg"
+                        alt="Product Image"
+                        height={240}
+                        width={240}
+                      />
+                    </a>
+                  </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="https://blog.qr678.com/" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-primary",
+                "text-muted-foreground"
+              )}
+            >
+              Blog
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger
+            className={cn(
+              "text-sm font-medium transition-colors hover:text-primary",
+              path.startsWith("/events") ? "text-primary" : "text-muted-foreground"
+            )}
+          >
+            Events
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+          <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]  ">
+                    <a
+                      href="#"
+                      className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                    >
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-secondary ">
+                        QR678 Neo®
+                      </h5>
+                      <p className="font-normal text-primary">
+                        One of the best hair regrowth product.
+                      </p>
+                      <Image
+                        src="/assets/svg/homepage/neo-product-image.svg"
+                        alt="Product Image"
+                        height={200}
+                        width={200}
+                      />
+                    </a>
+                    <a
+                      href="#"
+                      className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                    >
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-secondary ">
+                        QR678 Suite®
+                      </h5>
+                      <p className="font-normal text-primary">
+                        One of the best hair regrowth product.
+                      </p>
+                      <Image
+                        className="mt-10"
+                        src="/assets/svg/homepage/suite-product-image.svg"
+                        alt="Product Image"
+                        height={240}
+                        width={240}
+                      />
+                    </a>
+                  </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/aboutUs" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-primary",
+                path === "/aboutUs" ? "text-primary" : "text-muted-foreground"
+              )}
+            >
+              About Us
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/contactUs" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-primary",
+                path === "/contactUs" ? "text-primary" : "text-muted-foreground"
+              )}
+            >
+              Contact Us
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
+  );
+};
+
+const MobileNav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const NavItem = ({ href, children }) => (
+    <li>
+      <Link href={href} className="block py-2 text-sm">
+        {children}
+      </Link>
+    </li>
+  );
+
+  const NavItemWithSubmenu = ({ label, items }) => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    return (
+      <li>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="flex items-center justify-between w-full py-2 text-sm"
+        >
+          {label}
+          <svg
+            className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`}
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
           </svg>
         </button>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <NavigationMenu>
-            <NavigationMenuList className="gap-6">
-              <NavigationMenuItem>
-                <Link href="/" legacyBehavior passHref>
-                  <NavigationMenuLink
-                    className={
-                      path == "/" ? " text-primary" : " text-muted-text-color "
-                    }
-                  >
-                    Home
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
+        {isOpen && (
+          <ul className="pl-4 mt-2 space-y-2">
+            {items.map((item) => (
+              <NavItem key={item.title} href={item.href}>
+                {item.title}
+              </NavItem>
+            ))}
+          </ul>
+        )}
+      </li>
+    );
+  };
 
-              <NavigationMenuItem>
-                <NavigationMenuTrigger
-                  className={
-                    path == "/product"
-                      ? " text-primary"
-                      : "text-muted-text-color"
-                  }
-                >
-                  Product
-                </NavigationMenuTrigger>
-                <NavigationMenuContent id="product">
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]  ">
-                    <a
-                      href="#"
-                      className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-                    >
-                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-secondary ">
-                        QR678 Neo®
-                      </h5>
-                      <p className="font-normal text-primary">
-                        One of the best hair regrowth product.
-                      </p>
-                      <Image
-                        src="/assets/svg/homepage/neo-product-image.svg"
-                        alt="Product Image"
-                        height={200}
-                        width={200}
-                      />
-                    </a>
-                    <a
-                      href="#"
-                      className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-                    >
-                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-secondary ">
-                        QR678 Suite®
-                      </h5>
-                      <p className="font-normal text-primary">
-                        One of the best hair regrowth product.
-                      </p>
-                      <Image
-                        className="mt-10"
-                        src="/assets/svg/homepage/suite-product-image.svg"
-                        alt="Product Image"
-                        height={240}
-                        width={240}
-                      />
-                    </a>
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="/blog" legacyBehavior passHref>
-                  <NavigationMenuLink
-                    className={
-                      path == "/blog"
-                        ? " text-primary"
-                        : "text-muted-text-color"
-                    }
-                  >
-                    Blog
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="/events" legacyBehavior passHref>
-                  <NavigationMenuTrigger
-                    className={
-                      path == "/events"
-                        ? " text-primary"
-                        : "text-muted-text-color"
-                    }
-                  >
-                    Events
-                  </NavigationMenuTrigger>
-                </Link>
-                <NavigationMenuContent className="border-0">
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]  ">
-                    <a
-                      href="#"
-                      className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-                    >
-                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-secondary ">
-                        QR678 Neo®
-                      </h5>
-                      <p className="font-normal text-primary">
-                        One of the best hair regrowth product.
-                      </p>
-                      <Image
-                        src="/assets/svg/homepage/neo-product-image.svg"
-                        alt="Product Image"
-                        height={200}
-                        width={200}
-                      />
-                    </a>
-                    <a
-                      href="#"
-                      className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-                    >
-                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-secondary ">
-                        QR678 Suite®
-                      </h5>
-                      <p className="font-normal text-primary">
-                        One of the best hair regrowth product.
-                      </p>
-                      <Image
-                        className="mt-10"
-                        src="/assets/svg/homepage/suite-product-image.svg"
-                        alt="Product Image"
-                        height={240}
-                        width={240}
-                      />
-                    </a>
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="/aboutUs" legacyBehavior passHref>
-                  <NavigationMenuLink
-                    className={
-                      path == "/aboutUs"
-                        ? " text-primary"
-                        : " text-muted-text-color"
-                    }
-                  >
-                    About Us
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="/contactUs" legacyBehavior passHref>
-                  <NavigationMenuLink
-                    className={
-                      path == "/contactUs"
-                        ? " text-primary"
-                        : " text-muted-text-color"
-                    }
-                  >
-                    Contact Us
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+  return (
+    <Sheet open={isOpen} onOpenChange={setIsOpen}>
+      <SheetTrigger asChild>
+        <Button variant="outline" size="icon" className="md:hidden">
+          <Menu className="h-6 w-6" />
+          <span className="sr-only">Open menu</span>
+        </Button>
+      </SheetTrigger>
+      <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+        <nav>
+          <ul className="space-y-4">
+            <NavItem href="/">Home</NavItem>
+            <NavItemWithSubmenu
+              label="Product"
+              items={[
+                { title: "QR678 Neo®", href: "/product/qr678-neo", description: "Advanced hair regrowth solution" },
+                { title: "QR678 Suite®", href: "/product/qr678-suite", description: "Complete hair care system" },
+              ]}
+            />
+            <NavItem href="https://blog.qr678.com/">Blog</NavItem>
+            <NavItemWithSubmenu
+              label="Events"
+              items={[
+                { title: "Upcoming Events", href: "/events/upcoming", description: "Join our future events" },
+                { title: "Past Events", href: "/events/past", description: "Recap of our previous events" },
+              ]}
+            />
+            <NavItem href="/aboutUs">About Us</NavItem>
+            <NavItem href="/contactUs">Contact Us</NavItem>
+          </ul>
+        </nav>
+      </SheetContent>
+    </Sheet>
+  );
+};
+
+const Header = () => {
+  return (
+    <header className="bg-white shadow-xs top-0 sticky shadow-slate-500 z-20 border-b border-[#2D2D3099]">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <Link href="/" className="flex-shrink-0">
+              <Image
+                src="/assets/svg/logo/logo.svg"
+                alt="Logo"
+                height={40}
+                width={40}
+              />
+            </Link>
+          </div>
+          <DesktopNav />
+          <MobileNav />
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 
 export default Header;
+

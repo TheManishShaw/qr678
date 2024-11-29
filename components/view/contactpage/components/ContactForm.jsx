@@ -66,12 +66,13 @@ export default function ContactForm() {
         <form onSubmit={form.handleSubmit(onSubmit)} className="mt-8 space-y-6">
           <div className="grid gap-4 md:grid-cols-2">
             <FormField
+           
               control={form.control}
               name="firstName"
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Input placeholder="your first name" {...field} />
+                    <Input className="rounded-[5px]" placeholder="your first name" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -240,7 +241,7 @@ export default function ContactForm() {
           />
           <Button
             type="submit"
-            className="w-full bg-[#2A2B7B] hover:bg-[#2A2B7B]/90"
+            className="w-auto mx-auto items-center self-center bg-[#2A2B7B] hover:bg-[#2A2B7B]/90"
           >
             Submit
           </Button>
