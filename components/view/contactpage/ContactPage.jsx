@@ -1,8 +1,8 @@
 import React from 'react'
 import ContactForm from './components/ContactForm'
 import { WorldMap } from './components/word-map'
-import ProductSection from '../homepage/components/ProductSection'
 import { Stats } from './components/stats'
+import ProductSection from './components/ProductSection'
 
 const ContactPage = () => {
   return (

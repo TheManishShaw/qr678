@@ -12,7 +12,7 @@ export function WorldMap() {
   }, [])
 
   return (
-    <div ref={mapRef} className="relative h-[400px] w-full">
+    <div ref={mapRef} className="relative h-[600px] w-full">
       <div className="absolute inset-0 bg-[url('/assets/svg/contact/world-map.svg')] bg-contain bg-center bg-no-repeat opacity-100" />
       {/* Add map markers/points here */}
     </div>

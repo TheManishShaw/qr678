@@ -19,6 +19,7 @@ module.exports = {
         secondary: "rgb(var(--color-secondary) / <alpha-value>)",
         accent: "rgb(var(--color-accent) / <alpha-value>)",
         background: "rgb(var(--color-background) / <alpha-value>)",
+        "textBg":"rgb(var(--text-background) / <alpha-value>)"
       },
       borderRadius: {
         lg: "var(--radius)",

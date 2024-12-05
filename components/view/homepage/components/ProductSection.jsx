@@ -32,7 +32,7 @@ export default function ProductSection() {
       <h1 className="text-center text-4xl md:text-5xl font-bold mb-12 text-[#B38B59]">
         Products That Make Lives Better
       </h1>
-      <Card className="p-10">
+      <Card className="p-2 md:p-8">
         <Carousel className="w-full relative">
           <CarouselContent>
             {item.map((item, index) => (
@@ -54,8 +54,8 @@ export default function ProductSection() {
                           hair follicles for optimal results.
                         </p>
                       </div>
-                      <div className="grid md:grid-cols-2 gap-8 ">
-                        <div className="flex items-start justify-start">
+                      <div className="md:flex ">
+                        <div className="flex items-start md:w-1/3 justify-start">
                           <Image
                             src="/assets/png/Products-That-Make-Lives-Better.png"
                             alt="QR678 Neo Product"
@@ -64,7 +64,7 @@ export default function ProductSection() {
                             className="object-contain"
                           />
                         </div>
-                        <div className="space-y-6 ">
+                        <div className="md:w-2/3 ">
                           <div className="grid gap-4 grid-cols-2 items-start">
                             <div className="flex items-center gap-3">
                               <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center">

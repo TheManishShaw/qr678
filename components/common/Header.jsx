@@ -50,7 +50,7 @@ const DesktopNav = () => {
           <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+                "text-sm font-medium transition-colors hover:text-primary hover:bg-gray-50 px-4 py-3 rounded-md",
                 path === "/" ? "text-primary" : "text-muted-foreground"
               )}
             >
@@ -59,6 +59,8 @@ const DesktopNav = () => {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
+        <Link href="/products">
+
           <NavigationMenuTrigger
             className={cn(
               "text-sm font-medium transition-colors hover:text-primary",
@@ -67,6 +69,7 @@ const DesktopNav = () => {
           >
             Product
           </NavigationMenuTrigger>
+        </Link>
           <NavigationMenuContent>
           <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]  ">
                     <a
@@ -111,7 +114,7 @@ const DesktopNav = () => {
           <Link href="https://blog.qr678.com/" legacyBehavior passHref>
             <NavigationMenuLink
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+                "text-sm font-medium transition-colors hover:text-primary hover:bg-gray-50 px-4 py-3 rounded-md",
                 "text-muted-foreground"
               )}
             >
@@ -169,10 +172,10 @@ const DesktopNav = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/aboutUs" legacyBehavior passHref>
+          <Link href="/about-us" legacyBehavior passHref>
             <NavigationMenuLink
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+                "text-sm font-medium transition-colors hover:text-primary hover:bg-gray-50 px-4 py-3 rounded-md",
                 path === "/aboutUs" ? "text-primary" : "text-muted-foreground"
               )}
             >
@@ -181,10 +184,10 @@ const DesktopNav = () => {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/contactUs" legacyBehavior passHref>
+          <Link href="/contact-us" legacyBehavior passHref>
             <NavigationMenuLink
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+                "text-sm font-medium transition-colors hover:text-primary hover:bg-gray-50 px-4 py-3 rounded-md",
                 path === "/contactUs" ? "text-primary" : "text-muted-foreground"
               )}
             >
@@ -279,16 +282,16 @@ const MobileNav = () => {
 
 const Header = () => {
   return (
-    <header className="bg-white shadow-xs top-0 sticky shadow-slate-500 z-20 border-b border-[#2D2D3099]">
+    <header className="bg-white text-[#A7A7AB]     shadow-xs top-0 sticky shadow-slate-500 z-20 border-b border-[#2D2D3099]">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
               <Image
                 src="/assets/svg/logo/logo.svg"
-                alt="Logo"
-                height={40}
-                width={40}
+                alt="QR678"
+                height={80}
+                width={80 }
               />
             </Link>
           </div>

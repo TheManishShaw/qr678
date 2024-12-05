@@ -77,7 +77,7 @@ export default function TestimonialsSection() {
 
         <div className="space-y-12 ">
           <Card className="p-6 border border-secondary">
-            <div className="w-full max-w-7xl mx-auto px-4 py-8 ">
+            <div className="w-full max-w-7xl mx-auto md:px-4 md:py-8 ">
               <h2 className="text-3xl md:text-4xl  font-medium text-primary mb-8 text-start">
                 Experts said it
               </h2>
@@ -96,27 +96,28 @@ export default function TestimonialsSection() {
                       className="pl-2 md:pl-3 md:basis-1/2 lg:basis-1/3"
                     >
                       <Card className="border-2 border-secondary rounded-lg shadow-sm p-6">
-                        <CardContent className="flex flex-col items-start p-0 space-y-3">
-                          <div className="flex items-center gap-3">
-                            <Image
+                        <CardContent className="flex gap-2 items-start p-0 space-y-3">
+                        <Image
                               src={testimonial.image}
                               alt={testimonial.name}
-                              width={48}
-                              height={48}
+                              width={150}
+                              height={150}
                               className="rounded-full"
                             />
-                            <div>
+                          <div className=" items-center gap-3">
+                         
+                            
                               <h3 className="font-semibold text-base text-[#0F1B4C]">
                                 {testimonial.name}
                               </h3>
                               <p className="text-sm text-muted-foreground">
                                 {testimonial.location}
                               </p>
-                            </div>
-                          </div>
+                           
                           <p className="text-sm text-[#0F1B4C] leading-relaxed">
                             {testimonial.quote}
                           </p>
+                          </div>
                         </CardContent>
                       </Card>
                     </CarouselItem>
@@ -133,7 +134,7 @@ export default function TestimonialsSection() {
             </div>
           </Card>
           <Card className="p-6 border border-secondary">
-            <div className="w-full max-w-7xl mx-auto px-4 py-8 ">
+            <div className="w-full max-w-7xl mx-auto md:px-4 md:py-8 ">
               <h2 className="text-3xl md:text-4xl font-medium text-primary mb-8 text-start">
                 Users felt it
               </h2>

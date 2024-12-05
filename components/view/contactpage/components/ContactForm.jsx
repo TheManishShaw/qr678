@@ -1,10 +1,10 @@
 "use client"
 
-import { zodResolver } from "@hookform/resolvers/zod"
-import { useForm } from "react-hook-form"
-import * as z from "zod"
+import * as React from "react"
+import { Check } from 'lucide-react'
 
 import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
 import { Checkbox } from "@/components/ui/checkbox"
 import {
   Form,
@@ -12,7 +12,6 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import {
@@ -22,231 +21,263 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-
-const formSchema = z.object({
-  firstName: z.string().min(2, "First name must be at least 2 characters"),
-  lastName: z.string().min(2, "Last name must be at least 2 characters"),
-  state: z.string().min(1, "Please select a state"),
-  city: z.string().min(1, "Please select a city"),
-  country: z.string().min(1, "Please select a country"),
-  role: z.string().min(1, "Please select your role"),
-  phone: z.string().regex(/^\d{10}$/, "Please enter a valid 10-digit phone number"),
-  email: z.string().email("Please enter a valid email address"),
-  authorize: z.boolean().refine((val) => val === true, "You must authorize QR678 to contact you"),
-})
+import { useForm } from "react-hook-form"
 
 export default function ContactForm() {
   const form = useForm({
-    resolver: zodResolver(formSchema),
     defaultValues: {
       firstName: "",
       lastName: "",
       state: "",
       city: "",
       country: "",
-      role: "",
+      type: "",
       phone: "",
       email: "",
-      authorize: false,
+      authorise: false,
     },
   })
 
-  function onSubmit(values) {
-    console.log(values)
+  function onSubmit(data) {
+    console.log(data)
+    alert(data)
   }
 
   return (
-    <div className="mx-auto max-w-5xl rounded-lg border bg-white p-8 shadow-sm">
-      <h2 className="text-center text-2xl font-semibold text-[#C1994D]">
-        Lorem Ipsum Dolor Sit Amet,
-        <br />
-        Consectetur Adipiscing Elit
-      </h2>
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="mt-8 space-y-6">
-          <div className="grid gap-4 md:grid-cols-2">
-            <FormField
-           
-              control={form.control}
-              name="firstName"
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    <Input className="rounded-[5px]" placeholder="your first name" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="lastName"
-              render={({ field }) => (
-                <FormItem>
-                  <FormControl>
-                    <Input placeholder="your last name" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-          </div>
-          <div className="grid gap-4 md:grid-cols-2">
-            <FormField
-              control={form.control}
-              name="state"
-              render={({ field }) => (
-                <FormItem>
-                  <Select onValueChange={field.onChange} defaultValue={field.value}>
-                    <FormControl>
-                      <SelectTrigger>
-                        <SelectValue placeholder="select state" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                      <SelectItem value="maharashtra">Maharashtra</SelectItem>
-                      <SelectItem value="delhi">Delhi</SelectItem>
-                      {/* Add more states */}
-                    </SelectContent>
-                  </Select>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="city"
-              render={({ field }) => (
-                <FormItem>
-                  <Select onValueChange={field.onChange} defaultValue={field.value}>
-                    <FormControl>
-                      <SelectTrigger>
-                        <SelectValue placeholder="select city" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                      <SelectItem value="mumbai">Mumbai</SelectItem>
-                      <SelectItem value="pune">Pune</SelectItem>
-                      {/* Add more cities */}
-                    </SelectContent>
-                  </Select>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-          </div>
-          <div className="grid gap-4 md:grid-cols-2">
-            <FormField
-              control={form.control}
-              name="country"
-              render={({ field }) => (
-                <FormItem>
-                  <Select onValueChange={field.onChange} defaultValue={field.value}>
-                    <FormControl>
-                      <SelectTrigger>
-                        <SelectValue placeholder="select country" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                      <SelectItem value="india">India</SelectItem>
-                      <SelectItem value="singapore">Singapore</SelectItem>
-                      {/* Add more countries */}
-                    </SelectContent>
-                  </Select>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="role"
-              render={({ field }) => (
-                <FormItem>
-                  <Select onValueChange={field.onChange} defaultValue={field.value}>
-                    <FormControl>
-                      <SelectTrigger>
-                        <SelectValue placeholder="select from dropdown" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                      <SelectItem value="doctor">Doctor</SelectItem>
-                      <SelectItem value="patient">Patient</SelectItem>
-                      {/* Add more roles */}
-                    </SelectContent>
-                  </Select>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-          </div>
-          <div className="grid gap-4 md:grid-cols-2">
-            <div className="flex gap-2">
-              <div className="w-20">
-                <Select defaultValue="+91">
-                  <SelectTrigger>
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="+91">+91</SelectItem>
-                    <SelectItem value="+65">+65</SelectItem>
-                    {/* Add more country codes */}
-                  </SelectContent>
-                </Select>
-              </div>
+    <Card className="w-full border border-secondary max-w-4xl mx-auto">
+      <CardContent className="p-6">
+        <div className="text-center mb-8">
+          <h1 className="text-3xl md:text-4xl font-semibold text-[#B08D57]">
+            Lorem Ipsum Dolor Sit Amet,
+          </h1>
+          <h2 className="text-2xl md:text-3xl font-semibold text-[#B08D57]">
+            Consectetur Adipiscing Elit
+          </h2>
+        </div>
+
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xl">
               <FormField
                 control={form.control}
-                name="phone"
+                name="firstName"
                 render={({ field }) => (
-                  <FormItem className="flex-1">
+                  <FormItem className="border border-primary space-y-0 p-2 rounded-[8px]">
+                    <FormLabel className="text-primary">First Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="9876543210" {...field} />
+                      <Input 
+                        placeholder="your first name" 
+                        className="border-0 focus-visible:ring-0 " 
+                        {...field} 
+                      />
                     </FormControl>
-                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="lastName"
+                render={({ field }) => (
+                  <FormItem className="border focus:ring-0 focus:outline-none focus:border-0 border-primary space-y-0 p-2 rounded-[8px]">
+                    <FormLabel className="text-primary">Last Name</FormLabel>
+                    <FormControl>
+                      <Input 
+                        placeholder="your last name" 
+                        className="border-0 focus-visible:ring-0 " 
+                        {...field} 
+                      />
+                    </FormControl>
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="state"
+                render={({ field }) => (
+                  <FormItem className="border border-primary space-y-0 p-2 rounded-[8px]">
+                    <FormLabel className="text-primary">State</FormLabel>
+                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <FormControl>
+                        <SelectTrigger className="focus:ring-0 border-0">
+                          <SelectValue placeholder="select state" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value="state1">State 1</SelectItem>
+                        <SelectItem value="state2">State 2</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="city"
+                render={({ field }) => (
+                  <FormItem className=" border border-primary space-y-0 p-2 rounded-[8px]">
+                    <FormLabel className="text-primary">City</FormLabel>
+                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <FormControl>
+                        <SelectTrigger className=" focus:ring-0 border-0   ">
+                          <SelectValue placeholder="select city" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value="city1">City 1</SelectItem>
+                        <SelectItem value="city2">City 2</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="country"
+                render={({ field }) => (
+                  <FormItem className="border border-primary space-y-0 p-2 rounded-[8px]">
+                    <FormLabel className="text-primary">Country</FormLabel>
+                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <FormControl>
+                        <SelectTrigger className="border-0 focus:ring-0">
+                          <SelectValue placeholder="select country" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value="india">India</SelectItem>
+                        <SelectItem value="usa">USA</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="type"
+                render={({ field }) => (
+                  <FormItem className="border border-primary space-y-0 p-2 rounded-[8px]">
+                    <FormLabel className="text-primary">Are you a</FormLabel>
+                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <FormControl>
+                        <SelectTrigger className="border-0 focus:ring-0">
+                          <SelectValue placeholder="select from dropdown" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value="type1">Type 1</SelectItem>
+                        <SelectItem value="type2">Type 2</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </FormItem>
+                )}
+              />
+
+              <div className="flex gap-4">
+                <div className="w-24">
+                  <FormField
+                    control={form.control}
+                    name="countryCode"
+                    render={({ field }) => (
+                      <FormItem className="border border-primary h-full flex items-center justify-center space-y-0 p-2 rounded-[8px]">
+                        <FormLabel className="text-primary"></FormLabel>
+                        <Select onValueChange={field.onChange} defaultValue="+91">
+                          <FormControl>
+                            <SelectTrigger className="border-none focus:ring-0">
+                              <SelectValue>
+                                <div className="flex items-center gap-1">
+                                  <span className="text-lg">🇮🇳</span>
+                                  <span>+91</span>
+                                </div>
+                              </SelectValue>
+                            </SelectTrigger>
+                          </FormControl>
+                          <SelectContent>
+                            <SelectItem value="+91">
+                              <div className="flex items-center gap-1">
+                                <span className="text-lg">🇮🇳</span>
+                                <span>+91</span>
+                              </div>
+                            </SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </FormItem>
+                    )}
+                  />
+                </div>
+                <div className="flex-1">
+                  <FormField
+                    control={form.control}
+                    name="phone"
+                    render={({ field }) => (
+                      <FormItem className="border border-primary space-y-0 p-2 rounded-[8px]">
+                        <FormLabel className="text-primary">Phone Number</FormLabel>
+                        <FormControl>
+                          <Input 
+                            placeholder="9876543210" 
+                            className="border-0 focus-visible:ring-0" 
+                            {...field} 
+                          />
+                        </FormControl>
+                      </FormItem>
+                    )}
+                  />
+                </div>
+              </div>
+
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem className="border border-primary space-y-0 p-2 rounded-[8px]">
+                    <FormLabel className="text-primary">Email address</FormLabel>
+                    <FormControl>
+                      <Input 
+                        placeholder="enter email address" 
+                        type="email" 
+                        className="border-0 focus-visible:ring-0" 
+                        {...field} 
+                      />
+                    </FormControl>
                   </FormItem>
                 )}
               />
             </div>
+
             <FormField
               control={form.control}
-              name="email"
+              name="authorise"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="flex flex-row items-start space-x-3 space-y-0  p-2 ">
                   <FormControl>
-                    <Input placeholder="enter email address" {...field} />
+                    <Checkbox
+                      checked={field.value}
+                      onCheckedChange={field.onChange}
+                      className="border border-primary rounded-[8px] text-primary"
+                    />
                   </FormControl>
-                  <FormMessage />
+                  <div className="text-lg text-primary leading-none">
+                    I authorise QR678 to contact me using the details shared above.
+                  </div>
                 </FormItem>
               )}
             />
-          </div>
-          <FormField
-            control={form.control}
-            name="authorize"
-            render={({ field }) => (
-              <FormItem className="flex flex-row items-start space-x-3 space-y-0">
-                <FormControl>
-                  <Checkbox
-                    checked={field.value}
-                    onCheckedChange={field.onChange}
-                  />
-                </FormControl>
-                <div className="space-y-1 leading-none">
-                  <FormLabel>
-                    I authorise QR678 to contact me using the details shared above.
-                  </FormLabel>
-                  <FormMessage />
-                </div>
-              </FormItem>
-            )}
-          />
-          <Button
-            type="submit"
-            className="w-auto mx-auto items-center self-center bg-[#2A2B7B] hover:bg-[#2A2B7B]/90"
-          >
-            Submit
-          </Button>
-        </form>
-      </Form>
-    </div>
+
+            <div className="flex justify-center">
+              <Button 
+                type="submit" 
+                className="bg-primary hover:bg-[#2F2F7E] text-white px-12 py-6 rounded-md"
+              >
+                Submit
+              </Button>
+            </div>
+          </form>
+        </Form>
+      </CardContent>
+    </Card>
   )
 }
+

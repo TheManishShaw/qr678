@@ -27,6 +27,7 @@ body {
     --color-secondary: 179 143 76; /* #B38F4C */
     --color-accent: 107 91 149; /* #6B5B95 */
     --color-background: 248 248 248; /* #F5F5F7 */
+    --text-background: 255 232 158; /* #FFE89E */
   }
 
   h1,
@@ -62,13 +63,13 @@ body {
     @apply mx-auto px-4;
   }
   .heading-1 {
-    @apply text-3xl md:text-4xl font-medium;
+    @apply text-3xl md:text-6xl font-bold text-primary leading-tight;
   }
-  .heading-2 {
-    @apply text-2xl md:text-3xl font-medium;
+  .heading-2  {
+    @apply text-2xl md:text-3xl text-primary  font-bold;
   }
-  .heading-3 {
-    @apply text-xl md:text-2xl font-medium;
+  .sub-heading  {
+    @apply text-xl md:text-2xl text-primary font-medium;
   }
   .body-text {
     @apply text-base md:text-lg;
