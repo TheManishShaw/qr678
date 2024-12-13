@@ -47,10 +47,10 @@ export default function ContactForm() {
     <Card className="w-full border border-secondary max-w-4xl mx-auto">
       <CardContent className="p-6">
         <div className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-semibold text-[#B08D57]">
+          <h1 className="text-3xl md:text-4xl font-semibold text-primary">
             Lorem Ipsum Dolor Sit Amet,
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold text-[#B08D57]">
+          <h2 className="text-2xl md:text-3xl font-semibold text-primary">
             Consectetur Adipiscing Elit
           </h2>
         </div>
@@ -182,7 +182,7 @@ export default function ContactForm() {
                     control={form.control}
                     name="countryCode"
                     render={({ field }) => (
-                      <FormItem className="border border-primary h-full flex items-center justify-center space-y-0 p-2 rounded-[8px]">
+                      <FormItem className="border border-primary h-full flex items-center justify-center space-y-0 p-1 rounded-[8px]">
                         <FormLabel className="text-primary"></FormLabel>
                         <Select onValueChange={field.onChange} defaultValue="+91">
                           <FormControl>
@@ -197,7 +197,7 @@ export default function ContactForm() {
                           </FormControl>
                           <SelectContent>
                             <SelectItem value="+91">
-                              <div className="flex items-center gap-1">
+                              <div className="flex items-center gap-0">
                                 <span className="text-lg">🇮🇳</span>
                                 <span>+91</span>
                               </div>

@@ -23,7 +23,7 @@ export default function UntappedSection() {
                 alt={metric.value}
                 width={144}
                 height={144}
-                className="rounded-full"
+                className=""
               />
               <div className=" text-center md:text-start ">
                 <div className="text-2xl font-bold text-primary mb-2">

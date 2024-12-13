@@ -13,7 +13,7 @@ export default function ProgramSection() {
             A <span className="text-secondary text-4xl">Tricho</span>
             <span className="text-primary">logy + entre</span>
             <span className="text-secondary text-4xl ">preneur</span> with OR678{" "}
-            <sup>®</sup>
+            <sup className=" text-2xl">®</sup>
           </p>
           <p className="text-xl text-primary">
             An amazing partnership opportunity where we work to help you grow
@@ -29,7 +29,7 @@ export default function ProgramSection() {
             Be a <span className="text-secondary font-bold">Superhairo!</span>
           </h2>
           <p className="text-primary mb-6 text-4xl">
-            Your Expertise + OR678®&apos;s Proven Solution
+            Your Expertise + OR678<sup className=" text-2xl">®</sup>&apos;s Proven Solution
           </p>
           <p className="text-xl text-primary">
             Androgenetic Alopecia, or hair loss, affects millions of people

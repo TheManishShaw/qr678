@@ -176,7 +176,7 @@ const DesktopNav = () => {
             <NavigationMenuLink
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary hover:bg-gray-50 px-4 py-3 rounded-md",
-                path === "/aboutUs" ? "text-primary" : "text-muted-foreground"
+                path === "/about-us" ? "text-primary" : "text-muted-foreground"
               )}
             >
               About Us
@@ -188,7 +188,7 @@ const DesktopNav = () => {
             <NavigationMenuLink
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary hover:bg-gray-50 px-4 py-3 rounded-md",
-                path === "/contactUs" ? "text-primary" : "text-muted-foreground"
+                path === "/contact-us" ? "text-primary" : "text-muted-foreground"
               )}
             >
               Contact Us

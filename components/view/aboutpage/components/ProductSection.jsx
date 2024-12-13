@@ -1,41 +1,20 @@
-import * as React from "react";
-import Image from "next/image";
-import { Check } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselDots,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Button } from '@/components/ui/button'
+import { Card, CardContent } from '@/components/ui/card'
+import { Carousel, CarouselContent, CarouselDots, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
+import { Check } from 'lucide-react'
+import Image from 'next/image'
+import React from 'react'
 
-export default function ProductSection() {
-  const item = [
-    {
-      id: 1,
-    },
-    {
-      id: 2,
-    },
-    {
-      id: 3,
-    },
-    {
-      id: 4,
-    },
-  ];
+const ProductSection = () => {
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 py-12">
-      <h1 className="text-center text-4xl md:text-5xl font-bold mb-12 text-secondary">
-        Products That Make Lives Better
-      </h1>
-      <Card className="p-2 md:p-8">
+ 
+     <section className="w-full max-w-7xl mx-auto px-4 py-12">
+        <h3 className='font-bold text-primary text-3xl pl-8 capitalize'>The next revolution is around the corner</h3>
+   
+      <Card className="p-2 md:p-8 border-none shadow-none">
         <Carousel className="w-full relative">
           <CarouselContent>
-            {item.map((item, index) => (
+            {Array.from({ length: 5 }).map((_, index)=> (
               
                 <CarouselItem key={index}>
                   <Card className="border-secondary">
@@ -116,6 +95,9 @@ export default function ProductSection() {
           </div>
         </Carousel>
       </Card>
-    </div>
-  );
+    </section>
+ 
+  )
 }
+
+export default ProductSection

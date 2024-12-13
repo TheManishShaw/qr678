@@ -10,7 +10,7 @@ import TestimonialsSection from "./components/testimonials-section";
 const HomePage = () => {
   return (
     <div>
-      <HomeHeroSection />
+      {/* <HomeHeroSection /> */}
       <ResearchSection />
       <StatsSection />
       <UntappedSection />
