@@ -11,7 +11,7 @@ const AboutPage = () => {
   return (
     <div>
         <div className="relative overflow-hidden bg-white">
-      <div className="container h-screen relative z-10 mx-auto px-4 py-16">
+      <div className=" relative z-10 mx-auto">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-8">
             <div className="relative inline-block">
@@ -46,26 +46,18 @@ const AboutPage = () => {
             </div>
           </div>
           <div className="relative">
-            <div className="absolute right-0 top-0  rounded-full bg-[#FFE5B4] lg:-right-12" />
+         
             <Image
               src="/assets/png/aboutpage/hero-image.png"
               alt="Scientists at work"
-              width={600}
-              height={400}
+              width={900}
+              height={800}
               className="relative bg-cover z-10"
             />
           </div>
         </div>
       </div>
-      <div className="container mx-auto px-4 pb-16">
-        <h2 className="text-center text-4xl font-bold text-[#27277A]">
-          THE GENESIS
-          <span className="relative">
-            <span className="absolute bottom-0 left-0 h-2 w-full bg-[#FFE5B4]" />
-            ...
-          </span>
-        </h2>
-      </div>
+
     </div>
     <TimelineSection/>
 
