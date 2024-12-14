@@ -11,11 +11,12 @@ const AboutPage = () => {
   return (
     <div>
         <div className="relative overflow-hidden bg-white">
-      <div className="container h-screen relative z-10 mx-auto px-4 py-16">
+      <div className='flex justify-center '>
+        <div className="flex container h-screen relative z-10 mx-auto px-4 py-16">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-8">
             <div className="relative inline-block">
-              <h1 className="text-[40px] font-bold leading-tight tracking-tight text-[#27277A]">
+              <h1 className="text-[82px] font-bold leading-tight tracking-tight text-[#27277A]">
                 <span className="relative inline-block  p-4">
                   Science For
                   <br />
@@ -25,7 +26,7 @@ const AboutPage = () => {
                 </span>
               </h1>
             </div>
-            <p className="max-w-[400px] text-[#B8860B]">
+            <p className="text-[20px] max-w-[400px] text-[#B8860B]">
               At QR678, we innovate to craft solutions that go beyond just better hair and skin;
               <br />
               they better lives.
@@ -38,38 +39,40 @@ const AboutPage = () => {
               </Button>
               <Button
                 variant="ghost"
-                className="flex items-center gap-2 text-[#27277A]"
+                className="flex items-center gap-2 text-primary"
               >
-                <PlayCircle className="h-5 w-5" />
+                 <Image
+              src="/assets/svg/aboutus/watch_icon.svg"
+              alt="Scientists at work"
+              width={52}
+              height={52}
+              className="relative bg-cover z-10"
+            />
+                
                 Watch Testimonials
               </Button>
             </div>
           </div>
-          <div className="relative">
+          
+        </div>
+
+      </div>
+      <div className="relative ">
             <div className="absolute right-0 top-0  rounded-full bg-[#FFE5B4] lg:-right-12" />
             <Image
               src="/assets/png/aboutpage/hero-image.png"
               alt="Scientists at work"
-              width={600}
-              height={400}
+              width={1200}
+              height={850}
               className="relative bg-cover z-10"
             />
           </div>
-        </div>
       </div>
-      <div className="container mx-auto px-4 pb-16">
-        <h2 className="text-center text-4xl font-bold text-[#27277A]">
-          THE GENESIS
-          <span className="relative">
-            <span className="absolute bottom-0 left-0 h-2 w-full bg-[#FFE5B4]" />
-            ...
-          </span>
-        </h2>
-      </div>
+      
     </div>
     <TimelineSection/>
 
-          <section className="text-center mt-14 mb-4 space-y-4 max-w-5xl mx-auto">
+          <section className="text-center mt-14 mb-4 space-y-4 max-w-5xl mx-auto bg-[#FAF4EE]">
         <h2 className="heading-1">
           Beyond Hair Loss Treatments
         </h2>
