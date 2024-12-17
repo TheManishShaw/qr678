@@ -155,7 +155,7 @@ const AboutPage = () => {
  
         <div className="flex justify-center container mx-auto items-center gap-8">
       <h2 className="text-2xl font-semibold text-muted-foreground mb-6">As seen on...</h2>
-        <div className="w-full max-w-6xl mx-auto px-4 py-8">
+        <div className="w-full md:max-w-6xl mx-auto px-4 py-8">
         <div className="flex w-max space-x-8 p-4">
           {Array.from({ length: 5 }).map((logo,index) => (
             <div

@@ -184,6 +184,18 @@ const DesktopNav = () => {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
+          <Link href="/faq" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-primary hover:bg-gray-50 px-4 py-3 rounded-md",
+                path === "/faq" ? "text-primary" : "text-muted-foreground"
+              )}
+            >
+              FAQ
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
           <Link href="/contact-us" legacyBehavior passHref>
             <NavigationMenuLink
               className={cn(

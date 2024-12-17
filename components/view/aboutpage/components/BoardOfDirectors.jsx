@@ -31,15 +31,16 @@ const BoardOfDirectors = () => {
           >
             <Card className="border-none">
               <CardContent className="p-4">
-                <div className="aspect-square relative mb-4">
+              <div className=" w-full max-w-md relative mb-4">
                   <Image
                     src="/assets/png/aboutpage/avatar.png"
                     alt={`Director ${index + 1}`}
-                    fill
-                    className="object-cover rounded-md"
+                    width={100}
+                    height={100}
+                    className="object-cover w-full rounded-md"
                   />
                 </div>
-                <h4 className="font-semibold text-[#2D3166]">Name Surname</h4>
+                <h4 className="font-semibold text-primary">Name Surname</h4>
                 <p className="text-sm text-muted-foreground">Credentials</p>
               </CardContent>
             </Card>
