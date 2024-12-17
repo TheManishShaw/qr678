@@ -12,7 +12,7 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Minus, MinusIcon, Plus, PlusIcon, Search } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
-
+import Image from "next/image";
 const categories = [
   "Alopecia",
   "Alopecia Areata",
@@ -25,19 +25,19 @@ const topSearchedFAQs = [
     question: "What is QR678 Neo?",
     answer:
       "Many people come with different schedules, which means that doctors can start and end their day as they choose. Many people come with different schedules, which means that doctors can start and end their day as they choose. Many people come with different schedules, which means that doctors can start and end their day as they choose.",
-    icon: "📋",
+    icon: "/assets/svg/faq/briefcase.svg",
   },
   {
     question: "Where are you located?",
     answer:
       "We have centers in a number region of our opportunities that aren't limited by geographic location. This can be especially helpful.",
-    icon: "🌍",
+    icon: "/assets/svg/faq/location_pin.svg",
   },
   {
     question: "Patents available?",
     answer:
       "We have work available continuously in different locations, which embraces diversity and inclusion by hiring people from different backgrounds.",
-    icon: "📄",
+    icon: "/assets/svg/faq/people_group.svg",
   },
 ];
 
@@ -65,15 +65,15 @@ export function FAQSection() {
           <h2 className="text-3xl  mb-2">
             We Have <span className="text-secondary">Answers</span>
           </h2>
-          <div className="max-w-xl mx-auto mt-6 relative">
+          <div className="max-w-xl mx-auto mt-6 relative text-primary">
             <Input
               type="search"
-              placeholder="Ask a question"
-              className="pl-10"
+              placeholder="Ask a question "
+              className="pl-10 focus:placeholder-primary placeholder-primary"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <Search className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+            <Search className="absolute left-3 top-3 h-4 w-4 text-primary " />
           </div>
         </div>
 
@@ -98,7 +98,15 @@ export function FAQSection() {
             <Card key={index}>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <span className="text-2xl">{faq.icon}</span>
+                  <span className="text-2xl">
+                    <Image
+                                src={faq.icon}
+                                alt=""
+                                
+                               height={28}
+                               width={28}
+                                className=""
+                              /></span>
                   {faq.question}
                 </CardTitle>
               </CardHeader>

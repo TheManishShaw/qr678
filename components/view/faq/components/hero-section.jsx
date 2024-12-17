@@ -38,7 +38,7 @@ const HeroSection = () => {
       <div className="relative mx-auto grid h-full w-full max-w-7xl grid-cols-1 lg:grid-cols-2">
         {/* Text Content */}
         <div className="flex flex-col justify-center px-4 py-12 lg:px-12">
-          <h1 className="mb-6 text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="mb-6 text-7xl font-bold leading-tight text-white sm:text-5xl lg:text-7xl drop-shadow-lg">
             Your Journey To
             <br />
             Healthier Hair

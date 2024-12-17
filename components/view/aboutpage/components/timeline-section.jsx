@@ -10,74 +10,80 @@ import Image from "next/image"
 const timelineData = [
   {
     year: "2006",
-    title: "A Stroke Of Serendipity",
+    title: "A stroke of serendipity",
     description: "Research On Retinoblastoma In IIT Bombay Throws Up An Interesting Phenomenon On Hair Loss.",
-    icon: "/assets/png/no-image.png",
+    icon: "/assets/svg/aboutus/microscope.svg",
     position: "right",
     progress: 10
   },
   {
     year: "2007",
-    title: "Probing For A Revolution",
+    title: "Probing for a revolution",
     description: "Determined Pursuit Of This Insight Leads To The Identification Of Growth Factors Possibly Influencing Hair Growth.",
-    icon: "/assets/png/no-image.png",
+    icon: "/assets/svg/aboutus/microscope.svg",
     position: "left",
     progress: 15
   },
   {
-    year: "2008",
-    title: "A Stroke Of Serendipity",
-    description: "Research On Retinoblastoma In IIT Bombay Throws Up An Interesting Phenomenon On Hair Loss.",
-    icon: "/assets/png/no-image.png",
+    year: <div className="flex justify-center ">
+    {"2012"}
+    <br />-
+    {" 2016"}
+  </div>,
+    title: "The rigour",
+    description: <div className="">
+    
+    <span className="mt-6 text-2xl text-primary">
+      In-clinic user trial of 1000 patients of both genders to test
+      effectiveness and safety of the formulation.
+    </span>
+    <button className="bg-primary text-white text-lg font-medium px-6 py-2 rounded-[12px] shadow-lg hover:text-primary hover:bg-white transition duration-300 mt-6">
+      View Research
+    </button>
+  </div>,
+    icon: "/assets/svg/aboutus/microscope.svg",
     position: "right",
     progress: 20
   },
   {
-    year: "2012-2016",
-    title: "Probing For A Revolution",
-    description: "Determined Pursuit Of This Insight Leads To The Identification Of Growth Factors Possibly Influencing Hair Growth.",
-    icon: "/assets/png/no-image.png",
+    year: "2017",
+    title: "The world knows",
+    description: "QR678® awarded USA patent",
+    icon: "/assets/svg/aboutus/microscope.svg",
     position: "left",
     progress: 35
   },
   {
-    year: "2017",
-    title: "A Stroke Of Serendipity",
-    description: "Research On Retinoblastoma In IIT Bombay Throws Up An Interesting Phenomenon On Hair Loss.",
-    icon: "/assets/png/no-image.png",
+    year: "2019",
+    title: "The accolades follow",
+    description: "Indian patent & FDA approval for manufacturing of QR678 Neo.",
+    icon: "/assets/svg/aboutus/microscope.svg",
     position: "right",
     progress: 45
   },
   {
-    year: "2019",
-    title: "Probing For A Revolution",
-    description: "Determined Pursuit Of This Insight Leads To The Identification Of Growth Factors Possibly Influencing Hair Growth.",
-    icon: "/assets/png/no-image.png",
+    year: "2022",
+    title: "Taking over the world",
+    description: "Launched in the European Union.",
+    icon: "/assets/svg/aboutus/microscope.svg",
     position: "left",
     progress: 65
   },  {
-    year: "2022",
-    title: "A Stroke Of Serendipity",
-    description: "Research On Retinoblastoma In IIT Bombay Throws Up An Interesting Phenomenon On Hair Loss.",
-    icon: "/assets/png/no-image.png",
+    year: "2024",
+    title: "Changing the way you look at hair regrowth",
+    description: "Reimagined identity with the same rigour and vision.",
+    icon: "/assets/svg/aboutus/microscope.svg",
     position: "right",
     progress: 75
   },
   {
     year: "2024",
-    title: "Probing For A Revolution",
-    description: "Determined Pursuit Of This Insight Leads To The Identification Of Growth Factors Possibly Influencing Hair Growth.",
-    icon: "/assets/png/no-image.png",
+    title: "Taking on new challenges",
+    description: "From hair loss to greying, and skin care - Stay tuned!",
+    icon: "/assets/svg/aboutus/microscope.svg",
     position: "left",
     progress: 85
-  },  {
-    year: "2024",
-    title: "A Stroke Of Serendipity",
-    description: "Research On Retinoblastoma In IIT Bombay Throws Up An Interesting Phenomenon On Hair Loss.",
-    icon: "/assets/png/no-image.png",
-    position: "right",
-    progress: 100
-  },
+  }
 
 
 ]
@@ -156,7 +162,7 @@ function TimelineItem({ item, index }) {
         {index < timelineData.length - 1 && (
           <motion.div
             initial={{ height: 0 }}
-            animate={isInView ? { height: "130px" } : { height: 0 }}
+            animate={isInView ? { height: "230px" } : { height: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
             className="absolute left-1/2 top-full w-[2px] border-l-2 border-dashed border-secondary"
           />
@@ -174,8 +180,8 @@ function TimelineItem({ item, index }) {
         <Image
           src={item.icon}
           alt=""
-          width={180}
-          height={180}
+          width={290}
+          height={290}
           className="object-contain"
         />
         </motion.div>
@@ -188,16 +194,26 @@ function TimelineItem({ item, index }) {
 
 export function TimelineSection() {
   return (
-    <div className=" mx-auto bg-[#FAF4EE] py-20 px-4">
+    <div className=" mx-auto bg-[#FAF4EE] px-4 ">
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-5xl font-bold text-center  mb-20 text-primary"
+        className="text-5xl font-bold text-center  mb-20 text-primary pt-12"
       >
         THE <span className="relative">
           GENESIS
-          <span className="absolute bottom-0 left-0 w-full h-1 bg-[#ffc107]"></span>
+          
+          {/* <span className="absolute bottom-0 left-0 w-full h-1 bg-[#ffc107]"></span> */}
         </span>...
+       <div className="flex items-center">
+        <Image
+          src={"/assets/svg/aboutus/about_us_line.svg"}
+          alt=""
+          width={250}
+          height={12}
+          className="object-contain"
+        />
+        </div> 
       </motion.h1>
       <div className="relative">
         {timelineData.map((item, index) => (

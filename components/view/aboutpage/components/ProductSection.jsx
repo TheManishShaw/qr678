@@ -71,13 +71,13 @@ const ProductSection = () => {
                               <span>Visible results in 8-10 sessions</span>
                             </div>
                           </div>
-
-                          <Button
-                            variant="outline"
-                            className="mt-4 border-[#B38B59] text-[#B38B59] hover:bg-[#B38B59] hover:text-white"
-                          >
-                            Know More
-                          </Button>
+<Button
+                    variant="outline"
+                    className="text-primary rounded-[5px] bg-gray-400/20 border-secondary"
+                  >
+                    Know More
+                  </Button>
+                          
                         </div>
                       </div>
                     </CardContent>
