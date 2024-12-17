@@ -3,7 +3,7 @@ import React from 'react'
 const SuitPage = () => {
   return (
     <div>
-      fsfsfjsfsjf
+      fsfsfjsfsjf 
     </div>
   )
 }
