@@ -89,8 +89,8 @@ const DesktopNav = () => {
                         width={200}
                       />
                     </a>
-                    <a
-                      href="#"
+                    <Link
+                      href="/suite"
                       className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
                     >
                       <h5 className="mb-2 text-2xl font-bold tracking-tight text-secondary ">
@@ -106,7 +106,7 @@ const DesktopNav = () => {
                         height={240}
                         width={240}
                       />
-                    </a>
+                    </Link>
                   </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -180,6 +180,18 @@ const DesktopNav = () => {
               )}
             >
               About Us
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/faq" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-primary hover:bg-gray-50 px-4 py-3 rounded-md",
+                path === "/faq" ? "text-primary" : "text-muted-foreground"
+              )}
+            >
+              FAQ
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

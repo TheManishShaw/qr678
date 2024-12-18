@@ -56,8 +56,8 @@ const AboutPage = () => {
       <Image
         src="/assets/svg/aboutus/watch_icon.svg"
         alt="Scientists at work"
-        width={42}
-        height={42}
+        width={52}
+        height={52}
         className="relative bg-cover z-10"
       />
       Watch Testimonials
@@ -66,7 +66,7 @@ const AboutPage = () => {
 </div>
 
     </div>
-        <div className="grid place-items-center  gap-8 lg:grid-cols-4 lg:gap-12 ml-12">
+        {/* <div className="grid place-items-center  gap-8 lg:grid-cols-4 lg:gap-12 ml-12">
           <div className="space-y-8 ">
             <div className="relative inline-block">
               <h1 className="heading-1 ">
@@ -116,7 +116,7 @@ const AboutPage = () => {
               className="relative bg-cover z-10"
             />
           </div>
-        </div>
+        </div> */}
       </div>
 
     </div>
@@ -151,41 +151,33 @@ const AboutPage = () => {
       <ProductSection/>
         <LeadershipTeam/>
         <BoardOfDirectors/>
-        <section className="text-center space-y-4">
- 
-        <div className="flex justify-center container mx-auto items-center gap-8">
-      <h2 className="text-2xl font-semibold text-muted-foreground mb-6">As seen on...</h2>
-        <div className="w-full max-w-6xl mx-auto px-4 py-8">
-        <div className="flex w-max space-x-8 p-4">
-          {Array.from({ length: 5 }).map((logo,index) => (
-            <div
-              key={index}
-              className="w-[120px] shrink-0 items-center justify-center"
-            >
-              <Image
-                src={"/assets/png/no-image.png"}
-                alt={`Partner Logo ${index + 1}`}
-                width={120}
-                height={40}
-                className="aspect-[3/1] object-contain filter grayscale hover:grayscale-0 transition-all"
-              />
-            </div>
-          ))}
-        </div>
-        </div>
+        <section className="text-center py-8">
+  <div className="container mx-auto flex flex-wrap items-center justify-center gap-8">
+    {/* Text Section */}
+    <h2 className="text-2xl font-semibold text-muted-foreground">
+      As seen on...
+    </h2>
 
-          {/* {Array.from({ length: 5 }).map((_, index) => (
-            <div key={index} className="w-24 h-12 relative">
-              <Image
-                src="/placeholder.svg"
-                alt={`Partner Logo ${index + 1}`}
-                fill
-                className="object-contain"
-              />
-            </div>
-          ))} */}
+    {/* Logos Section */}
+    <div className="flex gap-8 items-center flex-wrap">
+      {Array.from({ length: 5 }).map((_, index) => (
+        <div
+          key={index}
+          className="w-[120px] flex items-center justify-center"
+        >
+          <Image
+            src={"/assets/png/no-image.png"}
+            alt={`Partner Logo ${index + 1}`}
+            width={120}
+            height={40}
+            className="aspect-[3/1] object-contain filter grayscale hover:grayscale-0 transition-all"
+          />
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
     </div>
   )
 }
