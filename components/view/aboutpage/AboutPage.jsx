@@ -27,13 +27,25 @@ const AboutPage = () => {
   {/* Heading Section */}
   <div className="relative inline-block place-items-center">
     <h1 className="heading-1 text-7xl sm:text-7xl lg:text-[5rem] font-bold">
-      <span className="relative inline-block p-2 sm:p-4">
-        Science For
-        <br />
-        Bettering
-        <br />
-        Lives.
-      </span>
+    <span className="relative inline-block p-2 sm:p-4">
+  <span className="relative z-10">
+    Science For
+    <br />
+    Bettering
+    <br />
+    Lives.
+  </span>
+  <span className="absolute bottom-7 left-0 w-full h-1 z-0">
+    <Image
+      src="/assets/svg/aboutus/about_us_line.svg"
+      alt=""
+      width={230}
+      height={12}
+      className=""
+    />
+  </span>
+</span>
+
     </h1>
   </div>
 
