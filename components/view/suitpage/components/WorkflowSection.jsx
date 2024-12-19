@@ -17,8 +17,8 @@ export default function WorkflowSection() {
         src="/assets/svg/suite/team_bg.svg"
         alt="Background"
         layout="fill"
-        objectFit="cover"
-        className="absolute inset-0 mt-8 z-0 p-[20rem]"
+        objectFit="contain"
+        className="absolute inset-0  z-0 p-[16rem]"
       />
 
       <div className="relative z-10 container mx-auto mb-14 px-4">

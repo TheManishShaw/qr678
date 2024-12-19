@@ -1,10 +1,8 @@
-import SuitPage from '@/components/view/suitpage/SuitPage'
-import React from 'react'
+import SuitPage from "@/components/view/suitpage/SuitPage";
+import React from "react";
 
 const page = () => {
-  return (
-<SuitPage/>
-  )
-}
+  return <SuitPage />;
+};
 
-export default page
+export default page;
