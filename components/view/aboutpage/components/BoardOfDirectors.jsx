@@ -12,51 +12,50 @@ import React from "react";
 
 const BoardOfDirectors = () => {
   return (
-    <section className="space-y-8 w-full max-w-7xl mx-auto px-4 py-12">
-      <h2 className="heading-1 text-center">
+    <section className="space-y-8 w-full max-w-7xl mx-auto px-4 py-8 sm:py-12">
+      <h2 className="heading-1 text-center text-3xl sm:text-4xl md:text-5xl font-bold">
         Board of Directors
       </h2>
       <Carousel
-      opts={{
-        align: "start",
-        loop: true,
-      }}
-      className="w-full border border-secondary rounded-md py-10 px-6"
-    >
-      <CarouselContent className="-ml-2 md:-ml-3">
-        {Array.from({ length: 9 }).map((_, index)  => (
-          <CarouselItem
-            key={index}
-            className="pl-2 md:pl-2 md:basis-1/3 lg:basis-1/5"
-          >
-            <Card className="border-none">
-              <CardContent className="p-4">
-              <div className=" w-full max-w-md relative mb-4">
-                  <Image
-                    src="/assets/png/aboutpage/avatar.png"
-                    alt={`Director ${index + 1}`}
-                    width={100}
-                    height={100}
-                    className="object-cover w-full rounded-md"
-                  />
-                </div>
-                <h4 className="font-semibold text-primary">Name Surname</h4>
-                <p className="text-sm text-muted-foreground">Credentials</p>
-              </CardContent>
-            </Card>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselDots className="self-center pt-6" />
-      <div className="flex items-center justify-end -mt-6 space-x-4">
-        <div className="flex space-x-2">
-          <CarouselPrevious className="relative inset-0 translate-y-0 hover:border hover:border-secondary" />
-          <CarouselNext className="relative inset-0 translate-y-0 hover:border hover:border-secondary" />
+        opts={{
+          align: "start",
+          loop: true,
+        }}
+        className="w-full border border-secondary rounded-md py-6 sm:py-10 px-4 sm:px-6"
+      >
+        <CarouselContent className="-ml-2 md:-ml-3">
+          {Array.from({ length: 9 }).map((_, index) => (
+            <CarouselItem
+              key={index}
+              className="pl-2 md:pl-2 md:basis-1/2 lg:basis-1/3 xl:basis-1/5"
+            >
+              <Card className="border-none">
+                <CardContent className="p-2 sm:p-4 flex flex-col items-center text-center">
+                  <div className="w-full max-w-[150px] sm:max-w-[200px] relative mb-3 sm:mb-4">
+                    <Image
+                      src="/assets/png/aboutpage/avatar.png"
+                      alt={`Director ${index + 1}`}
+                      width={200}
+                      height={200}
+                      className="object-cover w-full rounded-md"
+                    />
+                  </div>
+                  <h4 className="font-semibold text-primary text-sm sm:text-base">Name Surname</h4>
+                  <p className="text-xs sm:text-sm text-muted-foreground">Credentials</p>
+                </CardContent>
+              </Card>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselDots className="self-center pt-4 sm:pt-6" />
+        <div className="flex items-center justify-end sm:justify-end -mt-4 sm:-mt-6 space-x-2 sm:space-x-4">
+          <CarouselPrevious className="relative inset-0 translate-y-0 hover:border hover:border-secondary" aria-label="Previous slide" />
+          <CarouselNext className="relative inset-0 translate-y-0 hover:border hover:border-secondary" aria-label="Next slide" />
         </div>
-      </div>
-    </Carousel>
+      </Carousel>
     </section>
   );
 };
 
 export default BoardOfDirectors;
+

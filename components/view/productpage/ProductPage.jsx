@@ -4,7 +4,7 @@ import React from "react";
 import { TransformBeforeAfterCarousel } from "./components/TransformBeforeAfterCarousel";
 import { ScientificPublications } from "./components/ScientificPublications";
 import { Card, CardContent } from "@/components/ui/card";
-import { Cog, FileText, Microscope } from "lucide-react";
+import { Cog, FileText, Microscope } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
 
 const ProductPage = () => {
@@ -19,20 +19,22 @@ const ProductPage = () => {
         >
           <div className="container mx-auto px-4 md:mt-30">
             <div className="grid md:grid-cols-2 gap-4 items-center">
-              <div className="space-y-6">
-                <h1 className="heading-1 md:text-[80px] leading-tight">
-                  From the Womb <br /> of Science, a <br />
-                  <span className="bg-[#FFBF1A] px-2"> Hair Regrowth</span>{" "}
-                  Revolution is <br />
+              <div className="space-y-6 text-center md:text-left">
+                <h1 className="heading-1 text-4xl md:text-6xl lg:text-[80px] leading-tight">
+                  From the Womb <br className="hidden md:inline" /> of Science, a <br className="hidden md:inline" />
+                  <span className="bg-[#FFBF1A] px-2 "> Hair Regrowth</span>{" "}
+                  Revolution is <br className="hidden md:inline" />
                   Born.
                 </h1>
-                <p className="text-muted-foreground max-w-sm text-2xl text-secondary">
+                <p className="text-muted-foreground max-w-sm mx-auto md:mx-0 text-xl md:text-2xl text-secondary">
                   A patented biomimetic polypeptides formulation designed to
                   target hair follicles for QR678 hair growth
                 </p>
-                <Button size="lg" className="rounded-sm font-bold bg-primary">
-                  Learn More
-                </Button>
+                <div className="flex justify-center md:justify-start">
+                  <Button size="lg" className="rounded-sm font-bold bg-primary">
+                    Learn More
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
@@ -91,7 +93,7 @@ const ProductPage = () => {
             QR678 Neo<sup>®</sup>’s Biomimetic Polypeptides: <br /> A Class
             Apart
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
             <div className="text-center space-y-4">
               <div className="mx-auto w-20 h-20  flex items-center justify-center">
                 <Image
@@ -197,9 +199,11 @@ const ProductPage = () => {
             src="/assets/png/prodcutpage/spark.png"
             alt="spark image"
           />
-          <Button className="bg-primary rounded-[5px] absolute right-20  bottom-40 px-16 hover:bg-primary/90">
-            Learn More
-          </Button>
+          <div className="flex justify-center mt-8 md:mt-0 md:absolute md:right-20 md:bottom-40">
+            <Button className="bg-primary rounded-[5px] px-16 hover:bg-primary/90">
+              Learn More
+            </Button>
+          </div>
         </div>
       </section>
       <section className="bg-[#F2F1F1]">
@@ -217,8 +221,7 @@ const ProductPage = () => {
 
           {/* Benefits Section */}
           <section>
-
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-center text-center md:text-left">
             <Card className=" border-none shadow-none bg-transparent">
               <Image
                 src="/assets/png/product.png"
@@ -274,15 +277,15 @@ const ProductPage = () => {
                   width={20}
                   height={20}
                 />
-             <div className="space-y-2">
-                <h3 className="text-3xl font-semibold text-secondary">
-                  Strengthens & Revitalizes Hair
-                </h3>
-                <p className="text-indigo-900 text-xl">
-                  Reduces hair fall, improves texture, shine, and density. Can
-                  we add some more lines here?
-                </p>
-              </div>
+                <div className="space-y-2">
+                  <h3 className="text-3xl font-semibold text-secondary">
+                    Strengthens & Revitalizes Hair
+                  </h3>
+                  <p className="text-indigo-900 text-xl">
+                    Reduces hair fall, improves texture, shine, and density. Can
+                    we add some more lines here?
+                  </p>
+                </div>
               </div>
 
             
@@ -304,7 +307,7 @@ const ProductPage = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 text-center md:text-left">
               <Card className="border-none">
                 <Image
                   src="/assets/png/product-detail.png"
@@ -354,3 +357,4 @@ const ProductPage = () => {
 };
 
 export default ProductPage;
+
