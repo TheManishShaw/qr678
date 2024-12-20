@@ -91,7 +91,7 @@ const timelineData = [
 
 function YearIndicator({ year, progress }) {
   return (
-    <div className="relative w-40 h-40">
+    <div className="relative my-8 md:my-0 mx-auto md:mx-0 w-40 h-40">
       <svg className="w-full h-full transform -rotate-90" viewBox="0 0 140 140">
         <circle
           cx="70"
@@ -147,11 +147,11 @@ function TimelineItem({ item, index }) {
       <div
         className={`${
           item.position === "left" ? "flex-row" : "flex-row-reverse "
-        } container mx-auto flex items-center gap-8 py-12 last:mb-0`}
+        } container mx-auto md:flex block  items-center gap-8 py-12 last:mb-0`}
       >
         <div
-          className={`flex-1 ${
-            item.position === "left" ? "text-right" : "text-left"
+          className={`flex-1 text-center mb-2 ${
+            item.position === "left" ? "md:text-right" : "md:text-left"
           }`}
         >
           <motion.div
@@ -178,7 +178,7 @@ function TimelineItem({ item, index }) {
               initial={{ height: 0 }}
               animate={isInView ? { height: "130px" } : { height: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="absolute left-1/2 top-full w-[2px] border-l-2 border-dashed border-secondary"
+              className="absolute left-1/2 top-full w-[2px] hidden md:block border-l-2 border-dashed border-secondary"
             />
           )}
         </div>
