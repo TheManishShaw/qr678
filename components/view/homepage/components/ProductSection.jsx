@@ -21,7 +21,7 @@ export default function ProductSection() {
   ];
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 py-8 sm:py-12">
+    <div className="w-full max-w-7xl mx-auto px-4 py-8 sm:py-12 border-t border-[#AEA6A6]">
       <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-secondary">
         Products That Make Lives Better
       </h1>

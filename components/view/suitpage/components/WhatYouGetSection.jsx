@@ -120,7 +120,7 @@ const WhatYouGetSection = () => {
           </div>
         </div>
       </CardContent>
-      <Separator className="max-w-xl mx-auto bg-gray-300"/>
+      <Separator className="max-w-xl mx-auto my-6 bg-gray-300"/>
       <CardContent className="space-y-8">
         {/* Product Images and Features Grid */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -218,7 +218,7 @@ const WhatYouGetSection = () => {
           </div>
         </div>
       </CardContent>
-      <Separator className="max-w-xl mx-auto bg-gray-300"/>
+      <Separator className="max-w-xl mx-auto mb-10 my-6 bg-gray-300"/>
 
       <CardContent className="space-y-8">
         {/* Product Images and Features Grid */}

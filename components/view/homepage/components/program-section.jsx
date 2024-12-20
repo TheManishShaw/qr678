@@ -1,8 +1,8 @@
 export default function ProgramSection() {
   return (
-    <section className="bg-white py-8 sm:py-12 md:py-16 border-t border-[#AEA6A6]">
+    <section className="bg-white py-8 sm:py-12 md:py-16 ">
       <div className="container mx-auto px-4 space-y-6 sm:space-y-8">
-        <div className="rounded-lg p-4 sm:p-6 md:p-8 border-secondary border-[1.5px] text-center sm:text-left">
+        {/* <div className="rounded-lg p-4 sm:p-6 md:p-8 border-secondary border-[1.5px] text-center sm:text-left">
           <h2 className="text-3xl sm:text-4xl md:text-5xl mb-2 sm:mb-4 text-primary">
             Join the{" "}
             <span className="text-secondary font-bold">
@@ -22,7 +22,7 @@ export default function ProgramSection() {
           <button className="bg-background mt-4 sm:mt-6 hover:text-white px-6 sm:px-10 py-2 border border-secondary text-primary rounded-lg hover:bg-primary transition-colors text-sm sm:text-base">
             Get Started
           </button>
-        </div>
+        </div> */}
 
         <div className="rounded-lg p-4 sm:p-6 md:p-8 border-secondary border-[1.5px] text-center sm:text-left">
           <h2 className="text-3xl sm:text-4xl md:text-5xl mb-2 sm:mb-4 text-primary">

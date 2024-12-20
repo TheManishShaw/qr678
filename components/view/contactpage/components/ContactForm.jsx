@@ -48,11 +48,11 @@ export default function ContactForm() {
       <CardContent className="p-6">
         <div className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl font-semibold text-primary">
-            Lorem Ipsum Dolor Sit Amet,
+          Get in Touch with Us
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold text-primary">
+          {/* <h2 className="text-2xl md:text-3xl font-semibold text-primary">
             Consectetur Adipiscing Elit
-          </h2>
+          </h2> */}
         </div>
 
         <Form {...form}>

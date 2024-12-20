@@ -14,9 +14,9 @@ const HomePage = () => {
       <ResearchSection />
       <StatsSection />
       <UntappedSection />
-      <ProgramSection />
       <ProductSection />
       <TestimonialsSection />
+      <ProgramSection />
     </div>
   );
 };

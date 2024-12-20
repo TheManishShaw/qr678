@@ -30,11 +30,11 @@ const ProductPage = () => {
                   A patented biomimetic polypeptides formulation designed to
                   target hair follicles for QR678 hair growth
                 </p>
-                <div className="flex justify-center md:justify-start">
+                {/* <div className="flex justify-center md:justify-start">
                   <Button size="lg" className="rounded-sm font-bold bg-primary">
                     Learn More
                   </Button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

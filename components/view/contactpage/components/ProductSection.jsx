@@ -28,7 +28,8 @@ const ProductSection = () => {
           {/* Content */}
           <div className="flex flex-col gap-6">
             <p className="text-primary text-lg max-w-lg md:text-xl leading-relaxed">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            QR678® offers a comprehensive range of products designed to enhance the health of your existing hair and promote the regrowth of healthy hair. Our innovative formulations are tailored to nourish the scalp and rejuvenate hair follicles, ensuring optimal results for those seeking to restore their hair&apos;s vitality and thickness. Experience the transformative benefits of QR678® and embrace a new era of hair care.
+           
             </p>
             <div>
               <Button 

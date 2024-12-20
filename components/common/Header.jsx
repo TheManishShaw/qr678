@@ -124,7 +124,7 @@ const DesktopNav = () => {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger
             className={cn(
               "text-sm font-medium transition-colors hover:text-primary",
@@ -174,6 +174,18 @@ const DesktopNav = () => {
               </a>
             </ul>
           </NavigationMenuContent>
+        </NavigationMenuItem> */}
+        <NavigationMenuItem>
+          <Link href="/research" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-primary hover:bg-gray-50 px-4 py-3 rounded-md",
+                path === "/research" ? "text-primary" : "text-muted-foreground"
+              )}
+            >
+              Research
+            </NavigationMenuLink>
+          </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/about-us" legacyBehavior passHref>

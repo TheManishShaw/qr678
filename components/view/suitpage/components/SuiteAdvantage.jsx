@@ -15,7 +15,7 @@ export default function SuiteAdvantage() {
           {/* Card 1 */}
           <Card className="relative bg-white rounded-3xl overflow-hidden border-[6px] border-[#ECECEC] transition-all duration-300 hover:scale-105 shadow-[0_4px_20px_rgba(0,0,0,0.1)]">
             <CardContent className="p-6 flex flex-col items-center text-center min-h-[280px]">
-              <h3 className="text-xl font-semibold text-primary mb-3">
+              <h3 className="text-2xl font-semibold text-primary mb-3">
                 You Get A Complete System
               </h3>
               <p className="text-secondary text-sm mb-4">
@@ -35,7 +35,7 @@ export default function SuiteAdvantage() {
           {/* Card 2 */}
           <Card className="relative bg-white rounded-3xl overflow-hidden border-[6px] border-[#ECECEC] transition-all duration-300 hover:scale-105 shadow-[0_4px_20px_rgba(0,0,0,0.1)]">
             <CardContent className="p-6 flex flex-col items-center text-center min-h-[280px]">
-              <h3 className="text-xl font-semibold text-primary mb-3">
+              <h3 className="text-2xl font-semibold text-primary mb-3">
                 Its clinically proven
               </h3>
               <p className="text-secondary text-sm mb-4">
@@ -44,9 +44,9 @@ export default function SuiteAdvantage() {
               <Image
                 src="/assets/svg/suite/microscope.svg"
                 alt="Success checkmark"
-                height={90}
-                width={90}
-                className="object-contain drop-shadow-xl"
+                height={70}
+                width={70}
+                className="object-contain drop-shadow-xl "
               />
             </CardContent>
           </Card>
@@ -54,7 +54,7 @@ export default function SuiteAdvantage() {
           {/* Card 3 */}
           <Card className="relative bg-white rounded-3xl overflow-hidden border-[6px] border-[#ECECEC] transition-all duration-300 hover:scale-105 shadow-[0_4px_20px_rgba(0,0,0,0.1)]">
             <CardContent className="p-6 flex flex-col items-center text-center min-h-[280px]">
-              <h3 className="text-xl font-semibold text-primary mb-3">
+              <h3 className="text-2xl font-semibold text-primary mb-3">
                 Patented Formula
               </h3>
               <p className="text-secondary text-sm mb-4">
@@ -73,7 +73,7 @@ export default function SuiteAdvantage() {
           {/* Card 4 */}
           <Card className="relative bg-white rounded-3xl border-[6px] border-[#ECECEC] overflow-hidden transition-all duration-300 hover:scale-105 shadow-[0_4px_20px_rgba(0,0,0,0.1)] ">
             <CardContent className="p-6 flex flex-col items-center text-center min-h-[280px]">
-              <h3 className="text-xl font-semibold text-primary mb-3">
+              <h3 className="text-2xl font-semibold text-primary mb-3">
                 Easy to Use
               </h3>
               <p className="text-secondary text-sm mb-4 flex flex-col items-center text-center">
