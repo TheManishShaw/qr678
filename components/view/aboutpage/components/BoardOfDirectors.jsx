@@ -31,7 +31,7 @@ const BoardOfDirectors = () => {
             >
               <Card className="border-none">
                 <CardContent className="p-2 sm:p-4 flex flex-col items-center text-center">
-                  <div className="w-full max-w-[150px] sm:max-w-[200px] relative mb-3 sm:mb-4">
+                  <div className="w-full  md:max-w-[200px] relative mb-3 sm:mb-4">
                     <Image
                       src="/assets/png/aboutpage/avatar.png"
                       alt={`Director ${index + 1}`}

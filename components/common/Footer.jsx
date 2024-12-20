@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="max-w-screen-xl mx-auto ">
           <div className="mx-auto grid sm:grid-cols-2 md:grid-cols-7 gap-3 p-2">
             <div className="w-full px-2  ">
-              <div className="mb-10 w-full">
+              <div className="md:mb-10 w-full">
                 <a
                   href="javascript:void(0)"
                   className="mb-6 inline-block max-w-[160px]"
@@ -192,7 +192,7 @@ const Footer = () => {
                   </p>
                 </div>
                 <div className="my-1 flex justify-center md:justify-center">
-                  <p className="text-base text-gray-7">
+                  <p className="text-base text-center text-gray-7">
                     The QR678® Neo  is a patented, proprietary product.  Any
                     infringement of any kind will invite legal action.
                   </p>

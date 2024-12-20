@@ -229,33 +229,44 @@ const MobileNav = () => {
     </li>
   );
 
-  const   NavItemWithSubmenu = ({ label, items }) => {
+  const NavItemWithSubmenu = ({ label, items, href }) => {
     const [isOpen, setIsOpen] = useState(false);
-
+  
     return (
       <li>
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center justify-between w-full py-2 text-sm"
-        >
-          {label}
-          <svg
-            className={`w-4 h-4 transition-transform ${
-              isOpen ? "rotate-180" : ""
-            }`}
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+        <div className="flex items-center justify-between w-full">
+          <a
+            href={href}
+            className="flex-grow py-2 text-sm hover:underline"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </button>
+            {label}
+          </a>
+          <button
+            onClick={(e) => {
+              e.preventDefault(); // Prevent navigation when clicking the button
+              setIsOpen(!isOpen);
+            }}
+            className="ml-2"
+            aria-label="Toggle submenu"
+          >
+            <svg
+              className={`w-4 h-4 transition-transform ${
+                isOpen ? "rotate-180" : ""
+              }`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+        </div>
         {isOpen && (
           <ul className="pl-4 mt-2 space-y-2">
             {items.map((item) => (
@@ -272,6 +283,7 @@ const MobileNav = () => {
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger asChild>
+      
         <Button variant="outline" size="icon" className="md:hidden">
           <Menu className="h-6 w-6" />
           <span className="sr-only">Open menu</span>
@@ -282,20 +294,21 @@ const MobileNav = () => {
           <ul className="space-y-4">
             <NavItem href="/">Home</NavItem>
             <NavItemWithSubmenu
-              label="Product"
-              items={[
-                {
-                  title: "QR678 Neo®",
-                  href: "/product/qr678-neo",
-                  description: "Advanced hair regrowth solution",
-                },
-                {
-                  title: "QR678 Suite®",
-                  href: "/product/qr678-suite",
-                  description: "Complete hair care system",
-                },
-              ]}
-            />
+  label="Product"
+  href="/products"
+  items={[
+    {
+      title: "QR678 Neo®",
+      href: "/product/qr678-neo",
+      description: "Advanced hair regrowth solution",
+    },
+    {
+      title: "QR678 Suite®",
+      href: "/suite",
+      description: "Complete hair care system",
+    },
+  ]}
+/>
             <NavItem href="https://blog.qr678.com/">Blog</NavItem>
             <NavItemWithSubmenu
               label="Events"

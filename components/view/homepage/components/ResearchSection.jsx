@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ResearchSection() {
   return (
-    <div className="relative w-full min-h-screen">
+    <div className="relative w-full  ">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center mix-blend-multiply"
@@ -11,7 +11,7 @@ export default function ResearchSection() {
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/assets/svg/homepage/home-research-banner.svg')`,
         }}
       />
-      <div className="relative z-10 flex flex-col justify-end min-h-screen text-center px-4 sm:px-6 lg:px-8 pb-8 sm:pb-12 lg:pb-16">
+      <div className="relative z-10 flex flex-col justify-end min-h-[60vh] md:min-h-screen text-center px-4 sm:px-6 lg:px-8 pb-8 sm:pb-12 lg:pb-16">
         <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6 lg:space-y-8">
           <div className="space-y-2 sm:space-y-3 lg:space-y-4">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white italic">

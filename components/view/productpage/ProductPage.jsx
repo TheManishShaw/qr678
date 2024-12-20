@@ -12,7 +12,7 @@ const ProductPage = () => {
     <div className="">
       <section className="relative ">
         <div
-          className="pt-24   md:pt-32  inset-0 bg-[url('/assets/png/prodcutpage/hero-image.png')] bg-cover w-full  mix-blend-multiply bg-center"
+          className="pt-24   md:pt-32  inset-0 bg-[url('/assets/png/prodcutpage/hero-image.png')] bg-cover w-full  mix-blend-multiply md:bg-center"
           style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/assets/png/prodcutpage/hero-image.png')`,
           }}

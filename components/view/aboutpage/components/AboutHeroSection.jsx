@@ -11,16 +11,16 @@ const AboutHeroSection = () => {
             src="/assets/png/aboutpage/hero-image.png"
             alt="Background Image"
             layout="fill"
-            objectFit="contain"
+
            
-            className=" md:right-0 top-4 text-center"
+            className=" md:right-0 top-4 md:bg-contain  bg-cover text-center"
             quality={100}
             priority
           />
         </div>
 
         <div className="relative z-10 h-full">
-          <div className="mx-auto max-w-7xl h-full flex flex-col justify-center">
+          <div className="mx-auto  h-full flex flex-col justify-center">
             <div className="space-y-10 ml-4 sm:ml-8 lg:ml-12">
               <div className="relative inline-block">
                 <h1 className="text-5xl sm:text-6xl lg:text-[5rem] font-bold text-primary leading-tight">
