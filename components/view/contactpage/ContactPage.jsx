@@ -11,7 +11,7 @@ const ContactPage = () => {
       <h1 className="text-center text-4xl font-bold text-primary md:text-5xl">
         We&apos;d love to Hear From You
       </h1>
-      <p className="mt-4 text-center text-xl text-[#C1994D]">
+      <p className="mt-4 text-center text-xl text-secondary">
         QR678 is present around the world.
       </p>
       <div className="mt-12">

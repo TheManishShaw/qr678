@@ -1,27 +1,33 @@
-
 import Image from "next/image";
 import React from "react";
-import { Button } from "@/components/ui/button";
+
 const ChallengeSection = () => {
   return (
-    <section className="space-y-8 w-full max-w-7xl mx-auto px-4 py-8 sm:py-12">
-      <div className=" flex w-full mx-auto">
-        <section className="text-center text-[64px] mt-14 mb-4 space-y-4  bg-white mx-auto">
-          <h2 className="heading-1">Challenges</h2>
-          <p className="text-secondary text-lg text-[40px] pb-12">
+    <section className="w-full  mx-auto  py-8 sm:py-12 lg:py-16 space-y-12 sm:space-y-16 lg:space-y-20">
+      <div className="w-full mx-auto">
+        <div className="text-center space-y-4 sm:space-y-6 lg:space-y-8">
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-primary">Challenges</h2>
+          <p className="text-secondary text-lg sm:text-xl lg:text-3xl max-w-3xl mx-auto">
             Forays into hair greying, and skin science
           </p>
-          <Image src={"challenge.svg"} alt={``} width={1600} height={768} />
-        </section>
+        </div>
+        <div className="mt-8 sm:mt-12 lg:mt-16">
+          <Image 
+            src="/challenge.svg" 
+            alt="Challenges in hair and skin science" 
+            width={1600} 
+            height={768} 
+            className="w-full h-auto"
+          />
+        </div>
       </div>
 
-      <section className="text-center mt-14 mb-4 space-y-4 max-w-5xl mx-auto bg-white pb-12">
-        <h2 className="heading-1 text-[64px]">Beyond Hair Loss Treatments</h2>
-        <p className="text-secondary text-lg text-[40px] leading-10">
-          To Become The Global Thought Leader And A Science-Based Product
-          Behemoth In Hair Science.
+      <div className="text-center space-y-4 sm:space-y-6 lg:space-y-8 max-w-5xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-primary">Beyond Hair Loss Treatments</h2>
+        <p className="text-secondary text-lg sm:text-xl lg:text-3xl leading-normal sm:leading-relaxed">
+          To Become The Global Thought Leader And A Science-Based Product Behemoth In Hair Science.
         </p>
-      </section>
+      </div>
     </section>
   );
 };

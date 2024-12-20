@@ -127,12 +127,12 @@ export function FAQSection() {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border-none md:my-8 my-4 shadow-md rounded-md bg[#F7F9FC]"
+                className="border-none md:my-8 my-4 shadow-md rounded-md bg-[#F7F9FC]"
               >
                 <AccordionTrigger className="flex w-full items-center justify-between px-4 border-b rounded-md gap-4   hover:no-underline ">
                   {/* Question Text */}
                   <span className="text-left text-xl font-semibold text-primary">
-                  <span className="text-[#21BCED] text-2xl mr-2">{ '+'}</span>
+                
                     {faq.question}
                   </span>
                 </AccordionTrigger>
@@ -152,7 +152,7 @@ export function FAQSection() {
                 <AccordionTrigger className="flex w-full items-center justify-between px-4 border-b rounded-md gap-4   hover:no-underline ">
                   {/* Question Text */}
                   <span className="text-left text-xl font-semibold text-primary">
-                  <span className="text-[#21BCED] text-2xl mr-2">{ '+'}</span>
+                 
                     {faq.question}
                   </span>
                 </AccordionTrigger>

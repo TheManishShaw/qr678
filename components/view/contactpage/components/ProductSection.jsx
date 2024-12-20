@@ -10,7 +10,7 @@ const ProductSection = () => {
           {/* Heading - Full width on mobile, split on desktop */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold col-span-full mb-8 lg:mb-16">
             <span className="text-primary">Switch To The Cutting-Edge </span>
-            <span className="text-[#B8860B]">Hair Regrowth </span>
+            <span className="text-secondary">Hair Regrowth </span>
             <span className="text-primary">Solution!</span>
           </h1>
 
@@ -32,7 +32,7 @@ const ProductSection = () => {
             </p>
             <div>
               <Button 
-                className="bg-primary hover:bg-[#1F1F6F] text-white px-8 py-6 text-lg rounded-lg"
+                className="bg-primary hover:bg-primary text-white px-8 py-6 text-lg rounded-lg"
               >
                 Learn More
               </Button>

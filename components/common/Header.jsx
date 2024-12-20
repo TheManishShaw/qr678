@@ -313,6 +313,7 @@ const MobileNav = () => {
               ]}
             />
             <NavItem href="/about-us">About Us</NavItem>
+            <NavItem href="/faq">FAQ</NavItem>
             <NavItem href="/contact-us">Contact Us</NavItem>
           </ul>
         </nav>
