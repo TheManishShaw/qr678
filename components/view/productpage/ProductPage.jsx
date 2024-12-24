@@ -12,7 +12,7 @@ const ProductPage = () => {
     <div className="">
       <section className="relative ">
         <div
-          className="pt-24   md:pt-32  inset-0 bg-[url('/assets/png/prodcutpage/hero-image.png')] bg-cover w-full  mix-blend-multiply md:bg-center"
+          className="pt-24   md:pt-72  inset-0 bg-[url('/assets/png/prodcutpage/hero-image.png')] bg-cover w-full  mix-blend-multiply md:bg-center"
           style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/assets/png/prodcutpage/hero-image.png')`,
           }}
@@ -30,11 +30,7 @@ const ProductPage = () => {
                   A patented biomimetic polypeptides formulation designed to
                   target hair follicles for QR678 hair growth
                 </p>
-                {/* <div className="flex justify-center md:justify-start">
-                  <Button size="lg" className="rounded-sm font-bold bg-primary">
-                    Learn More
-                  </Button>
-                </div> */}
+
               </div>
             </div>
           </div>
