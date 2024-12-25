@@ -10,15 +10,12 @@ const AboutHeroSection = () => {
           <Image
             src="/assets/png/aboutpage/hero-image.png"
             alt="Background Image"
-            layout="fill"
-
-           
+            layout="fill"           
             className=" md:right-0 top-4 md:bg-contain  bg-cover text-center"
             quality={100}
             priority
           />
         </div>
-
         <div className="relative z-10 h-full">
           <div className="mx-auto  h-full flex flex-col justify-center">
             <div className="md:space-y-10 space-y-5 mb-2 ml-4 sm:ml-8 lg:ml-12">

@@ -13,16 +13,14 @@ const ProductPage = () => {
       <section className="relative ">
         <div
           className="pt-24   md:pt-72  inset-0 bg-[url('/assets/png/prodcutpage/hero-image.png')] bg-cover w-full  mix-blend-multiply md:bg-center"
-          style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/assets/png/prodcutpage/hero-image.png')`,
-          }}
+        
         >
           <div className="container mx-auto px-4 md:mt-30">
             <div className="grid md:grid-cols-2 gap-4 items-center">
               <div className="space-y-6 text-center md:text-left">
-                <h1 className="heading-1 text-4xl md:text-6xl lg:text-[80px] leading-tight">
+                <h1 className="heading-1 leading-10 text-4xl md:text-6xl lg:text-[80px] ">
                   From the Womb <br className="hidden md:inline" /> of Science, a <br className="hidden md:inline" />
-                  <span className="bg-[#FFBF1A] px-2 "> Hair Regrowth</span>{" "}
+                  <span className="bg-[#FFBF1A] px-2"> Hair Regrowth</span>{" "}
                   Revolution is <br className="hidden md:inline" />
                   Born.
                 </h1>
@@ -178,8 +176,6 @@ const ProductPage = () => {
           </div>
         </div>
       </section>
-
-      {/* SPARK Diagram */}
       <section className="py-16 bg-primary/5">
         <div className="container mx-auto px-4 relative">
           <h2 className="heading-1 text-secondary text-center mb-2">

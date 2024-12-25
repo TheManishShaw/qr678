@@ -21,11 +21,11 @@ export default function WorkflowSection() {
         className="absolute inset-0  z-0 p-[16rem]"
       />
 
-      <div className="relative z-10 container mx-auto mb-14 px-4">
+      <div className="relative z-10 container mx-auto md:mb-14 px-4">
         <h2 className="text-primary text-4xl md:text-5xl font-bold text-center mb-20">
           Acts like a team. Works like a charm.
         </h2>
-        <div className="md:grid md:grid-cols-2 gap-8 items-center">
+        <div className="md:grid md:grid-cols-2 flex flex-col gap-8 items-center">
           <div className="md:space-y-32">
             <Card className="bg-[#E9F3FF] h-[428px] w-[402px] mx-auto md:mb-26 flex flex-col justify-center items-center">
               <CardHeader>
@@ -67,7 +67,7 @@ export default function WorkflowSection() {
                 className="absolute left-[31rem] -top-[17rem] transform -translate-y-1/2"
               />
             </div>
-            <Card className="bg-[#E9F3FF] h-[428px] w-[402px] mx-auto my-10 md:my-0 mr-12 md:mt-20 flex flex-col justify-center items-center">
+            <Card className="bg-[#E9F3FF] h-[428px] w-[402px] mx-auto mt-10 md:my-0 md:mr-12 md:mt-20 flex flex-col justify-center items-center">
               <CardHeader>
                 <Image
                   src="/assets/svg/suite/nutra.svg"
@@ -91,7 +91,7 @@ export default function WorkflowSection() {
             </Card>
           </div>
 
-          <div className="flex justify-center items-center h-screen">
+          <div className="flex justify-center items-center ">
             <Card className="bg-[#E9F3FF] h-[428px] w-[402px] flex flex-col justify-center items-center">
               <CardHeader className="flex justify-center">
                 <Image

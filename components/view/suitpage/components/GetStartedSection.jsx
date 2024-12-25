@@ -10,12 +10,13 @@ const GetStartedSection = () => {
         <div className="container mx-auto px-4 h-full flex flex-col md:flex-row items-end">
           <div className="grid md:grid-cols-2 items-end w-full h-full">
             {/* Left Column */}
-            <div className="relative h-full md:h-[95%] w-full md:block hidden">
+            <div className="relative h-full  w-full md:block hidden">
               <Image
                 src="/assets/png/suite/lady.png"
                 alt="Person thinking"
-                fill
-                className="object-cover object-bottom"
+               
+               fill
+                className="object-contain object-bottom"
                 priority
               />
             </div>
