@@ -9,7 +9,7 @@ const ResearchPage = () => {
   return (
     <>
       <HeroSectionResearch />
-      <section className="max-w-6xl mx-auto px-4 py-12 text-center">
+      <section className="max-w-6xl  mx-auto px-4 py-12 text-center">
       <div className="space-y-6">
         <h2 className="text-secondary text-2xl md:text-2xl font-medium leading-relaxed max-w-4xl mx-auto">
         QR678 Neo is a proprietary, first in class hair fall & hair regrowth therapy, which has revolutionised the treatment of hair fall in alopecia. This formulation has been named QR678® Neo inspired by the new generation ubiquitous presence of “Quick Response“ QR code. 
@@ -52,8 +52,6 @@ const ResearchPage = () => {
             widening parting and thin, frizzy hair that gradually leads to
             visible scalp.
           </p>
-
-          {/* Features */}
           <div className="flex flex-wrap justify-around gap-8 mb-12">
             <div className="flex items-center gap-4">
               <Image

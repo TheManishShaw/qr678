@@ -11,18 +11,18 @@ const AsSeenOnSection = () => {
         </h2>
 
         {/* Logos Section */}
-        <div className="flex flex-wrap justify-center sm:justify-start gap-4 sm:gap-8 items-center">
-          {Array.from({ length: 5 }).map((_, index) => (
+        <div className="flex flex-wrap justify-center sm:justify-start  gap-4 sm:gap-8 items-center">
+          {PartnersImages.map((partner, index) => (
             <div
               key={index}
               className=" flex flex-wrap items-center justify-center"
             >
               <Image
-                src={"/assets/png/no-image.png"}
-                alt={`Partner Logo ${index + 1}`}
+                src={partner.src ||"/assets/png/no-image.png"}
+                alt={partner.name ||`Partner Logo ${index + 1}`}
                 width={120}
                 height={40}
-                className="aspect-[3/1] object-contain filter grayscale hover:grayscale-0 transition-all"
+                className=" object-contain filter  transition-all"
               />
             </div>
           ))}
@@ -33,4 +33,34 @@ const AsSeenOnSection = () => {
 };
 
 export default AsSeenOnSection;
+
+
+const PartnersImages = [
+  {
+    src:"/assets/svg/aboutus/partner-1.svg",
+    name:"TOI"
+  },
+  {
+    src:"/assets/svg/aboutus/bs.svg",
+    name:"BS"
+  },
+  {
+    src:"/assets/svg/aboutus/tfe.svg",
+    name:"The Financial Express"
+  },
+  {
+    src:"/assets/svg/aboutus/en.svg",
+    name:"ET Now"
+  },
+  {
+    src:"/assets/svg/aboutus/femina.svg",
+    name:"FEMINA"
+  },{
+    src:"/assets/svg/aboutus/mid-day.svg",
+    name:"mid-day"
+  },{
+    src:"/assets/svg/aboutus/india.svg",
+    name:"INDIA.COM"
+  },
+]
 

@@ -4,7 +4,7 @@ import React from 'react'
 
 const ProductSection = () => {
   return (
-    <section className="min-h-screen bg-white">
+    <section className="min-h-screen ">
       <div className="container mx-auto px-4 py-8 md:py-16">
         <div className="grid gap-8 lg:grid-cols-2 items-center">
           {/* Heading - Full width on mobile, split on desktop */}
