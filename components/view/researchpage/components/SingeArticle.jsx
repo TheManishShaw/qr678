@@ -3,6 +3,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { CircleArrowRight } from "lucide-react";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const SingeArticle = ({ journal, index }) => {
   return (
@@ -26,9 +27,9 @@ const SingeArticle = ({ journal, index }) => {
         {/* <p className="text-sm text-muted-foreground line-clamp-3">{journal.description}</p> */}
       </CardContent>
       <CardFooter className="p-6 pt-0 ">
-        <Button variant="link" className="px-0 text-primary">
-          Read the paper <CircleArrowRight />
-        </Button>
+        <Link variant="link" href={journal.url} target="_blank" className="px-0 text-primary flex justify-center items-end hover:underline gap-2">
+          Read the paper <CircleArrowRight className="w-4 h-5" />
+        </Link>
       </CardFooter>
     </Card>
   );

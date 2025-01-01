@@ -126,71 +126,84 @@ export default ResearchPage;
 
 const journals = [
   {
+    url:"https://drive.google.com/file/d/10irUKWswqhsoh0l--h_q2xyvQI6tNTp6/view?usp=drive_link",
     title:
       "QR678 & QR678 Neo Hair Growth Formulations: A Cellular Toxicity & Animal Efficacy Study",
     summary:
       "Current treatment modalities are limited in their approach and success for hair loss. QR 678 & QR 678 Neo are new formulations, consisting of a combination of growth factors and peptides. This study demonstrates safety analysis.",
   },
   {
+    url:"https://drive.google.com/file/d/1SqbGnazcXw3HYLyPZdtVLtOBkeSJcWm9/view?usp=drive_link",
     title:
       "Intradermal injections of a hair growth factor formulation for enhancement of human hair regrowth",
     summary:
       "Research has shown the efficacy of hair growth factors in hair regrowth. We describe the intradermal injections of a recombinant, bioengineered hair formulation, containing growth factors, into the scalp skin.",
   },
   {
+    url:"https://drive.google.com/file/d/1vU3ow5f99k-4nnDexJCGbsrf9FasQe4e/view?usp=drive_link",
     title:
       "Evaluation of the safety and effectiveness of intradermal administration of QR678 Neo® hair growth factor formulation",
     summary:
       "A phase-IV, open-label, single-arm multi-ethnicity clinical trial.",
   },
   {
+    url:"https://drive.google.com/file/d/1BPh0uU9sRy1bBTHKpttf91k6UOnY3ww8/view?usp=drive_link",
     title:
       "QR 678 & QR678 Neo Vs PRP—A randomized, comparative, prospective study",
     summary:
       "Hair plays a significant role in shaping the appearance of an individual. Loss of hair can lead to serious effects on social esteem of an individual. The most common cause of hair loss is Androgenetic Alopecia (AGA).",
   },
   {
+    url:"https://drive.google.com/file/d/1fWa50C1M8je3PnYlHs-HrV4p4o_mbCfx/view?usp=drive_link",
     title:
       "Comparison of QR 678® & QR678® Neo as monotherapy and as combination therapy with 5% Minoxidil solution and oral Finasteride in the treatment of male androgenetic alopecia—Which is better?",
     summary: null,
   },
   {
+    url:"https://drive.google.com/file/d/1ehf6HNLd3eD16zVYRWi1TQrgGNptBdSP/view?usp=drive_link",
     title:
       "Effectiveness of QR678 and QR678 Neo® with intralesional corticosteroid vs. intralesional corticosteroid alone in the treatment of alopecia areata –A randomized, comparative, prospective study",
     summary: null,
   },
   {
+    url:"https://drive.google.com/file/d/14ZGoSFEw0Gdme9N7WGTId5ydQiPK99F-/view?usp=drive_link",
     title:
       "Evaluation of efficacy of QR678® and QR678® Neo hair growth factor formulation in the treatment of persistent chemotherapy-induced alopecia caused due to cytotoxic chemotherapy—A prospective pilot study",
     summary: null,
   },
   {
+    url:"https://drive.google.com/file/d/16gcBWC-UEEkFwAaZzhQTENyI3tjWZttf/view?usp=drive_link",
     title:
       "Evaluation of efficacy of QR 678 and QR678 neo hair growth factor formulation for the treatment of female pattern alopecia in patients with PCOS—A prospective study",
     summary: null,
   },
   {
+    url:"https://drive.google.com/file/d/1Sbckh_PS0sb2nkeTY8f1jBifAAnLYAia/view?usp=drive_link",
     title:
       "Efficacy of QR678 Neo® hair growth factor formulation for the treatment of hair loss in Covid-19-induced persistent Telogen Effluvium—A prospective, clinical, single-blind study",
     summary: null,
   },
   {
+    url:"https://drive.google.com/file/d/1BQ2SwyiG0KWJjHGySb4RZbDzIUUAwWtF/view?usp=drive_link",
     title:
       "A newer approach in the treatment of seborrheic dermatitis with QR678® and QR678 Neo®—A prospective pilot study",
     summary:
       "Seborrheic dermatitis is a skin condition that mainly affects the scalp causing scaly patches, inflamed skin and stubborn dandruff. It usually affects oily areas of the body.",
   },
   {
+    url:"https://drive.google.com/file/d/1PXRa65lE-mrMkn4_75duH8J29xOJShy8/view?usp=drive_link",
     title:
       "Evaluation of efficacy of intradermal injection therapy vs derma roller application for administration of QR678 Neo hair regrowth formulation for the treatment of Androgenetic Alopecia—A prospective study",
     summary: null,
   },
   {
+    url:"https://drive.google.com/file/d/1GTepd3uVpZzbN4ow7YuciFbRcpQgToXO/view?usp=drive_link",
     title:
       "Evaluation of efficacy of derma roller sizes vs topical application for administration of QR678 Neo® hair regrowth formulation in the treatment of androgenetic alopecia",
     summary: null,
   },
   {
+    url:"https://drive.google.com/file/d/1g9zWKD3cof5niRMsVGnBGIDvH49-nJZY/view?usp=drive_link",
     title:
       "The iceberg phenomenon of alopecia associated public health ramifications on the quality of life among adults in India",
     summary:
