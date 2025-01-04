@@ -6,6 +6,8 @@ import StatsSection from "./components/StatsSection";
 import UntappedSection from "./components/untapped-section";
 import ProgramSection from "./components/program-section";
 import TestimonialsSection from "./components/testimonials-section";
+import HappyCustomersSlider from "./components/HappyCustomersSlider";
+import FloatingActionButtons from "./components/FloatingButtons";
 
 const HomePage = () => {
   return (
@@ -13,6 +15,8 @@ const HomePage = () => {
       {/* <HomeHeroSection /> */}
       <ResearchSection />
       <StatsSection />
+      <HappyCustomersSlider/>
+      <FloatingActionButtons />
       <UntappedSection />
       <ProductSection />
       <TestimonialsSection />
