@@ -8,6 +8,11 @@ import ProgramSection from "./components/program-section";
 import TestimonialsSection from "./components/testimonials-section";
 import HappyCustomersSlider from "./components/HappyCustomersSlider";
 import FloatingActionButtons from "./components/FloatingButtons";
+import TopSearchSection from "../faq/components/TopSearchSection";
+import GetStartedSection from "../suitpage/components/GetStartedSection";
+import HomeBottomSection from "./components/HomeBottomSection";
+import AsSeenOnSection from "../aboutpage/components/AsSeenOnSection";
+import TestimonialsGrid from "./components/ExpertsSection";
 
 const HomePage = () => {
   return (
@@ -17,10 +22,16 @@ const HomePage = () => {
       <StatsSection />
       <HappyCustomersSlider/>
       <FloatingActionButtons />
-      <UntappedSection />
+      {/* <UntappedSection /> */}
       <ProductSection />
-      <TestimonialsSection />
+      <AsSeenOnSection/>
+      {/* <TestimonialsSection /> */}
+      <TestimonialsGrid/>
+      
       <ProgramSection />
+      <TopSearchSection/>
+      <HomeBottomSection />
+      
     </div>
   );
 };

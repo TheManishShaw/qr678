@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { FileText, Microscope } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const timelineData = [
   {
@@ -38,9 +39,9 @@ const timelineData = [
           In-clinic user trial of 1000 patients of both genders to test
           effectiveness and safety of the formulation.
         </p>
-        <button className="bg-primary text-white text-[18px] py-2 px-6 rounded-[8px] font-semibold hover:bg-primary transition">
+        <Link href="/research"  className="bg-primary text-white text-[18px] py-2 px-6 rounded-[8px] font-semibold hover:bg-primary transition">
           View Research
-        </button>
+        </Link>
       </div>
     ),
     icon: "/assets/svg/aboutus/find.svg",

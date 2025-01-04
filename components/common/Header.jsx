@@ -77,6 +77,11 @@ const DesktopNav = () => {
               <Link
                 href="/products"
                 className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                onClick={() => {
+                  if (window.innerWidth <= 768) {
+                    setIsOpen(false);
+                  }
+                }}
               >
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-secondary ">
                   QR678 Neo®
@@ -94,6 +99,11 @@ const DesktopNav = () => {
               <Link
                 href="/suite"
                 className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                onClick={() => {
+                  if (window.innerWidth <= 768) {
+                    setIsOpen(false);
+                  }
+                }}
               >
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-secondary ">
                   QR678 Suite®
@@ -124,57 +134,6 @@ const DesktopNav = () => {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        {/* <NavigationMenuItem>
-          <NavigationMenuTrigger
-            className={cn(
-              "text-sm font-medium transition-colors hover:text-primary",
-              path.startsWith("/events")
-                ? "text-primary"
-                : "text-muted-foreground"
-            )}
-          >
-            Events
-          </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]  ">
-              <a
-                href="#"
-                className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-              >
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-secondary ">
-                  QR678 Neo®
-                </h5>
-                <p className="font-normal text-primary">
-                  One of the best hair regrowth product.
-                </p>
-                <Image
-                  src="/assets/svg/homepage/neo-product-image.svg"
-                  alt="Product Image"
-                  height={200}
-                  width={200}
-                />
-              </a>
-              <a
-                href="#"
-                className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
-              >
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-secondary ">
-                  QR678 Suite®
-                </h5>
-                <p className="font-normal text-primary">
-                  One of the best hair regrowth product.
-                </p>
-                <Image
-                  className="mt-10"
-                  src="/assets/svg/homepage/suite-product-image.svg"
-                  alt="Product Image"
-                  height={240}
-                  width={240}
-                />
-              </a>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem> */}
         <NavigationMenuItem>
           <Link href="/research" legacyBehavior passHref>
             <NavigationMenuLink
@@ -184,6 +143,18 @@ const DesktopNav = () => {
               )}
             >
               Research
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/partners" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-primary hover:bg-gray-50 px-4 py-3 rounded-md",
+                path === "/partners" ? "text-primary" : "text-muted-foreground"
+              )}
+            >
+              Our Partners
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
@@ -235,35 +206,40 @@ const MobileNav = () => {
 
   const NavItem = ({ href, children }) => (
     <li>
-      <Link href={href} className="block py-2 text-sm">
+      <Link
+        href={href}
+        className="block py-2 text-sm"
+        onClick={() => setIsOpen(false)}
+      >
         {children}
       </Link>
     </li>
   );
 
   const NavItemWithSubmenu = ({ label, items, href }) => {
-    const [isOpen, setIsOpen] = useState(false);
-  
+    const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
+
     return (
       <li>
         <div className="flex items-center justify-between w-full">
           <a
             href={href}
             className="flex-grow py-2 text-sm hover:underline"
+            onClick={() => setIsOpen(false)}
           >
             {label}
           </a>
           <button
             onClick={(e) => {
-              e.preventDefault(); // Prevent navigation when clicking the button
-              setIsOpen(!isOpen);
+              e.preventDefault();
+              setIsSubmenuOpen(!isSubmenuOpen);
             }}
             className="ml-2"
             aria-label="Toggle submenu"
           >
             <svg
               className={`w-4 h-4 transition-transform ${
-                isOpen ? "rotate-180" : ""
+                isSubmenuOpen ? "rotate-180" : ""
               }`}
               fill="none"
               stroke="currentColor"
@@ -279,7 +255,7 @@ const MobileNav = () => {
             </svg>
           </button>
         </div>
-        {isOpen && (
+        {isSubmenuOpen && (
           <ul className="pl-4 mt-2 space-y-2">
             {items.map((item) => (
               <NavItem key={item.title} href={item.href}>
@@ -295,7 +271,6 @@ const MobileNav = () => {
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger asChild>
-      
         <Button variant="outline" size="icon" className="md:hidden">
           <Menu className="h-6 w-6" />
           <span className="sr-only">Open menu</span>
@@ -306,37 +281,24 @@ const MobileNav = () => {
           <ul className="space-y-4">
             <NavItem href="/">Home</NavItem>
             <NavItemWithSubmenu
-  label="Product"
-  href="/products"
-  items={[
-    {
-      title: "QR678 Neo®",
-      href: "/product/qr678-neo",
-      description: "Advanced hair regrowth solution",
-    },
-    {
-      title: "QR678 Suite®",
-      href: "/suite",
-      description: "Complete hair care system",
-    },
-  ]}
-/>
-            <NavItem href="https://blog.qr678.com/">Blog</NavItem>
-            <NavItemWithSubmenu
-              label="Events"
+              label="Product"
+              href="/products"
               items={[
                 {
-                  title: "Upcoming Events",
-                  href: "/events/upcoming",
-                  description: "Join our future events",
+                  title: "QR678 Neo®",
+                  href: "/product/qr678-neo",
+                  description: "Advanced hair regrowth solution",
                 },
                 {
-                  title: "Past Events",
-                  href: "/events/past",
-                  description: "Recap of our previous events",
+                  title: "QR678 Suite®",
+                  href: "/suite",
+                  description: "Complete hair care system",
                 },
               ]}
             />
+            <NavItem href="https://blog.qr678.com/">Blog</NavItem>
+            <NavItem href="/research">Research</NavItem>
+            <NavItem href="/partners">Our Partners</NavItem>
             <NavItem href="/about-us">About Us</NavItem>
             <NavItem href="/faq">FAQ</NavItem>
             <NavItem href="/contact-us">Contact Us</NavItem>

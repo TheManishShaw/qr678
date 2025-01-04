@@ -49,7 +49,7 @@ const AboutHeroSection = () => {
                 they better lives.
               </p>
 
-              <div className="flex flex-wrap items-center gap-4 mb-2">
+              {/* <div className="flex flex-wrap items-center gap-4 mb-2">
                 <Button className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-20 md:py-6 text-sm font-semibold sm:text-base">
                   Learn More
                 </Button>
@@ -66,7 +66,7 @@ const AboutHeroSection = () => {
                   />
                   Watch Testimonials
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

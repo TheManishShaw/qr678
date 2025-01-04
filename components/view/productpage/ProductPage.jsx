@@ -6,6 +6,7 @@ import { ScientificPublications } from "./components/ScientificPublications";
 import { Card, CardContent } from "@/components/ui/card";
 import { Cog, FileText, Microscope } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
+import Link from "next/link";
 
 const ProductPage = () => {
   return (
@@ -191,11 +192,11 @@ const ProductPage = () => {
             src="/assets/png/prodcutpage/spark.png"
             alt="spark image"
           />
-          <div className="flex justify-center mt-8 md:mt-0 md:absolute md:right-20 md:bottom-40">
+          {/* <div className="flex justify-center mt-8 md:mt-0 md:absolute md:right-20 md:bottom-40">
             <Button className="bg-primary rounded-[5px] px-16 hover:bg-primary/90">
               Learn More
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
       <section className="bg-[#F2F1F1]">
@@ -309,12 +310,13 @@ const ProductPage = () => {
                   className="w-full h-auto"
                 />
                 <div className="text-center mt-4 w-/">
-                  <Button
+                <Link href="/research">
+                 <Button
                     variant="outline"
                     className="text-indigo-900 rounded-[5px] bg-gray-400/20 border-secondary"
                   >
                     View All Research
-                  </Button>
+                  </Button></Link> 
                 </div>
               </Card>
 

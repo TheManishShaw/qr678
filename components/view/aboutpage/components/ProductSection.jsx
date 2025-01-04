@@ -15,7 +15,7 @@ const ProductSection = () => {
       <Card className="p-2 sm:p-4 md:p-8 border-none shadow-none">
         <Carousel className="w-full relative">
           <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 1 }).map((_, index) => (
               <CarouselItem key={index}>
                 <Card className="border-secondary">
                   <CardContent className="p-4 sm:p-6 md:p-8 relative">
