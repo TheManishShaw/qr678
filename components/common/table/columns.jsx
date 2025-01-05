@@ -1,63 +1,56 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { CopyButton } from "@/components/ui/copy-button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { MoreHorizontal } from "lucide-react";
+import { Check, Copy, MoreHorizontal } from "lucide-react";
+import { useState } from "react";
 
 export const columns = [
   {
-    accessorKey: "name",
+    accessorKey: "area",
     header: "Clinic Name",
+    cell: ({ row }) => {
+      const partner = row.original;
+      const title = partner?.title?.rendered || "Unknown Title";
+      const area = partner?.area?.trim();
+      return (
+        <div
+          style={{ display: "flex", flexDirection: "column", gap: "0.25rem" }}
+        >
+          <strong>{title ? title : area}</strong>
+        </div>
+      );
+    },
   },
+
   {
-    accessorKey: "state",
-    header: "State",
+    accessorKey: "location_name",
+    header: "Location",
   },
+
   {
-    accessorKey: "city",
-    header: "City",
-  },
-  {
-    accessorKey: "brand",
-    header: "Brand",
+    accessorKey: "email",
+    header: "Email",
   },
   {
     accessorKey: "address",
     header: "Address",
   },
   {
-    accessorKey: "contact",
+    accessorKey: "phone_no",
     header: "Contact",
   },
   {
-    id: "actions",
+    id: "id",
     cell: ({ row }) => {
       const partner = row.original;
-
-      return (
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="h-8 w-8 p-0">
-              <span className="sr-only">Open menu</span>
-              <MoreHorizontal className="h-4 w-4" />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" className="text-primary">
-            <DropdownMenuItem
-              onClick={() => navigator.clipboard.writeText(partner.contact)}
-            >
-              Copy contact
-            </DropdownMenuItem>
-            <DropdownMenuItem>View details</DropdownMenuItem>
-            <DropdownMenuItem>Get directions</DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-      );
+      return <CopyButton value={partner.phone_no} />;
     },
   },
 ];

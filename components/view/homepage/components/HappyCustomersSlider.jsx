@@ -10,38 +10,40 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 
-const slides= [
+const slides = [
   {
-    title: 'QR678 Neo',
-    subtitle: 'Sub-head',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer.',
-    image: '/assets/svg/homepage/product.svg',
-    ctaText: 'Learn More'
+    title: "QR678 Neo",
+    subtitle: "Sub-head",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.",
+    image: "/assets/svg/homepage/product.svg",
+    ctaText: "Learn More",
   },
   {
-    title: 'Happy Customers',
-    subtitle: 'Sub-head',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer.',
-    image: '/assets/svg/homepage/girl_customer.svg',
-    ctaText: 'Learn More'
+    title: "Happy Customers",
+    subtitle: "Sub-head",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.",
+    image: "/assets/svg/homepage/girl_customer.svg",
+    ctaText: "Learn More",
   },
   {
-    title: 'Got Questions?',
-    subtitle: 'Sub-head',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer.',
-    image: '/assets/svg/homepage/girl_customer.svg',
-    ctaText: 'Learn More'
-  }
-]
+    title: "Got Questions?",
+    subtitle: "Sub-head",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.",
+    image: "/assets/svg/homepage/girl_customer.svg",
+    ctaText: "Learn More",
+  },
+];
 
 export default function HappyCustomersSlider() {
   return (
     <section className=" py-8 sm:py-12 md:py-16">
-      <div className="container mx-auto px-4">      
-        <div className="space-y-8 sm:space-y-12">
+      <div className="container mx-auto px-4 ">
+        <div className="">
           <Card className="p-4 sm:p-6 shadow-none border-none bg-transparent ">
             <div className="">
-             
               <Carousel
                 opts={{
                   align: "start",
@@ -51,33 +53,33 @@ export default function HappyCustomersSlider() {
               >
                 <CarouselContent className="">
                   {slides.map((slide, index) => (
-                    <div
-                    key={index}
-                    className="flex gap-4 mx-4"
-                  >
-                    <div className="bg-gradient-to-r  w-[500px] from-[#494996] to-[#060628] rounded-3xl p-1 mb-0 md:p-2 md:pb-0  flex flex-col md:flex-row items-center gap-2">
-                    <div className="w-full md:w-1/2">
-                        <Image
-                          src={slide.image}
-                          alt={slide.title}
-                          width={600}
-                          height={900}
-                          className="w-full h-auto object-contain"
-                        />
-                      </div><div className="w-full md:w-1/2 space-y-4">
-                        <h2 className="text-white text-3xl md:text-xl font-bold">{slide.title}</h2>
-                        <p className="text-white/80 text-[16px]">{slide.subtitle}</p>
-                        <p className="text-white/70 leading-relaxed text-[14px]">{slide.description}</p>
-                        <Button 
-                          variant="secondary" 
-                          className="mt-4 rounded-full px-8"
-                        >
-                          {slide.ctaText}
-                        </Button>
+                    <div key={index} className="flex gap-4 mx-4">
+                      <div className="bg-gradient-to-r  w-[500px] from-[#494996] to-[#060628] rounded-3xl p-1 mb-0 md:p-2 md:pb-0  flex flex-col md:flex-row items-center gap-2">
+                        <div className="w-full md:w-1/2">
+                          <Image
+                            src={slide.image}
+                            alt={slide.title}
+                            width={600}
+                            height={900}
+                            className="w-full h-auto object-contain"
+                          />
+                        </div>
+                        <div className="w-full md:w-1/2 space-y-2">
+                          <h2 className="text-white text-3xl md:text-xl font-bold">
+                            {slide.title}
+                          </h2>
+                          <p className="text-white/80 text-[16px]">
+                            {slide.subtitle}
+                          </p>
+                          <p className="text-white/70 leading-relaxed text-[14px]">
+                            {slide.description}
+                          </p>
+                          <Button variant="secondary" className="mt-4  px-4">
+                            {slide.ctaText}
+                          </Button>
+                        </div>
                       </div>
-                     
                     </div>
-                  </div>
                   ))}
                 </CarouselContent>
                 <CarouselDots className="self-center pt-4 sm:pt-6" />
@@ -88,7 +90,6 @@ export default function HappyCustomersSlider() {
               </Carousel>
             </div>
           </Card>
-          
         </div>
       </div>
     </section>
@@ -132,4 +133,3 @@ const users = [
     quote: "Absolutely impressed with the results. Would highly recommend!",
   },
 ];
-

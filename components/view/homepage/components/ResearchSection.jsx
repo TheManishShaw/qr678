@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ResearchSection() {
   return (
@@ -29,17 +30,17 @@ export default function ResearchSection() {
               </p>
             </div>
           </div>
-
-          <Button
-            variant="outline"
-            size="lg"
-            className="mt-4 sm:mt-6 lg:mt-8 bg-white text-primary rounded-lg font-bold text-xs sm:text-sm md:text-base px-4 py-2 sm:px-6 sm:py-3"
-          >
-            QR678 Research
-          </Button>
+          <Link href={"/research"}>
+            <Button
+              variant="outline"
+              size="lg"
+              className="mt-4 sm:mt-6 lg:mt-8 bg-white text-primary rounded-lg font-bold text-xs sm:text-sm md:text-base px-4 py-2 sm:px-6 sm:py-3"
+            >
+              QR678 Research
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
   );
 }
-

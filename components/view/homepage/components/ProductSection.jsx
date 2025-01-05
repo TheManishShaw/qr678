@@ -1,6 +1,6 @@
 import * as React from "react";
 import Image from "next/image";
-import { Check } from 'lucide-react';
+import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -11,6 +11,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Link from "next/link";
 
 export default function ProductSection() {
   const items = [
@@ -34,16 +35,17 @@ export default function ProductSection() {
                   <CardContent className="p-4 sm:p-6 md:p-8">
                     <div className="mb-6 sm:mb-8 md:mb-12">
                       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary text-center sm:text-left">
-                        QR678 Neo<sup className="text-lg sm:text-xl md:text-2xl">®</sup>
+                        QR678 Neo
+                        <sup className="text-lg sm:text-xl md:text-2xl">®</sup>
                       </h2>
                       <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg mt-4 text-center sm:text-left">
                         QR678 Neo<sup>®</sup> is a patented, clinically-proven
                         hair regrowth therapy designed to combat hair loss and
                         stimulate new hair growth. Unlike traditional methods,
                         QR678 Neo<sup>®</sup> uses a unique, non-surgical
-                        formulation of six specific biomimetic polypeptides
-                        that is injected painlessly into the scalp, targeting
-                        hair follicles for optimal results.
+                        formulation of six specific biomimetic polypeptides that
+                        is injected painlessly into the scalp, targeting hair
+                        follicles for optimal results.
                       </p>
                     </div>
                     <div className="flex flex-col sm:flex-row items-center sm:items-start">
@@ -64,21 +66,28 @@ export default function ProductSection() {
                             "Works on all etiologies of hair loss",
                             "Visible results in 8-10 sessions",
                           ].map((feature, index) => (
-                            <div key={index} className="flex items-center gap-3">
+                            <div
+                              key={index}
+                              className="flex items-center gap-3"
+                            >
                               <div className="h-6 w-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
                                 <Check className="h-4 w-4 text-green-600" />
                               </div>
-                              <span className="text-sm sm:text-base">{feature}</span>
+                              <span className="text-sm sm:text-base">
+                                {feature}
+                              </span>
                             </div>
                           ))}
                         </div>
                         <div className="flex justify-center sm:justify-start mt-6">
-                          <Button
-                            variant="outline"
-                            className="border-[#B38B59] text-[#B38B59] hover:bg-[#B38B59] hover:text-white text-sm sm:text-base"
-                          >
-                            Know More
-                          </Button>
+                          <Link href={"/products"}>
+                            <Button
+                              variant="outline"
+                              className="border-[#B38B59] text-[#B38B59] hover:bg-[#B38B59] hover:text-white text-sm sm:text-base"
+                            >
+                              Know More
+                            </Button>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -97,4 +106,3 @@ export default function ProductSection() {
     </div>
   );
 }
-

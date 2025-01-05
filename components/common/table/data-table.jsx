@@ -33,7 +33,7 @@ import { Button } from "@/components/ui/button";
 export function DataTable({ columns, data }) {
   const [sorting, setSorting] = React.useState([]);
   const [columnFilters, setColumnFilters] = React.useState([]);
-
+  const [locations, setLocations] = React.useState([]);
   const table = useReactTable({
     data,
     columns,
@@ -48,47 +48,47 @@ export function DataTable({ columns, data }) {
       columnFilters,
     },
   });
+  const memoizedData = React.useMemo(() => data, [data]);
+
+  React.useEffect(() => {
+    const locationString = data
+      .map((clinic) => clinic.location_name)
+      .join(", ");
+    const locationArray = [
+      ...new Set(locationString.split(",").map((loc) => loc.trim())),
+    ];
+    setLocations(locationArray);
+  }, [memoizedData]);
 
   return (
     <div>
       <div className="flex flex-col gap-4 py-4 md:flex-row">
         <Input
           placeholder="Filter clinics..."
-          value={table.getColumn("name")?.getFilterValue() ?? ""}
+          value={table.getColumn("area")?.getFilterValue() ?? ""}
           onChange={(event) =>
-            table.getColumn("name")?.setFilterValue(event.target.value)
+            table.getColumn("area")?.setFilterValue(event.target.value)
           }
           className="max-w-sm"
         />
         <div className="flex gap-2">
           <Select
-            value={table.getColumn("state")?.getFilterValue() ?? ""}
+            value={table.getColumn("location_name")?.getFilterValue() ?? ""}
             onValueChange={(value) =>
-              table.getColumn("state")?.setFilterValue(value)
+              table.getColumn("location_name")?.setFilterValue(value)
             }
           >
             <SelectTrigger className="w-[180px]">
               <SelectValue placeholder="Select State" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="Maharashtra">Maharashtra</SelectItem>
-              <SelectItem value="Delhi">Delhi</SelectItem>
-              {/* Add more states */}
-            </SelectContent>
-          </Select>
-          <Select
-            value={table.getColumn("city")?.getFilterValue() ?? ""}
-            onValueChange={(value) =>
-              table.getColumn("city")?.setFilterValue(value)
-            }
-          >
-            <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder="Select City" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="Mumbai">Mumbai</SelectItem>
-              <SelectItem value="New Delhi">New Delhi</SelectItem>
-              {/* Add more cities */}
+              {locations
+                ?.filter((location) => location.trim() !== "") // Ensure no empty or whitespace-only values
+                .map((location, index) => (
+                  <SelectItem key={index} value={location}>
+                    {location}
+                  </SelectItem>
+                ))}
             </SelectContent>
           </Select>
         </div>
