@@ -14,14 +14,14 @@ import AsSeenOnSection from "./components/AsSeenOnSection";
 const AboutPage = () => {
   return (
     <div>
-      <AboutHeroSection/>
+      <AboutHeroSection />
 
       <TimelineSection />
-      <ChallengeSection/>
+      <ChallengeSection />
       <ProductSection />
       <LeadershipTeam />
-      <BoardOfDirectors />
-      <AsSeenOnSection/>
+      {/* <BoardOfDirectors /> */}
+      <AsSeenOnSection />
     </div>
   );
 };

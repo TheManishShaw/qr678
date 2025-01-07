@@ -18,21 +18,22 @@ const LeadershipTeam = () => {
       designation: "Vice President - QR678",
     },
     {
-      image: "",
+      image: "/assets/jpg/about/Vaijayanti Naidu.jpeg",
       name: "Mrs. Vaijayanti Naidu",
       designation: "DGM-BD & Strategic Alliances - QR678",
     },
     {
-      image: "",
+      image: "/assets/jpg/about/Dr Reshma Mallya.jpeg",
       name: "Dr. Reshma Mallya",
       designation: "DGM Marketing - QR678",
     },
     {
-      image: "",
+      image: "/assets/jpg/about/Dr Raji Image.JPG",
       name: "Dr. Raji Patil",
       designation: "AGM, Medical Affairs - QR678",
-    },{
-      image: "",
+    },
+    {
+      image: "/assets/jpg/about/Sridhar 1.jpeg",
       name: "Mr. Sridhar Ranganathan",
       designation: "Board Advisor - QR678",
     },
@@ -40,7 +41,7 @@ const LeadershipTeam = () => {
   return (
     <section className="space-y-8 w-full max-w-7xl mx-auto px-4 py-8 sm:py-12">
       <h2 className="heading-1 text-center text-3xl sm:text-4xl md:text-5xl font-bold">
-        Board of Directors
+        Leadership Team
       </h2>
       <Carousel
         opts={{
@@ -59,18 +60,22 @@ const LeadershipTeam = () => {
                 <CardContent className="p-2 sm:p-4 flex flex-col items-center text-center">
                   <div className="w-full md:max-w-[200px] relative mb-3 sm:mb-4">
                     <Image
-                      src="/assets/png/aboutpage/avatar.png"
-                      alt={`Director ${index + 1}`}
+                      src={
+                        item?.image
+                          ? item?.image
+                          : "/assets/png/aboutpage/avatar.png"
+                      }
+                      alt={`Leader ${index + 1}`}
                       width={200}
                       height={200}
-                      className="object-cover w-full rounded-md"
+                      className="object-cover object-top border-2 h-[14rem] rounded-md"
                     />
                   </div>
                   <h4 className="font-semibold text-primary text-sm sm:text-base">
                     {item.name}
                   </h4>
                   <p className="text-xs sm:text-sm text-muted-foreground">
-                   {item.designation}
+                    {item.designation}
                   </p>
                 </CardContent>
               </Card>
