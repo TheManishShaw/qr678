@@ -18,39 +18,39 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const SLIDES = [
   {
-    before: "/assets/png/Vector.png",
-    after: "/assets/png/Vector.png",
-    title: "Androgenetic Alopecia",
+    before: "/assets/svg/productpage/abhinav_jain_before.svg",
+    after: "/assets/svg/productpage/abhinav_jain_after.svg",
+    title: "Abhinav Jain",
   },
   {
-    before: "/assets/png/Vector.png",
-    after: "/assets/png/Vector.png",
-    title: "Androgenetic Alopecia",
+    before: "/assets/svg/productpage/pratap_reddy_before.svg",
+    after: "/assets/svg/productpage/pratap_reddy_after.svg",
+    title: "Pratap Reddy",
   },
   {
-    before: "/assets/png/Vector.png",
-    after: "/assets/png/Vector.png",
-    title: "Androgenetic Alopecia",
+    before: "/assets/svg/productpage/arjun_kohli_before.svg",
+    after: "/assets/svg/productpage/arjun_kohli_after.svg",
+    title: "Arjun Kohli",
   },
   {
-    before: "/assets/png/Vector.png",
-    after: "/assets/png/Vector.png",
-    title: "Androgenetic Alopecia",
+    before: "/assets/svg/productpage/digvijay_singh_before.svg",
+    after: "/assets/svg/productpage/digvijay_singh_after.svg",
+    title: "Digvijay Singh",
   },
   {
-    before: "/assets/png/Vector.png",
-    after: "/assets/png/Vector.png",
-    title: "Androgenetic Alopecia",
+    before: "/assets/svg/productpage/sharal_braggs_before.svg",
+    after: "/assets/svg/productpage/sharal_braggs_after.svg",
+    title: "Pt. Sharal Braggs",
   },
   {
-    before: "/assets/png/Vector.png",
-    after: "/assets/png/Vector.png",
-    title: "Androgenetic Alopecia",
+    before: "/assets/svg/productpage/rimka_nishchal_before.svg",
+    after: "/assets/svg/productpage/rimka_nishchal_after.svg",
+    title: "Pt. Rimka Nischal",
   },
   {
-    before: "/assets/png/Vector.png",
-    after: "/assets/png/Vector.png",
-    title: "Androgenetic Alopecia",
+    before: "/assets/svg/productpage/rishab_salecha_before.svg",
+    after: "/assets/svg/productpage/rishab_salecha_after.svg",
+    title: "Pt. Rishabh Salecha",
   },
 ];
 
@@ -74,9 +74,11 @@ export function TransformBeforeAfterCarousel() {
                 {/* Before Card */}
                 <Card className="relative border-2 rounded-none p-3 border-primary w-[300px]">
                   <CardContent className="p-0">
-                    <img
-                      src="/assets/png/prodcutpage/before.png"
+                    <Image
+                      src={slide.before}
                       alt="Before treatment"
+                      width={225}
+                      height={262}
                       className="w-full h-[200px] object-cover"
                     />
                     <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-gray-100/95 px-6 py-2  shadow-lg">
@@ -90,9 +92,11 @@ export function TransformBeforeAfterCarousel() {
                 {/* After Card */}
                 <Card className="relative border-2 rounded-none p-3 border-primary w-[300px]">
                   <CardContent className="p-0">
-                    <img
-                      src="/assets/png/prodcutpage/before.png"
+                    <Image
+                      src={slide.after}
                       alt="After treatment"
+                      width={225}
+                      height={262}
                       className="w-full h-[200px] object-cover"
                     />
                     <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 bg-gray-100/95 px-6 py-2  shadow-lg">
@@ -105,7 +109,7 @@ export function TransformBeforeAfterCarousel() {
               </div>
               <div className="bg-textBg shadow-md py-3 px-6  text-center mx-auto">
                 <h2 className="text-blue-900 text-2xl font-semibold">
-                  Androgenetic Alopecia
+                {slide.title}
                 </h2>
               </div>
             </CarouselItem>
