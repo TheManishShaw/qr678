@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const AsSeenOnSection = () => {
@@ -17,13 +18,13 @@ const AsSeenOnSection = () => {
               key={index}
               className=" flex flex-wrap items-center justify-center"
             >
-              <Image
-                src={partner.src ||"/assets/png/no-image.png"}
-                alt={partner.name ||`Partner Logo ${index + 1}`}
+             <Link href={partner.url}> <Image
+                src={partner.src || "/assets/png/no-image.png"}
+                alt={partner.name || `Partner Logo ${index + 1}`}
                 width={120}
                 height={40}
                 className=" object-contain filter  transition-all"
-              />
+              /></Link>
             </div>
           ))}
         </div>
@@ -34,33 +35,40 @@ const AsSeenOnSection = () => {
 
 export default AsSeenOnSection;
 
-
 const PartnersImages = [
   {
-    src:"/assets/svg/aboutus/partner-1.svg",
-    name:"TOI"
+    src: "/assets/svg/aboutus/partner-1.svg",
+    name: "TOI",
+    url: "",
   },
   {
-    src:"/assets/svg/aboutus/bs.svg",
-    name:"BS"
+    src: "/assets/svg/aboutus/bs.svg",
+    name: "BS",
+    url: "",
   },
   {
-    src:"/assets/svg/aboutus/tfe.svg",
-    name:"The Financial Express"
+    src: "/assets/svg/aboutus/tfe.svg",
+    name: "The Financial Express",
+    url: "https://www.financialexpress.com/life/90-percent-of-women-aged-18-36-with-pcos-at-risk-of-hair-loss-3596541/",
   },
   {
-    src:"/assets/svg/aboutus/en.svg",
-    name:"ET Now"
+    src: "/assets/svg/aboutus/en.svg",
+    name: "ET Now",
+    url: "",
   },
   {
-    src:"/assets/svg/aboutus/femina.svg",
-    name:"FEMINA"
-  },{
-    src:"/assets/svg/aboutus/mid-day.svg",
-    name:"mid-day"
-  },{
-    src:"/assets/svg/aboutus/india.svg",
-    name:"INDIA.COM"
+    src: "/assets/svg/aboutus/femina.svg",
+    name: "FEMINA",
+    url: "",
   },
-]
-
+  {
+    src: "/assets/svg/aboutus/mid-day.svg",
+    name: "mid-day",
+    url: "",
+  },
+  {
+    src: "/assets/svg/aboutus/india.svg",
+    name: "INDIA.COM",
+    url: "",
+  },
+];

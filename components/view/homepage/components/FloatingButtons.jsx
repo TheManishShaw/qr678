@@ -30,8 +30,21 @@ export default function FloatingActionButtons() {
       {/* Chat Button */}
       <div className="bg-white p-4 rounded-bl-3xl ">
         {" "}
+        <button
+                  className="group flex flex-col items-center"
+                  aria-label="Chat with us"
+                >
+                  <Image
+                    src="/floating_chat.svg"
+                    alt=""
+                    width={32}
+                    height={32}
+                    className=""
+                  />
+                  <span className="mt-1 text-xs font-medium text-primary">Chat</span>
+                </button>
 
-            <ContactDialog/>
+            {/* <ContactDialog/> */}
          
       </div>
     </div>

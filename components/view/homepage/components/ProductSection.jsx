@@ -97,10 +97,10 @@ export default function ProductSection() {
             ))}
           </CarouselContent>
           <CarouselDots className="self-center pt-4 sm:pt-6" />
-          <div className="flex items-center justify-end -mt-4 sm:-mt-6 space-x-2">
+          {/* <div className="flex items-center justify-end -mt-4 sm:-mt-6 space-x-2">
             <CarouselPrevious className="relative inset-0 translate-y-0 hover:border hover:border-secondary" />
             <CarouselNext className="relative inset-0 translate-y-0 hover:border hover:border-secondary" />
-          </div>
+          </div> */}
         </Carousel>
       </Card>
     </div>

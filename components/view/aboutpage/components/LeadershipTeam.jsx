@@ -1,9 +1,42 @@
-import { Card, CardContent } from '@/components/ui/card'
-import { Carousel, CarouselContent, CarouselDots, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
-import Image from 'next/image'
-import React from 'react'
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselDots,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Image from "next/image";
+import React from "react";
 
 const LeadershipTeam = () => {
+  const leaders = [
+    {
+      image: "",
+      name: "Mr. Indrajit Dutta",
+      designation: "Vice President - QR678",
+    },
+    {
+      image: "",
+      name: "Mrs. Vaijayanti Naidu",
+      designation: "DGM-BD & Strategic Alliances - QR678",
+    },
+    {
+      image: "",
+      name: "Dr. Reshma Mallya",
+      designation: "DGM Marketing - QR678",
+    },
+    {
+      image: "",
+      name: "Dr. Raji Patil",
+      designation: "AGM, Medical Affairs - QR678",
+    },{
+      image: "",
+      name: "Mr. Sridhar Ranganathan",
+      designation: "Board Advisor - QR678",
+    },
+  ];
   return (
     <section className="space-y-8 w-full max-w-7xl mx-auto px-4 py-8 sm:py-12">
       <h2 className="heading-1 text-center text-3xl sm:text-4xl md:text-5xl font-bold">
@@ -17,7 +50,7 @@ const LeadershipTeam = () => {
         className="w-full border border-secondary rounded-md py-6 sm:py-10 px-4 sm:px-6"
       >
         <CarouselContent className="-ml-2 md:-ml-3">
-          {Array.from({ length: 9 }).map((_, index) => (
+          {leaders.map((item, index) => (
             <CarouselItem
               key={index}
               className="pl-2 md:pl-2 md:basis-1/2 lg:basis-1/3 xl:basis-1/5"
@@ -33,8 +66,12 @@ const LeadershipTeam = () => {
                       className="object-cover w-full rounded-md"
                     />
                   </div>
-                  <h4 className="font-semibold text-primary text-sm sm:text-base">Name Surname</h4>
-                  <p className="text-xs sm:text-sm text-muted-foreground">Credentials</p>
+                  <h4 className="font-semibold text-primary text-sm sm:text-base">
+                    {item.name}
+                  </h4>
+                  <p className="text-xs sm:text-sm text-muted-foreground">
+                   {item.designation}
+                  </p>
                 </CardContent>
               </Card>
             </CarouselItem>
@@ -47,8 +84,7 @@ const LeadershipTeam = () => {
         </div>
       </Carousel>
     </section>
-  )
-}
+  );
+};
 
-export default LeadershipTeam
-
+export default LeadershipTeam;

@@ -101,7 +101,7 @@ export default function TestimonialsGrid() {
           </div>
         </div>
       </section>
-      <section className="py-10 px-4 bg-gray-50">
+      {/* <section className="py-10 px-4 bg-gray-50">
         <div className=" mx-auto container">
           <h2 className="text-5xl font-semibold text-center mb-20 text-secondary">
             Users Felt it
@@ -149,7 +149,7 @@ export default function TestimonialsGrid() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
