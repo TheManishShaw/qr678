@@ -54,9 +54,9 @@ const LeadershipTeam = () => {
           {leaders.map((item, index) => (
             <CarouselItem
               key={index}
-              className="pl-2 md:pl-2 md:basis-1/2 lg:basis-1/3 xl:basis-1/5"
+              className="pl-2 md:pl-2 md:basis-1/2 lg:basis-1/3  xl:basis-1/5"
             >
-              <Card className="border-none">
+              <Card className="border-none h-full ">
                 <CardContent className="p-2 sm:p-4 flex flex-col items-center text-center">
                   <div className="w-full md:max-w-[200px] relative mb-3 sm:mb-4">
                     <Image
@@ -68,7 +68,7 @@ const LeadershipTeam = () => {
                       alt={`Leader ${index + 1}`}
                       width={200}
                       height={200}
-                      className="object-cover object-top border-2 h-[14rem] rounded-md"
+                      className="object-cover object-top border border-primary h-[14rem] rounded-md"
                     />
                   </div>
                   <h4 className="font-semibold text-primary text-sm sm:text-base">

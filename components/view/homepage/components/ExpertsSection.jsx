@@ -19,7 +19,7 @@ const testimonials = [
     location: "Gold Skin Care, USA",
     quote:
       "QR678® to me is a revolutionary hair growth product. There are really no adverse events that I am aware of.",
-    image: "/assets/png/testimonials.png",
+    image: "/assets/jpg/doctors/Dr. Michael Gold.jpeg",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const testimonials = [
     location: "09 Clinic, Kuwait",
     quote:
       "I have a bunch of patients who have used QR678 post chemotherapy and the results were excellent.",
-    image: "/assets/png/testimonials.png",
+    image: "/assets/jpg/doctors/Dr. Vivek Singhal.jpg",
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ const testimonials = [
     location: "Skin Saga Centre for Dermatology, India",
     quote:
       "QR678 is a quick procedure that requires no blood involvement, making it painless and eliminating the need for prior numbing.",
-    image: "/assets/png/testimonials.png",
+    image: "/assets/jpg/doctors/Aseem Sharma.png",
   },
   {
     id: 7,
@@ -61,50 +61,6 @@ const testimonials = [
     image: "/assets/jpg/doctors/Dr. Jagdish Sakhiya.jpg",
   },
 ];
-// const testimonials = [
-//   {
-//     quote:
-//       "I have a bunch of patients who have used QR678 post chemotherapy and the results were excellent.",
-//     name: "Dr Sarah Alenezi",
-//     credentials: "MD, Dermatologist, Hair Disease Bayan Derma, Kuwait",
-//     image: "/placeholder.svg?height=120&width=120",
-//   },
-//   {
-//     quote:
-//       "QR678 therapy in my patients offered definitive benefit after the very first session; gross and trichoscopic confirmed progressive efficacy; and fantastic patient compliance.",
-//     name: "Dr. Sidharth Sonthalia",
-//     credentials: "MD, DNB, MNAMS, FIAD, Dermatologist, Skinnocence, India",
-//     image: "/placeholder.svg?height=120&width=120",
-//   },
-//   {
-//     quote:
-//       "I have been using QR678 for chronic telogen effluvium, especially in adolescents.",
-//     name: "Dr Sarah Alenezi",
-//     credentials: "MD, Dermatologist, Hair Disease Bayan Derma, Kuwait",
-//     image: "/placeholder.svg?height=120&width=120",
-//   },
-//   {
-//     quote:
-//       "I have been using QR678 for chronic telogen effluvium, especially in adolescents.",
-//     name: "Dr Sarah Alenezi",
-//     credentials: "MD, Dermatologist, Hair Disease Bayan Derma, Kuwait",
-//     image: "/placeholder.svg?height=120&width=120",
-//   },
-//   {
-//     quote:
-//       "I have been using QR678 for chronic telogen effluvium, especially in adolescents.",
-//     name: "Dr Sarah Alenezi",
-//     credentials: "MD, Dermatologist, Hair Disease Bayan Derma, Kuwait",
-//     image: "/placeholder.svg?height=120&width=120",
-//   },
-//   {
-//     quote:
-//       "I have been using QR678 for chronic telogen effluvium, especially in adolescents.",
-//     name: "Dr Sarah Alenezi",
-//     credentials: "MD, Dermatologist, Hair Disease Bayan Derma, Kuwait",
-//     image: "/placeholder.svg?height=120&width=120",
-//   },
-// ];
 
 export default function TestimonialsGrid() {
   return (
@@ -115,41 +71,41 @@ export default function TestimonialsGrid() {
             Experts said it
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative [&>*]:h-full">
             {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className={cn(
-                  " mb-10 relative ",
-                  index === 0 && "lg:-mt-12",
-                  index % 2 === 1 && "lg:-mt-12",
-                  index % 3 === 1 && "lg:-mt-8",
-                  index % 3 === 2 && "lg:-mt-12"
-                )}
-              >
-                <Card className="space-y-4 p-6 overflow-hidden transition-all duration-300 hover:shadow-lg">
-                  <blockquote className="text-[#6366F1] text-lg leading-relaxed">
+              <div key={index} className="mb-10 relative">
+                <Card className="flex flex-col h-full p-6 overflow-hidden transition-all duration-300 hover:shadow-lg">
+                  {/* Background Quote */}
+                  <div className="absolute top-4 left-4 text-[200px] leading-none text-black/10 font-serif">
+                    &ldquo;
+                  </div>
+
+                  {/* Quote Content */}
+                  <blockquote className="text-[#6366F1] text-lg leading-relaxed relative flex-grow">
                     {testimonial.quote}
                   </blockquote>
 
-                  <div className="flex items-center justify-between gap-4">
-                    <div>
-                      <h3 className="font-medium text-[#B08B57]">
-                        {testimonial.name}
-                      </h3>
-                      <p className="text-sm text-[#B08B57]/80">
-                        {testimonial.location}
-                      </p>
-                    </div>
+                  {/* Bottom Details Section - Now sticky */}
+                  <div className="mt-auto pt-4 border-t border-gray-100">
+                    <div className="flex items-center justify-between gap-4">
+                      <div>
+                        <h3 className="font-medium text-secondary text-xl">
+                          {testimonial.name}
+                        </h3>
+                        <p className="text-secondary/80 mt-1">
+                          {testimonial.location}
+                        </p>
+                      </div>
 
-                    <div className="flex-shrink-0">
-                      <Image
-                        src={testimonial.image}
-                        alt="QR678 Neo Product"
-                        width={138}
-                        height={138}
-                        className="object-contain rounded-full"
-                      />
+                      <div className="flex-shrink-0">
+                        <Image
+                          src={testimonial.image}
+                          alt={`Portrait of ${testimonial.name}`}
+                          width={80}
+                          height={80}
+                          className="object-cover rounded-full  max-h-[5.5rem] border-2 border-secondary/20"
+                        />
+                      </div>
                     </div>
                   </div>
                 </Card>
@@ -183,10 +139,10 @@ export default function TestimonialsGrid() {
 
                   <div className="flex items-center justify-between gap-4">
                     <div>
-                      <h3 className="font-medium text-[#B08B57]">
+                      <h3 className="font-medium text-secondary">
                         {testimonial.name}
                       </h3>
-                      <p className="text-sm text-[#B08B57]/80">
+                      <p className="text-sm text-secondary/80">
                         {testimonial.credentials}
                       </p>
                     </div>

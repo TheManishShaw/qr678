@@ -18,13 +18,16 @@ const AsSeenOnSection = () => {
               key={index}
               className=" flex flex-wrap items-center justify-center"
             >
-             <Link href={partner.url}> <Image
-                src={partner.src || "/assets/png/no-image.png"}
-                alt={partner.name || `Partner Logo ${index + 1}`}
-                width={120}
-                height={40}
-                className=" object-contain filter  transition-all"
-              /></Link>
+              <Link href={partner.url} target="_blank">
+                {" "}
+                <Image
+                  src={partner.src || "/assets/png/no-image.png"}
+                  alt={partner.name || `Partner Logo ${index + 1}`}
+                  width={120}
+                  height={40}
+                  className=" object-contain filter  transition-all"
+                />
+              </Link>
             </div>
           ))}
         </div>
@@ -39,7 +42,7 @@ const PartnersImages = [
   {
     src: "/assets/svg/aboutus/partner-1.svg",
     name: "TOI",
-    url: "",
+    url: "https://timesofindia.indiatimes.com/life-style/beauty/the-future-of-hair-restoration-science-innovation-and-a-holistic-shift/articleshow/116626862.cms",
   },
   {
     src: "/assets/svg/aboutus/bs.svg",
@@ -54,12 +57,12 @@ const PartnersImages = [
   {
     src: "/assets/svg/aboutus/en.svg",
     name: "ET Now",
-    url: "",
+    url: "https://health.economictimes.indiatimes.com/news/industry/pcos-impacts-hair-health-increases-susceptibility-to-hair-thinning-loss-study/112896932",
   },
   {
     src: "/assets/svg/aboutus/femina.svg",
     name: "FEMINA",
-    url: "",
+    url: "https://drive.google.com/file/d/11HTBix1ENMTX7uz7Sb92kaQwtCRDARGP/view?usp=sharing",
   },
   {
     src: "/assets/svg/aboutus/mid-day.svg",

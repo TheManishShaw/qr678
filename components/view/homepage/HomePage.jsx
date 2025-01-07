@@ -13,6 +13,7 @@ import GetStartedSection from "../suitpage/components/GetStartedSection";
 import HomeBottomSection from "./components/HomeBottomSection";
 import AsSeenOnSection from "../aboutpage/components/AsSeenOnSection";
 import TestimonialsGrid from "./components/ExpertsSection";
+import FeaturesPartners from "./components/FeaturesPartners";
 
 const HomePage = () => {
   return (
@@ -20,18 +21,18 @@ const HomePage = () => {
       {/* <HomeHeroSection /> */}
       <ResearchSection />
       <StatsSection />
+      <FeaturesPartners />
       {/* <HappyCustomersSlider/> */}
       <FloatingActionButtons />
       {/* <UntappedSection /> */}
       <ProductSection />
-      <AsSeenOnSection/>
+      <AsSeenOnSection />
       {/* <TestimonialsSection /> */}
-      <TestimonialsGrid/>
-      
-      <ProgramSection />
-      <TopSearchSection/>
+      <TestimonialsGrid />
+
+      {/* <ProgramSection /> */}
+      {/* <TopSearchSection/> */}
       <HomeBottomSection />
-      
     </div>
   );
 };

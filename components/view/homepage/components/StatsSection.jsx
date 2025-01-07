@@ -37,7 +37,7 @@ export default function StatsSection() {
                 height={64}
                 className="mx-auto mb-4"
               />
-              <h4 className="text-primary font-extrabold text-base sm:text-lg">
+              <h4 className="text-secondary font-extrabold text-base sm:text-lg">
                 {stat.title}
               </h4>
               <p className="text-primary text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-2">
@@ -68,4 +68,3 @@ const stats = [
     description: "Clinical Studies Published in Peer-Reviewed Journals",
   },
 ];
-
