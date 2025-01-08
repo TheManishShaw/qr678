@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/button";
 const AboutHeroSection = () => {
   return (
     <section className="w-full  mx-auto">
-      <div className="relative overflow-hidden bg-white md:h-screen">
+      <div className="relative overflow-hidden bg-white min-h-[35vh] md:h-screen">
         <div className="md:absolute md:inset-0 bg-gray-100">
           <Image
             src="/assets/png/aboutpage/hero-image.png"
             alt="Background Image"
-            layout="fill"           
+            layout="fill"
             className=" md:right-0 top-4 md:bg-contain  bg-cover text-center"
             quality={100}
             priority
@@ -20,7 +20,7 @@ const AboutHeroSection = () => {
           <div className="mx-auto  h-full flex flex-col justify-center">
             <div className="md:space-y-10 space-y-5 mb-2 ml-4 sm:ml-8 lg:ml-12">
               <div className="relative inline-block">
-                <h1 className="text-2xl lg:text-[5rem] font-bold text-primary leading-tight">
+                <h1 className="text-2xl lg:text-[5rem] mt-20 md:mt-0 font-bold text-primary leading-tight">
                   <span className="relative inline-block p-2 sm:p-4">
                     <span className="relative z-10">
                       Science For
@@ -35,7 +35,7 @@ const AboutHeroSection = () => {
                         alt=""
                         width={150}
                         height={12}
-                        className="w-full"
+                        className="w-full md:block hidden"
                       />
                     </span>
                   </span>
@@ -76,4 +76,3 @@ const AboutHeroSection = () => {
 };
 
 export default AboutHeroSection;
-

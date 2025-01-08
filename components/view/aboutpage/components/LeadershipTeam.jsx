@@ -13,7 +13,7 @@ import React from "react";
 const LeadershipTeam = () => {
   const leaders = [
     {
-      image: "",
+      image: "/assets/jpg/doctors/Mr. Indrajit Dutta.jpeg",
       name: "Mr. Indrajit Dutta",
       designation: "Vice President - QR678",
     },
@@ -68,7 +68,7 @@ const LeadershipTeam = () => {
                       alt={`Leader ${index + 1}`}
                       width={200}
                       height={200}
-                      className="object-cover object-top border border-primary h-[14rem] rounded-md"
+                      className="object-cover object-top border border-primary w-full h-[20.5rem] md:h-[14.5rem] rounded-md"
                     />
                   </div>
                   <h4 className="font-semibold text-primary text-sm sm:text-base">
@@ -82,11 +82,19 @@ const LeadershipTeam = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselDots className="self-center pt-4 sm:pt-6" />
-        <div className="flex items-center justify-end sm:justify-end -mt-4 sm:-mt-6 space-x-2 sm:space-x-4">
-          <CarouselPrevious className="relative inset-0 translate-y-0 hover:border hover:border-secondary" />
-          <CarouselNext className="relative inset-0 translate-y-0 hover:border hover:border-secondary" />
-        </div>
+        {leaders.length > 1 ? (
+          <>
+            <CarouselDots
+              className={` flex md:hidden self-center pt-4 sm:pt-6 `}
+            />
+            <div className="flex md:hidden  items-center justify-end sm:justify-end -mt-4 sm:-mt-6 space-x-2 sm:space-x-4">
+              <CarouselPrevious className="relative inset-0 translate-y-0 hover:border hover:border-secondary" />
+              <CarouselNext className="relative inset-0 translate-y-0 hover:border hover:border-secondary" />
+            </div>
+          </>
+        ) : (
+          ""
+        )}
       </Carousel>
     </section>
   );

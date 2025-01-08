@@ -13,7 +13,7 @@ import AsSeenOnSection from "./components/AsSeenOnSection";
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className=" overflow-x-hidden">
       <AboutHeroSection />
 
       <TimelineSection />

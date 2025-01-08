@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/carousel";
 import { Check } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const ProductSection = () => {
@@ -76,12 +77,14 @@ const ProductSection = () => {
                       </div>
                     </div>
                     <div className="flex justify-center sm:justify-end mt-6">
-                      <Button
-                        variant="outline"
-                        className="text-primary rounded-[5px] bg-gray-400/20 border-secondary text-sm sm:text-base"
-                      >
-                        Know More
-                      </Button>
+                      <Link href="/products">
+                        <Button
+                          variant="outline"
+                          className="text-primary rounded-[5px] bg-gray-400/20 border-secondary text-sm sm:text-base"
+                        >
+                          Know More
+                        </Button>
+                      </Link>
                     </div>
                   </CardContent>
                 </Card>

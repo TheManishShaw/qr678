@@ -83,7 +83,7 @@ export default function ProductSection() {
                           <Link href={"/products"}>
                             <Button
                               variant="outline"
-                              className="border-[#B38B59] text-[#B38B59] hover:bg-[#B38B59] hover:text-white text-sm sm:text-base"
+                              className="border-secondary text-secondary hover:bg-secondary hover:text-white text-sm sm:text-base"
                             >
                               Know More
                             </Button>

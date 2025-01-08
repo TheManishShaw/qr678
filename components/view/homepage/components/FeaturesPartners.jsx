@@ -64,9 +64,9 @@ const FeaturesPartners = () => {
                       <Image
                         src={partner.logo}
                         alt={partner.name}
-                        width={800}
-                        height={800}
-                        className=" max-w-52 object-cover self-center "
+                        width={500}
+                        height={200}
+                        className=" md:max-w-52 object-cover self-center "
                       />
                     </CarouselItem>
                   ))}

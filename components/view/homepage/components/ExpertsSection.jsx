@@ -10,7 +10,7 @@ const testimonials = [
     name: "Dr. Sarah Alenezi",
     location: "Bayan Derma, Kuwait",
     quote:
-      "I have been using QR678 for chronic telogen effluvium, especially in adolescents.",
+      "I have been using QR678® for chronic telogen effluvium, especially in adolescents.",
     image: "/assets/jpg/doctors/Dr. Sarah Alenezi.jpg",
   },
   {
@@ -26,14 +26,14 @@ const testimonials = [
     name: "Dr. Sidharth Sonthalia",
     location: "Skinnocence, India",
     quote:
-      "QR678 therapy in my patients offered 'definitive benefit' after the very first session; gross and trichoscopic confirmed progressive efficacy; and fantastic patient compliance.",
+      "QR678® therapy in my patients offered 'definitive benefit' after the very first session; gross and trichoscopic confirmed progressive efficacy; and fantastic patient compliance.",
     image: "/assets/jpg/doctors/Dr. Siddharth Sonthalia.jpg",
   },
   {
     id: 4,
     name: "Dr. Kalpana Sarangi",
     location: "DKS Clinique, India",
-    quote: "I have had very good results with QR678 and no doubts about it.",
+    quote: "I have had very good results with QR678® and no doubts about it.",
     image: "/assets/jpg/doctors/Dr. Kalpana Sarangi.jpg",
   },
   {
@@ -41,7 +41,7 @@ const testimonials = [
     name: "Dr. Vivek Singhal",
     location: "09 Clinic, Kuwait",
     quote:
-      "I have a bunch of patients who have used QR678 post chemotherapy and the results were excellent.",
+      "I have a bunch of patients who have used QR678® post chemotherapy and the results were excellent.",
     image: "/assets/jpg/doctors/Dr. Vivek Singhal.jpg",
   },
   {
@@ -49,7 +49,7 @@ const testimonials = [
     name: "Sqn. Ldr. (Dr.) Aseem Sharma",
     location: "Skin Saga Centre for Dermatology, India",
     quote:
-      "QR678 is a quick procedure that requires no blood involvement, making it painless and eliminating the need for prior numbing.",
+      "QR678® is a quick procedure that requires no blood involvement, making it painless and eliminating the need for prior numbing.",
     image: "/assets/jpg/doctors/Aseem Sharma.png",
   },
   {
@@ -57,7 +57,7 @@ const testimonials = [
     name: "Dr. Jagdish Sakhiya",
     location: "Sakhiya Skin Clinic, India",
     quote:
-      "In AGA patients with multifactorial local pathophysiologies, I have had 90% success rate with QR678.",
+      "In AGA patients with multifactorial local pathophysiologies, I have had 90% success rate with QR678®.",
     image: "/assets/jpg/doctors/Dr. Jagdish Sakhiya.jpg",
   },
 ];
@@ -76,7 +76,7 @@ export default function TestimonialsGrid() {
               <div key={index} className="mb-10 relative">
                 <Card className="flex flex-col h-full p-6 overflow-hidden transition-all duration-300 hover:shadow-lg">
                   {/* Background Quote */}
-                  <div className="absolute top-4 left-4 text-[200px] leading-none text-black/10 font-serif">
+                  <div className="absolute top-0 left-2 text-[200px] leading-none text-black/5 font-serif">
                     &ldquo;
                   </div>
 

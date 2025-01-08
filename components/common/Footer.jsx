@@ -2,10 +2,10 @@ import Image from "next/image";
 import React from "react";
 const footerItems = {
   Company: [
-    { link: "", name: "About" },
-    { link: "", name: "Testimonials" },
-    { link: "", name: "Before/After" },
-    { link: "", name: "Blogs" },
+    { link: "/about-us", name: "About" },
+    { link: "/", name: "Testimonials" },
+    { link: "/products", name: "Before/After" },
+    { link: "https://blog.qr678.com", name: "Blogs" },
   ],
   Region: [
     { link: "", name: "Indonesia" },
@@ -14,10 +14,10 @@ const footerItems = {
     { link: "", name: "Canada" },
   ],
   Help: [
-    { link: "", name: "FAQ" },
-    { link: "", name: "Partner" },
-    { link: "", name: "Become a Trichopreneur" },
-    { link: "", name: "How it works" },
+    { link: "/faq", name: "FAQ" },
+    { link: "/partners", name: "Partner" },
+    { link: "#", name: "Become a Trichopreneur" },
+    { link: "#", name: "How it works" },
   ],
 };
 const Footer = () => {
@@ -51,7 +51,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="javascript:void(0)"
-                      className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                      className="mb-3 inline-block text-base text-gray-7 "
                     >
                       Let’s connect.
                     </a>
@@ -64,7 +64,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="javascript:void(0)"
-                      className="mb-2 inline-block text-base text-gray-7 hover:text-primary"
+                      className="mb-2 inline-block text-base text-gray-7 "
                     >
                       +91 83538 35330
                     </a>
@@ -77,7 +77,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="javascript:void(0)"
-                      className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                      className="mb-3 inline-block text-base text-gray-7 "
                     >
                       +91 9876 543 210
                     </a>

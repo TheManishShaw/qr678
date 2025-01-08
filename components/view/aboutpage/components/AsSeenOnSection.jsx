@@ -18,14 +18,14 @@ const AsSeenOnSection = () => {
               key={index}
               className=" flex flex-wrap items-center justify-center"
             >
-              <Link href={partner.url} target="_blank">
+              <Link href={partner.url} target="_blank" className="w-32 h-32">
                 {" "}
                 <Image
                   src={partner.src || "/assets/png/no-image.png"}
                   alt={partner.name || `Partner Logo ${index + 1}`}
                   width={120}
                   height={40}
-                  className=" object-contain filter  transition-all"
+                  className=" h-full w-full object-contain filter grayscale  transition-all"
                 />
               </Link>
             </div>
@@ -45,9 +45,9 @@ const PartnersImages = [
     url: "https://timesofindia.indiatimes.com/life-style/beauty/the-future-of-hair-restoration-science-innovation-and-a-holistic-shift/articleshow/116626862.cms",
   },
   {
-    src: "/assets/svg/aboutus/bs.svg",
-    name: "BS",
-    url: "",
+    src: "/assets/svg/aboutus/livemint.jpeg",
+    name: "Livemint",
+    url: "https://www.livemint.com/mint-lounge/wellness/androgenetic-alopecia-hair-loss-in-youngsters-iceberg-phenomenon-minoxidil-11723909608450.html",
   },
   {
     src: "/assets/svg/aboutus/tfe.svg",
@@ -65,13 +65,8 @@ const PartnersImages = [
     url: "https://drive.google.com/file/d/11HTBix1ENMTX7uz7Sb92kaQwtCRDARGP/view?usp=sharing",
   },
   {
-    src: "/assets/svg/aboutus/mid-day.svg",
-    name: "mid-day",
-    url: "",
-  },
-  {
-    src: "/assets/svg/aboutus/india.svg",
-    name: "INDIA.COM",
-    url: "",
+    src: "/assets/svg/aboutus/news19.jpg",
+    name: "News9",
+    url: "https://www.news9live.com/health/health-news/from-laser-stimulation-to-microneedling-how-hair-restoration-may-change-in-2025-2782444",
   },
 ];
