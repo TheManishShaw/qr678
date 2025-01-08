@@ -19,7 +19,7 @@ const AboutPage = () => {
       <TimelineSection />
       <ChallengeSection />
       <ProductSection />
-      <LeadershipTeam />
+      {/* <LeadershipTeam /> */}
       {/* <BoardOfDirectors /> */}
       <AsSeenOnSection />
     </div>
