@@ -90,11 +90,11 @@ export default function SuiteAdvantage() {
           </Card>
         </div>
 
-        <div className="flex justify-center mt-12">
+        {/* <div className="flex justify-center mt-12">
           <Button className="bg-primary text-white px-8 py-6 text-lg rounded-xl hover:bg-[#23216A] transition-colors duration-300">
             Download Brochure
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
