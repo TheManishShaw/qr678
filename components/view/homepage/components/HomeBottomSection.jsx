@@ -43,11 +43,11 @@ const HomeBottomSection = () => {
             <h2 className="text-primary text-2xl px-2 md:text-5xl font-medium leading-tight relative z-10 mb-6">
               Want to give your patients the QR678 advantage?
             </h2>
-            <Link href="/suite">
+            {/* <Link href="/suite">
               <Button className="bg-primary hover:bg-primary text-white px-8  text-lg relative z-10">
                 Get Started Here!
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>

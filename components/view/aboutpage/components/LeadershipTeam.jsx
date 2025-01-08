@@ -13,7 +13,7 @@ import React from "react";
 const LeadershipTeam = () => {
   const leaders = [
     {
-      image: "/assets/jpg/doctors/Mr. Indrajit Dutta.jpeg",
+      image: "/assets/jpg/doctors/Mr. Indrajit Dutta.jpg",
       name: "Mr. Indrajit Dutta",
       designation: "Vice President - QR678",
     },
