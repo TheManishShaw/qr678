@@ -31,11 +31,11 @@ const HeroProductSection = () => {
             The QR678 Suite includes a Shampoo, Serum, and Nutraceuticals designed to work with QR678 Neo for even better results.
           </p>
 
-          <Button 
+          {/* <Button 
             className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-md shadow-lg"
           >
             Learn More
-          </Button>
+          </Button> */}
         </div>
       </div>
     </div>

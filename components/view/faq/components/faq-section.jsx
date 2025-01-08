@@ -21,7 +21,7 @@ const categories = [
   "Androgenic Alopecia",
 ];
 
-const faqs =  [
+const faqs = [
   {
     question: "What is QR678 Neo?",
     answer:
@@ -144,25 +144,29 @@ export function FAQSection() {
           ))}
         </div>
 
-       {/* Top Search */}
-       <TopSearchSection/>
+        {/* Top Search */}
+        <TopSearchSection />
         <Separator className="max-w-5xl bg-[#C0C0C0] mx-auto mb-10 " />
         <h3 className="text-4xl text-secondary font-bold mb-8 text-center">
           QR678 Neo
         </h3>
 
         <div className="grid md:grid-cols-2 grid-cols-1 gap-6 container mx-auto">
-          <Accordion type="single" collapsible className="w-full  rounded-md ">
-            {faqs.map((faq, index) => (
+          {faqs.map((faq, index) => (
+            <Accordion
+              key={index}
+              type="single"
+              defaultValue={`item-0`}
+              collapsible
+              className="w-full  rounded-md "
+            >
               <AccordionItem
-                key={index}
                 value={`item-${index}`}
-                className="border-none md:my-8 my-4 shadow-md rounded-md bg-[#F7F9FC]"
+                className="border-none  shadow-md rounded-md bg-[#F7F9FC]"
               >
                 <AccordionTrigger className="flex w-full items-center justify-between px-4 border-b rounded-md gap-4   hover:no-underline ">
                   {/* Question Text */}
                   <span className="text-left text-xl font-semibold text-primary">
-                
                     {faq.question}
                   </span>
                 </AccordionTrigger>
@@ -170,28 +174,8 @@ export function FAQSection() {
                   <p className="mb-4">{faq.answer}</p>
                 </AccordionContent>
               </AccordionItem>
-            ))}
-          </Accordion>
-          <Accordion type="single" collapsible className="w-full  rounded-md ">
-            {faqs.map((faq, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className="border-none md:my-8 my-4 shadow-md rounded-md  bg-[#F7F9FC]"
-              >
-                <AccordionTrigger className="flex w-full items-center justify-between px-4 border-b rounded-md gap-4   hover:no-underline ">
-                  {/* Question Text */}
-                  <span className="text-left text-xl font-semibold text-primary">
-                 
-                    {faq.question}
-                  </span>
-                </AccordionTrigger>
-                <AccordionContent className="pt-4 py-4 px-6 shadow-md text-lg leading-relaxed text-primary">
-                  <p className="mb-4 font-light">{faq.answer}</p>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+            </Accordion>
+          ))}
         </div>
       </div>
     </section>

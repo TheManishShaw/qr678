@@ -92,9 +92,9 @@ const GetStartedSection = () => {
             <h2 className="text-primary text-2xl px-2 md:text-5xl font-medium leading-tight relative z-10 mb-6">
               Want to give your patients the QR678 Suite advantage?
             </h2>
-            <Button className="bg-primary hover:bg-primary text-white px-8  text-lg relative z-10">
+            {/* <Button className="bg-primary hover:bg-primary text-white px-8  text-lg relative z-10">
               Get Started Here!
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>

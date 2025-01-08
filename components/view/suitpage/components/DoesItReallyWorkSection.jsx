@@ -1,7 +1,8 @@
-'use client'
+"use client";
 
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const DoesItReallyWorkSection = () => {
   return (
@@ -24,10 +25,13 @@ const DoesItReallyWorkSection = () => {
               />
             </div>
             <h3 className="text-primary text-xl sm:text-2xl font-bold">
-              Better Hair Regrowth<br />by 24.8%
+              Better Hair Regrowth
+              <br />
+              by 24.8%
             </h3>
             <p className="text-secondary/80 text-sm sm:text-base leading-relaxed">
-              24.8% improvement in Global Hair Growth and Quality scores while using the QR678 Suite with QR678 Neo therapy.
+              24.8% improvement in Global Hair Growth and Quality scores while
+              using the QR678 Suite with QR678 Neo therapy.
             </p>
           </div>
 
@@ -43,10 +47,13 @@ const DoesItReallyWorkSection = () => {
               />
             </div>
             <h3 className="text-primary text-xl sm:text-2xl font-bold">
-              80%+ Success<br />Rate
+              80%+ Success
+              <br />
+              Rate
             </h3>
             <p className="text-secondary/80 text-sm sm:text-base leading-relaxed">
-              Hair Rub Test showed reduced hair fall from 4.54* (baseline) to 1.49* (post-therapy) for over 80% users.
+              Hair Rub Test showed reduced hair fall from 4.54* (baseline) to
+              1.49* (post-therapy) for over 80% users.
             </p>
           </div>
 
@@ -62,7 +69,8 @@ const DoesItReallyWorkSection = () => {
               />
             </div>
             <h3 className="text-primary text-xl sm:text-2xl font-bold">
-              Strengthens &<br />Revitalizes Hair
+              Strengthens &<br />
+              Revitalizes Hair
             </h3>
             <p className="text-secondary/80 text-sm sm:text-base leading-relaxed">
               Reduces hair fall, improves texture, shine, and density.
@@ -71,20 +79,22 @@ const DoesItReallyWorkSection = () => {
         </div>
 
         <div className="text-center space-y-6 sm:space-y-8">
-          <Button 
-            className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg shadow-lg"
-          >
-            View Full Research
-          </Button>
-          
+          <Link href={"/research"}>
+            <Button className="bg-primary hover:bg-primary/90 text-white px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg shadow-lg">
+              View Full Research
+            </Button>
+          </Link>
+
           <p className="text-secondary/60 text-xs sm:text-sm max-w-4xl mx-auto">
-            *Reference: Kapoor, R., & Shome, D. (2024, August). Evaluation of the effectiveness of the QR678 Suite in combination with QR678 Neo therapy for managing Androgenetic Alopecia: A prospective clinical study.
+            *Reference: Kapoor, R., & Shome, D. (2024, August). Evaluation of
+            the effectiveness of the QR678 Suite in combination with QR678 Neo
+            therapy for managing Androgenetic Alopecia: A prospective clinical
+            study.
           </p>
         </div>
       </div>
-    </section>    
-  )
-}
+    </section>
+  );
+};
 
-export default DoesItReallyWorkSection
-
+export default DoesItReallyWorkSection;
