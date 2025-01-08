@@ -4,7 +4,7 @@ import React from "react";
 import { TransformBeforeAfterCarousel } from "./components/TransformBeforeAfterCarousel";
 import { ScientificPublications } from "./components/ScientificPublications";
 import { Card, CardContent } from "@/components/ui/card";
-import { Cog, FileText, Microscope } from 'lucide-react';
+import { Cog, FileText, Microscope } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 
@@ -12,16 +12,17 @@ const ProductPage = () => {
   return (
     <div className="">
       <section className="relative ">
-        <div
-          className="pt-24   md:pt-72  inset-0 bg-[url('/assets/png/prodcutpage/hero-image.png')] bg-cover w-full  mix-blend-multiply md:bg-center"
-        
-        >
+        <div className="pt-24   md:pt-72  inset-0 bg-[url('/assets/png/prodcutpage/hero-image.png')] bg-cover w-full  mix-blend-multiply md:bg-center">
           <div className="container mx-auto px-4 md:mt-30">
             <div className="grid md:grid-cols-2 gap-4 items-center">
               <div className="space-y-6 text-center md:text-left">
                 <h1 className="heading-1 leading-10 text-4xl md:text-6xl lg:text-[80px] ">
-                  From the Womb <br className="hidden md:inline" /> of Science, a <br className="hidden md:inline" />
-                  <span className="bg-[#FFBF1A] px-2"> Hair Regrowth</span>{" "}
+                  From the Womb <br className="hidden md:inline" /> of Science,
+                  a <br className="hidden md:inline" />
+                  <span className="bg-[#FFBF1A] px-2 ">
+                    {" "}
+                    Hair Regrowth
+                  </span>{" "}
                   Revolution is <br className="hidden md:inline" />
                   Born.
                 </h1>
@@ -29,7 +30,6 @@ const ProductPage = () => {
                   A patented biomimetic polypeptides formulation designed to
                   target hair follicles for QR678 hair growth
                 </p>
-
               </div>
             </div>
           </div>
@@ -214,78 +214,79 @@ const ProductPage = () => {
 
           {/* Benefits Section */}
           <section>
-          <div className="grid md:grid-cols-2 gap-8 items-center text-center md:text-left">
-            <Card className=" border-none shadow-none bg-transparent">
-              <Image
-                src="/assets/png/product.png"
-                alt="QR678 Suite Products"
-                width={500}
-                height={500}
-                className="w-full h-auto"
-              />
-            </Card>
+            <div className="grid md:grid-cols-2 gap-8 items-center text-center md:text-left">
+              <Card className=" border-none shadow-none bg-transparent">
+                <Image
+                  src="/assets/png/product.png"
+                  alt="QR678 Suite Products"
+                  width={500}
+                  height={500}
+                  className="w-full h-auto"
+                />
+              </Card>
 
-            <div className="space-y-8">
-              <div className="flex gap-4 items-start">
-                <Image
-                  src="/assets/svg/productpage/arrowIcon.svg"
-                  className="mt-2"
-                  alt="icon"
-                  width={20}
-                  height={20}
-                />
-                <div className="space-y-2">
-                  <h3 className="text-3xl font-semibold text-secondary">
-                    Better Hair Regrowth by 24.8%
-                  </h3>
-                  <p className="text-indigo-900 text-xl">
-                    24.8% improvement in Global Hair Growth and Quality scores
-                    while using the QR678 Suite with QR678 Neo therapy.
-                  </p>
+              <div className="space-y-8">
+                <div className="flex gap-4 items-start">
+                  <Image
+                    src="/assets/svg/productpage/arrowIcon.svg"
+                    className="mt-2"
+                    alt="icon"
+                    width={20}
+                    height={20}
+                  />
+                  <div className="space-y-2">
+                    <h3 className="text-3xl font-semibold text-secondary">
+                      Better Hair Regrowth by 24.8%
+                    </h3>
+                    <p className="text-indigo-900 text-xl">
+                      24.8% improvement in Global Hair Growth and Quality scores
+                      while using the QR678 Suite with QR678 Neo therapy.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start">
+                  <Image
+                    src="/assets/svg/productpage/arrowIcon.svg"
+                    className="mt-2"
+                    alt="icon"
+                    width={20}
+                    height={20}
+                  />
+                  <div className="space-y-2">
+                    <h3 className="text-3xl font-semibold text-secondary">
+                      80%+ Success Rate
+                    </h3>
+                    <p className="text-indigo-900 text-xl">
+                      Hair Rub Test showed reduced hair fall from 4.54*
+                      (baseline) to 1.49* (post-therapy) for over 80% users.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start">
+                  <Image
+                    src="/assets/svg/productpage/arrowIcon.svg"
+                    className="mt-2"
+                    alt="icon"
+                    width={20}
+                    height={20}
+                  />
+                  <div className="space-y-2">
+                    <h3 className="text-3xl font-semibold text-secondary">
+                      Strengthens & Revitalizes Hair
+                    </h3>
+                    <p className="text-indigo-900 text-xl">
+                      Reduces hair fall, improves texture, shine, and density.
+                      Can we add some more lines here?
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex gap-4 items-start">
-                <Image
-                  src="/assets/svg/productpage/arrowIcon.svg"
-                  className="mt-2"
-                  alt="icon"
-                  width={20}
-                  height={20}
-                />
-                <div className="space-y-2">
-                  <h3 className="text-3xl font-semibold text-secondary">
-                    80%+ Success Rate
-                  </h3>
-                  <p className="text-indigo-900 text-xl">
-                    Hair Rub Test showed reduced hair fall from 4.54* (baseline)
-                    to 1.49* (post-therapy) for over 80% users.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-4 items-start">
-                <Image
-                  src="/assets/svg/productpage/arrowIcon.svg"
-                  className="mt-2"
-                  alt="icon"
-                  width={20}
-                  height={20}
-                />
-                <div className="space-y-2">
-                  <h3 className="text-3xl font-semibold text-secondary">
-                    Strengthens & Revitalizes Hair
-                  </h3>
-                  <p className="text-indigo-900 text-xl">
-                    Reduces hair fall, improves texture, shine, and density. Can
-                    we add some more lines here?
-                  </p>
-                </div>
-              </div>
-
-            
             </div>
-          </div>
             <p className="text-primary text-xl mt-4 p-2">
-            *Reference: Kapoor, R., & Shome, D. (2024, August). Evaluation of the effectiveness of the QR678 Suite in combination with QR678 Neo therapy for managing Androgenetic Alopecia: A prospective clinical study.
+              *Reference: Kapoor, R., & Shome, D. (2024, August). Evaluation of
+              the effectiveness of the QR678 Suite in combination with QR678 Neo
+              therapy for managing Androgenetic Alopecia: A prospective clinical
+              study.
             </p>
           </section>
 
@@ -310,13 +311,14 @@ const ProductPage = () => {
                   className="w-full h-auto"
                 />
                 <div className="text-center mt-4 w-/">
-                <Link href="/research">
-                 <Button
-                    variant="outline"
-                    className="text-indigo-900 rounded-[5px] bg-gray-400/20 border-secondary"
-                  >
-                    View All Research
-                  </Button></Link> 
+                  <Link href="/research">
+                    <Button
+                      variant="outline"
+                      className="text-indigo-900 rounded-[5px] bg-gray-400/20 border-secondary"
+                    >
+                      View All Research
+                    </Button>
+                  </Link>
                 </div>
               </Card>
 
@@ -351,4 +353,3 @@ const ProductPage = () => {
 };
 
 export default ProductPage;
-
