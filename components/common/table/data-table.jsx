@@ -34,6 +34,8 @@ export function DataTable({ columns, data }) {
   const [sorting, setSorting] = React.useState([]);
   const [columnFilters, setColumnFilters] = React.useState([]);
   const [locations, setLocations] = React.useState([]);
+  const [pageSize, setPageSize] = React.useState(10); // Default page size
+
   const table = useReactTable({
     data,
     columns,
@@ -47,7 +49,13 @@ export function DataTable({ columns, data }) {
       sorting,
       columnFilters,
     },
+    initialState: {
+      pagination: {
+        pageSize: pageSize, // Set initial page size
+      },
+    },
   });
+
   const memoizedData = React.useMemo(() => data, [data]);
 
   React.useEffect(() => {
@@ -144,23 +152,28 @@ export function DataTable({ columns, data }) {
           </TableBody>
         </Table>
       </div>
-      <div className="flex text-primary  items-center justify-end space-x-2 py-4">
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => table.previousPage()}
-          disabled={!table.getCanPreviousPage()}
-        >
-          Previous
-        </Button>
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => table.nextPage()}
-          disabled={!table.getCanNextPage()}
-        >
-          Next
-        </Button>
+      <div className="flex items-center justify-end space-x-2 py-4">
+        {/* Page Size Selector */}
+
+        {/* Pagination Buttons */}
+        <div className="flex items-center space-x-2">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => table.previousPage()}
+            disabled={!table.getCanPreviousPage()}
+          >
+            Previous
+          </Button>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => table.nextPage()}
+            disabled={!table.getCanNextPage()}
+          >
+            Next
+          </Button>
+        </div>
       </div>
     </div>
   );

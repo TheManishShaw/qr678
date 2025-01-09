@@ -23,7 +23,7 @@ const HomePage = () => {
       <StatsSection />
       <FeaturesPartners />
       {/* <HappyCustomersSlider/> */}
-      <FloatingActionButtons />
+
       {/* <UntappedSection /> */}
       <ProductSection />
       <AsSeenOnSection />

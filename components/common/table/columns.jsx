@@ -35,16 +35,28 @@ export const columns = [
   },
 
   {
-    accessorKey: "email",
-    header: "Email",
-  },
-  {
     accessorKey: "address",
     header: "Address",
   },
   {
     accessorKey: "phone_no",
     header: "Contact",
+    cell: ({ row }) => {
+      const phoneNo = row.original.phone_no;
+      return (
+        <a
+          href={`tel:${phoneNo}`}
+          style={{
+            whiteSpace: "nowrap",
+            color: "blue",
+            textDecoration: "underline",
+            cursor: "pointer",
+          }}
+        >
+          {phoneNo}
+        </a>
+      );
+    },
   },
   {
     id: "id",
