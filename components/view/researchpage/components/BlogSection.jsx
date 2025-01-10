@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
+import Link from 'next/link'
 
 export default function BlogSection() {
   return (
@@ -35,9 +36,9 @@ export default function BlogSection() {
             alopecia.
           </p>
           <div className="flex items-center">
-            <button className="rounded-md bg-[#2E3192] px-8 py-3 font-semibold text-white transition-colors hover:bg-[#24266E]">
+            <Link href="https://blog.qr678.com/male-pattern-alopecia/" target='_blank' className="rounded-md bg-[#2E3192] px-8 py-3 font-semibold text-white transition-colors hover:bg-[#24266E]">
               Read Blog
-            </button>
+            </Link>
           </div>
         </div>
 

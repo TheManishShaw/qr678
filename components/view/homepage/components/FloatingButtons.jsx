@@ -10,7 +10,7 @@ export default function FloatingActionButtons() {
     <div className="fixed bg-primary rounded-tl-3xl rounded-bl-3xl border-primary border-[1px] border-r-0 right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col ">
       {/* Call Button */}
       <div className="bg-primary  p-4 rounded-tl-3xl">
-        <Link href="tel:0987654321">
+        <Link href="tel:+919137127855">
         <button
           className="group flex flex-col items-center"
           aria-label="Call us"

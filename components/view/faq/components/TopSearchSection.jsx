@@ -7,19 +7,19 @@ const TopSearchSection = () => {
     {
       question: "What is QR678 Neo?",
       answer:
-        "Many people come with different schedules, which means that doctors can start and end their day as they choose. Many people come with different schedules, which means that doctors can start and end their day as they choose. Many people come with different schedules, which means that doctors can start and end their day as they choose.",
+        "The QR678®️ Neo is a proprietary, first-in-class hair loss and hair regrowth therapy that has revolutionized the treatment of hair loss in alopecia. This formulation has been named QR678®️ Neo inspired by the new generation's ubiquitous presence of the “Quick Response“ QR code. 678 in Morse Code signifies “there is no answer.” This formulation has been named QR678™️ to signify a Quick Response to a disease which earlier had no answer.",
       icon: "/assets/svg/faq/briefcase.svg",
     },
     {
       question: "Where are you located?",
       answer:
-        "We have centers in a number region of our opportunities that aren't limited by geographic location. This can be especially helpful.",
+        "We are currently available in Ahmedabad, Bangalore, Chennai, Delhi, Hyderabad, Jaipur, Kolkata, Madurai, Mumbai, Nagpur, Nashik, Pune, Surat, Vadodara, Vishakhapatnam and many more. (Link 'many more' with the partners' page).",
       icon: "/assets/svg/faq/location_pin.svg",
     },
     {
       question: "Patents available?",
       answer:
-        "We have work available continuously in different locations, which embraces diversity and inclusion by hiring people from different backgrounds.",
+        "QR678®️ is a patented, regulatory-approved treatment with a 90% success rate. It’s a quick, non-surgical procedure backed by 13+ clinical trials, ensuring proven efficacy.",
       icon: "/assets/svg/faq/people_group.svg",
     },
   ];

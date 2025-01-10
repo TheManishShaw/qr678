@@ -32,13 +32,13 @@ const HeroSectionResearch = () => {
             QR678: The cutting-edge hair regrowth solution
           </p>
           <div className="mt-8">
-            <Button
+            {/* <Button
               size="lg"
               variant="secondary"
               className="rounded-full bg-white text-[#0A0B3B] hover:bg-white/90"
             >
               Let&apos;s Talk
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
