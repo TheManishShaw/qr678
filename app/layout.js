@@ -18,10 +18,17 @@ const geistMono = localFont({
 
 export const metadata = {
   title:
-    "QR678- Hair Growth Solution, Best Hair Clinics for all Hair Problem in India",
+    "Hair Growth Solution, Best Hair Clinics for all Hair Problem in India-QR678",
   description:
-    "Are you looking for best hair clinics in India? QR 678 is one of the best hair growth solutions to get rid of every hair problem by the top hair specialist doctors and experts. Book your appointment today!",
-};
+    "Are you looking for the best hair clinics in India? QR678 is one of the best hair growth solutions to get rid of every hair problem by the top hair specialist doctors and experts. Book your appointment today!",
+    keywords:[
+      "Hair growth",
+      "Hair clinics”,“hair problem solution”,“hair solution”,“Hair care”,“Hair treatment"
+
+    ],
+    author:"Author"
+  };
+
 
 export default function RootLayout({ children }) {
   return (
