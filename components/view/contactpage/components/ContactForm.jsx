@@ -5,6 +5,7 @@ import { Loader2 } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import axios from "axios";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -63,7 +64,7 @@ export default function ContactForm() {
       email: "",
       authorise: false,
     },
-  },);
+  });
 
   const watchCountry = form.watch("country");
   const watchState = form.watch("state");
@@ -98,23 +99,22 @@ export default function ContactForm() {
         ],
       };
 
-      const response = await fetch(
-        "https://www.kenyt.ai/dashboardApi/api/crm/create-deal?organizationId=8426761&authToken=0b68191e-3312-4954-8afe-271a10b7df90",
+      const response = await axios.post(
+        "https://www.kenyt.ai/dashboardApi/api/crm/create-deal",
+        payload,
         {
-          method: "POST",
+          params: {
+            organizationId: "8426761",
+            authToken: "0b68191e-3312-4954-8afe-271a10b7df90",
+          },
           headers: {
             "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
           },
-          body: JSON.stringify(payload),
         }
       );
 
-      if (!response.ok) {
-        throw new Error("Failed to submit form");
-      }
-
-      const responseData = await response.json();
-      console.log("API Response:", responseData);
+      console.log("API Response:", response.data);
 
       toast.success("Form submitted successfully We'll get back to you soon!");
       form.reset();
