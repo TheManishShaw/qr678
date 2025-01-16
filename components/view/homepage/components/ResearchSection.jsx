@@ -26,7 +26,7 @@ export default function ResearchSection() {
             </p>
             <div className="inline-block bg-[#FFD481] px-2 py-1 sm:px-3 sm:py-1 md:px-4">
               <p className="text-xs sm:text-sm md:text-base text-gray-900 font-bold">
-                13+ clinical studies
+                14+ clinical studies
               </p>
             </div>
           </div>
@@ -36,7 +36,7 @@ export default function ResearchSection() {
               size="lg"
               className="mt-4 sm:mt-6 lg:mt-8 bg-white text-primary rounded-lg font-bold text-xs sm:text-sm md:text-base px-4 py-2 sm:px-6 sm:py-3"
             >
-              QR678 Research
+              View Research
             </Button>
           </Link>
         </div>

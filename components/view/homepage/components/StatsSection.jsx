@@ -58,12 +58,12 @@ const stats = [
     description: "Patent",
   },
   {
-    title: "15+",
+    title: "16+",
     src: "/assets/svg/homepage/home-stats-yearofresearch.svg",
     description: "Years of Research",
   },
   {
-    title: "15+",
+    title: "13+",
     src: "/assets/svg/homepage/home-stats-clinical.svg",
     description: "Clinical Studies Published in Peer-Reviewed Journals",
   },

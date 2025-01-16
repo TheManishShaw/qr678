@@ -35,11 +35,14 @@ const timelineData = [
     title: "The rigour",
     description: (
       <div>
-        <p className="text-lg text-primary mb-6 leading-relaxed">
+        <p className="text-lg text-primary capitalize mb-6 leading-relaxed">
           In-clinic user trial of 1000 patients of both genders to test
           effectiveness and safety of the formulation.
         </p>
-        <Link href="/research"  className="bg-primary text-white text-[18px] py-2 px-6 rounded-[8px] font-semibold hover:bg-primary transition">
+        <Link
+          href="/research"
+          className="bg-primary text-white text-[18px] py-2 px-6 rounded-[8px] font-semibold hover:bg-primary transition"
+        >
           View Research
         </Link>
       </div>
@@ -166,7 +169,7 @@ function TimelineItem({ item, index }) {
             className="space-y-4"
           >
             <h3 className="text-secondary text-3xl font-bold">{item.title}</h3>
-            <div className="text-primary text-xl leading-relaxed">
+            <div className="text-primary capitalize text-xl leading-relaxed">
               {item.description}
             </div>
           </motion.div>

@@ -1,5 +1,5 @@
-import Image from "next/image"
-import { Check } from 'lucide-react'
+import Image from "next/image";
+import { Check } from "lucide-react";
 
 export function ScientificPublications() {
   return (
@@ -14,7 +14,7 @@ export function ScientificPublications() {
       </div>
       <div className="space-y-6">
         <h3 className="text-lg font-semibold">
-          13+ clinical studies published in top scientific journals
+          14+ clinical studies published in top scientific journals
         </h3>
         <ul className="space-y-4">
           <li className="flex items-start gap-2">
@@ -50,6 +50,5 @@ export function ScientificPublications() {
         </ul>
       </div>
     </div>
-  )
+  );
 }
-

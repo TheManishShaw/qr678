@@ -3,21 +3,21 @@ import React from "react";
 const footerItems = {
   Company: [
     { link: "/about-us", name: "About" },
-    { link: "/", name: "Testimonials" },
+    // { link: "/", name: "Testimonials" },
     { link: "/products", name: "Before/After" },
     { link: "https://blog.qr678.com", name: "Blogs" },
   ],
-  Region: [
-    { link: "", name: "Indonesia" },
-    { link: "", name: "Singapore" },
-    { link: "", name: "Hongkong" },
-    { link: "", name: "Canada" },
-  ],
+  // Region: [
+  //   { link: "", name: "Indonesia" },
+  //   { link: "", name: "Singapore" },
+  //   { link: "", name: "Hongkong" },
+  //   { link: "", name: "Canada" },
+  // ],
   Help: [
     { link: "/faq", name: "FAQ" },
-    { link: "/partners", name: "Partner" },
-    { link: "#", name: "Become a Trichopreneur" },
-    { link: "#", name: "How it works" },
+    { link: "/contact-us", name: "Contact Us" },
+    // { link: "#", name: "Become a Trichopreneur" },
+    // { link: "#", name: "How it works" },
   ],
 };
 const Footer = () => {
@@ -135,7 +135,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="w-full px-2 ">
+            {/* <div className="w-full px-2 ">
               <div className="mb-10 w-full">
                 <h4 className="mb-3 text-lg font-semibold text-white">
                   Region
@@ -153,7 +153,7 @@ const Footer = () => {
                   ))}
                 </ul>
               </div>
-            </div>
+            </div> */}
             <div className="w-full px-2 ">
               <div className="mb-10 w-full">
                 <h4 className="mb-3 text-lg font-semibold text-white">Help</h4>

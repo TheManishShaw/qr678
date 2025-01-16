@@ -7,14 +7,6 @@ import Image from "next/image";
 const testimonials = [
   {
     id: 1,
-    name: "Dr. Sarah Alenezi",
-    location: "Bayan Derma, Kuwait",
-    quote:
-      "I have been using QR678® for chronic telogen effluvium, especially in adolescents.",
-    image: "/assets/jpg/doctors/Dr. Sarah Alenezi.jpg",
-  },
-  {
-    id: 2,
     name: "Dr. Michael Gold",
     location: "Gold Skin Care, USA",
     quote:
@@ -22,13 +14,22 @@ const testimonials = [
     image: "/assets/jpg/doctors/Dr. Michael Gold.jpeg",
   },
   {
-    id: 3,
-    name: "Dr. Sidharth Sonthalia",
-    location: "Skinnocence, India",
+    id: 2,
+    name: "Dr. Jagdish Sakhiya",
+    location: "Sakhiya Skin Clinic, India",
     quote:
-      "QR678® therapy in my patients offered 'definitive benefit' after the very first session; gross and trichoscopic confirmed progressive efficacy; and fantastic patient compliance.",
-    image: "/assets/jpg/doctors/Dr. Siddharth Sonthalia.jpg",
+      "In AGA patients with multifactorial local pathophysiologies, I have had 90% success rate with QR678®.",
+    image: "/assets/jpg/doctors/Dr. Jagdish Sakhiya.jpg",
   },
+
+  // {
+  //   id: 3,
+  //   name: "Dr. Sidharth Sonthalia",
+  //   location: "Skinnocence, India",
+  //   quote:
+  //     "QR678® therapy in my patients offered 'definitive benefit' after the very first session; gross and trichoscopic confirmed progressive efficacy; and fantastic patient compliance.",
+  //   image: "/assets/jpg/doctors/Dr. Siddharth Sonthalia.jpg",
+  // },
   {
     id: 4,
     name: "Dr. Kalpana Sarangi",
@@ -54,11 +55,11 @@ const testimonials = [
   },
   {
     id: 7,
-    name: "Dr. Jagdish Sakhiya",
-    location: "Sakhiya Skin Clinic, India",
+    name: "Dr. Sarah Alenezi",
+    location: "Bayan Derma, Kuwait",
     quote:
-      "In AGA patients with multifactorial local pathophysiologies, I have had 90% success rate with QR678®.",
-    image: "/assets/jpg/doctors/Dr. Jagdish Sakhiya.jpg",
+      "I have been using QR678® for chronic telogen effluvium, especially in adolescents.",
+    image: "/assets/jpg/doctors/Dr. Sarah Alenezi.jpg",
   },
 ];
 

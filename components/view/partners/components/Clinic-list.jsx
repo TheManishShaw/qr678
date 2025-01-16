@@ -73,7 +73,8 @@ const ClinicList = () => {
               Our Partners
             </h1>
             <p className="text-secondary">
-              Find a QR678® certified clinic near you
+              Find clinic partners offering QR678® hair regrowth therapy near
+              you
             </p>
           </div>
         </div>

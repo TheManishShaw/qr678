@@ -297,7 +297,7 @@ const ProductPage = () => {
                 Seriously Scientific
               </h2>
               <p className="text-xl text-indigo-900">
-                13+ clinical studies published in top scientific journals
+                14+ clinical studies published in top scientific journals
               </p>
             </div>
 

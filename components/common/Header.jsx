@@ -86,9 +86,9 @@ const DesktopNav = () => {
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-secondary ">
                   QR678 Neo®
                 </h5>
-                <p className="font-normal text-primary">
+                {/* <p className="font-normal text-primary">
                   One of the best hair regrowth product.
-                </p>
+                </p> */}
                 <Image
                   src="/assets/svg/homepage/neo-product-image.svg"
                   alt="Product Image"
@@ -108,9 +108,9 @@ const DesktopNav = () => {
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-secondary ">
                   QR678 Suite®
                 </h5>
-                <p className="font-normal text-primary">
+                {/* <p className="font-normal text-primary">
                   One of the best hair regrowth product.
-                </p>
+                </p> */}
                 <Image
                   className="mt-10"
                   src="/assets/svg/homepage/suite-product-image.svg"

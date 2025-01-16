@@ -27,7 +27,7 @@ const AboutHeroSection = () => {
                       <br />
                       Bettering
                       <br />
-                      Lives.
+                      Lives
                     </span>
                     <span className="absolute bottom-5 -left-2 w-40 md:w-64">
                       <Image
