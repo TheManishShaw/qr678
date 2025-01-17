@@ -78,44 +78,91 @@ export default function ContactForm() {
     form.setValue("city", "");
   }, [watchState, form]);
 
+  // async function onSubmit(data) {
+  //   setIsSubmitting(true);
+  //   try {
+  //     const payload = {
+  //       BotName: "QR678_Kolkata",
+  //       LeadPhone: data.phone,
+  //       LeadEmail: data.email,
+  //       Source: "Contact form",
+  //       CustomProperties: [
+  //         { Name: "First name", Value: data.firstName },
+  //         { Name: "Last name", Value: data.lastName },
+  //         { Name: "State", Value: data.state },
+  //         { Name: "City/Town", Value: data.city },
+  //         { Name: "Country", Value: data.country },
+  //         { Name: "Country Code", Value: data.countryCode },
+  //         { Name: "Are you a", Value: data.type },
+  //         { Name: "EmailAddress", Value: data.email },
+  //         { Name: "MobileNumber", Value: data.phone },
+  //       ],
+  //     };
+
+  //     const response = await axios.post(
+  //       "https://www.kenyt.ai/dashboardApi/api/crm/create-deal",
+  //       payload,
+  //       {
+  //         params: {
+  //           organizationId: "8426761",
+  //           authToken: "0b68191e-3312-4954-8afe-271a10b7df90",
+  //         },
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //           "Access-Control-Allow-Origin": "*",
+  //         },
+  //       }
+  //     );
+
+  //     console.log("API Response:", response.data);
+
+  //     toast.success("Form submitted successfully We'll get back to you soon!");
+  //     form.reset();
+  //   } catch (error) {
+  //     console.error("Submission error:", error);
+  //     toast.error("Failed to submit form. Please try again.");
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // }
+
   async function onSubmit(data) {
     setIsSubmitting(true);
     try {
       const payload = {
-        BotName: "QR678_Kolkata",
-        LeadPhone: data.phone,
-        LeadEmail: data.email,
+        BotName: "Kenyt_Product",
+        LeadPhone: "9988778844",
+        LeadEmail: "sample@gmail.com",
         Source: "Contact form",
         CustomProperties: [
-          { Name: "First name", Value: data.firstName },
-          { Name: "Last name", Value: data.lastName },
-          { Name: "State", Value: data.state },
-          { Name: "City/Town", Value: data.city },
-          { Name: "Country", Value: data.country },
-          { Name: "Country Code", Value: data.countryCode },
-          { Name: "Are you a", Value: data.type },
-          { Name: "EmailAddress", Value: data.email },
-          { Name: "MobileNumber", Value: data.phone },
+          // { Name: "First name", Value: data.firstName },
+          // { Name: "Last name", Value: data.lastName },
+          // { Name: "State", Value: data.state },
+          // { Name: "City/Town", Value: data.city },
+          // { Name: "Country", Value: data.country },
+          // { Name: "Country Code", Value: data.countryCode },
+          // { Name: "Are you a", Value: data.type },
+          // { Name: "EmailAddress", Value: data.email },
+          // { Name: "MobileNumber", Value: data.phone },
         ],
       };
-
+  
       const response = await axios.post(
         "https://www.kenyt.ai/dashboardApi/api/crm/create-deal",
         payload,
         {
           params: {
-            organizationId: "8426761",
-            authToken: "0b68191e-3312-4954-8afe-271a10b7df90",
+            organizationId: "1234567",
+            authToken: "acbhnsd-dsads-dsad-greh-nghdsajbgkjfnd",
           },
           headers: {
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
           },
-        }
+        },
       );
-
+  
       console.log("API Response:", response.data);
-
+  
       toast.success("Form submitted successfully We'll get back to you soon!");
       form.reset();
     } catch (error) {
@@ -126,10 +173,11 @@ export default function ContactForm() {
     }
   }
 
+
   return (
-    <Card className="w-full border border-secondary max-w-4xl mx-auto">
+    <Card  className="w-full border border-secondary max-w-4xl mx-auto">
       <CardContent className="p-6">
-        <div className="text-center mb-8">
+        <div id="contactForm"  className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl font-semibold text-primary">
             Get in Touch with Us
           </h1>

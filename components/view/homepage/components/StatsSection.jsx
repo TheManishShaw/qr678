@@ -8,7 +8,7 @@ export default function StatsSection() {
           <div className="w-full md:w-2/3 lg:w-1/2 max-w-2xl">
             <p className="text-primary text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight sm:leading-tight md:leading-[3rem] lg:leading-[3.6rem]">
               <span className="text-primary font-bold">
-                OR678<sup>® </sup>
+                QR678<sup>® </sup>
               </span>
               products have been used by{" "}
               <span className="text-secondary font-bold">1500+ doctors</span> to

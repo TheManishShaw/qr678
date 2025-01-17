@@ -43,7 +43,7 @@ const AboutHeroSection = () => {
               </div>
 
               <p className=" text-sm lg:text-xl max-w-[300px] sm:max-w-[400px] text-secondary">
-                At QR678, we innovate to craft solutions that go beyond just
+                At QR678<sup>® </sup>, we innovate to craft solutions that go beyond just
                 better hair and skin;
                 <br />
                 they better lives.

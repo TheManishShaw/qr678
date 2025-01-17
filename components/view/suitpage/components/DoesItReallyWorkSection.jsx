@@ -8,7 +8,7 @@ const DoesItReallyWorkSection = () => {
   return (
     <section className="relative w-full py-12 sm:py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-primary text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 md:mb-16">
+        <h2 className="text-primary text-3xl capitalize sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 md:mb-16">
           Does it Really Work?
         </h2>
 
@@ -25,12 +25,12 @@ const DoesItReallyWorkSection = () => {
               />
             </div>
             <h3 className="text-primary text-xl sm:text-2xl font-bold">
-              Better Hair Regrowth
               <br />
-              by 24.8%
+              Better Hair Regrowth
+            
             </h3>
             <p className="text-secondary/80 text-sm sm:text-base leading-relaxed">
-              24.8% improvement in Global Hair Growth and Quality scores while
+             improvement in Global Hair Growth and Quality scores while
               using the QR678 Suite with QR678 Neo therapy.
             </p>
           </div>

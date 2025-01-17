@@ -62,7 +62,7 @@ const timelineData = [
   {
     year: "2019",
     title: "The accolades follow",
-    description: "Indian patent & FDA approval for manufacturing of QR678 Neo.",
+    description: "Indian patent & FDA approval for manufacturing of QR678® Neo.",
     icon: "/assets/svg/aboutus/test_tube.svg",
     position: "right",
     progress: 45,

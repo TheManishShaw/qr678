@@ -15,27 +15,27 @@ const LeadershipTeam = () => {
     {
       image: "/assets/jpg/doctors/Mr. Indrajit Dutta.jpg",
       name: "Mr. Indrajit Dutta",
-      designation: "Vice President - QR678",
+      designation: "Vice President - QR678®",
     },
     {
       image: "/assets/jpg/about/Vaijayanti Naidu.jpeg",
       name: "Mrs. Vaijayanti Naidu",
-      designation: "DGM-BD & Strategic Alliances - QR678",
+      designation: "DGM-BD & Strategic Alliances - QR678®",
     },
     {
       image: "/assets/jpg/about/Dr Reshma Mallya.jpeg",
       name: "Dr. Reshma Mallya",
-      designation: "DGM Marketing - QR678",
+      designation: "DGM Marketing - QR678®",
     },
     {
       image: "/assets/jpg/about/Dr Raji Image.JPG",
       name: "Dr. Raji Patil",
-      designation: "AGM, Medical Affairs - QR678",
+      designation: "AGM, Medical Affairs - QR678®",
     },
     {
       image: "/assets/jpg/about/Sridhar 1.jpeg",
       name: "Mr. Sridhar Ranganathan",
-      designation: "Board Advisor - QR678",
+      designation: "Board Advisor - QR678®",
     },
   ];
   return (
