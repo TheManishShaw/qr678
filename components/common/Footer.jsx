@@ -63,7 +63,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="javascript:void(0)"
+                      href="tel:+918353835330"
                       className="mb-2 inline-block text-base text-gray-7 "
                     >
                       +91 83538 35330
@@ -79,7 +79,7 @@ const Footer = () => {
                       href="javascript:void(0)"
                       className="mb-3 inline-block text-base text-gray-7 "
                     >
-                      +91 9876 543 210
+                      +91 83538 35330
                     </a>
                   </li>
                 </ul>
@@ -96,10 +96,7 @@ const Footer = () => {
                       href="javascript:void(0)"
                       className="mb-3 inline-block text-base "
                     >
-                      1st & 2nd Floor, Navratnamala Cooperative Housing Society
-                      Limited, First Floor CTS No 6946 , CST Road, Back Side Of,
-                      Bandra Kurla Complex, Santacruz East, Mumbai, Maharashtra
-                      400098
+                     Kalina, Mumbai
                     </a>
                   </li>
                 </ul>
@@ -107,10 +104,10 @@ const Footer = () => {
                 <ul>
                   <li>
                     <a
-                      href="javascript:void(0)"
+                      href="mailto:tp3@qr678.hair"
                       className="mb-3 inline-block text-base "
                     >
-                      info@qr678.com
+                      tp3@qr678.hair
                     </a>
                   </li>
                 </ul>

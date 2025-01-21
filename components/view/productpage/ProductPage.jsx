@@ -114,7 +114,7 @@ const ProductPage = () => {
               </div>
               <h3 className="heading-2">Clinically Proven</h3>
               <p className="sub-heading">
-                Backed by 13+ rigorous clinical trials
+                Backed by 14+ rigorous clinical trials
               </p>
             </div>
             <div className="text-center space-y-4">
@@ -236,10 +236,10 @@ const ProductPage = () => {
                   />
                   <div className="space-y-2">
                     <h3 className="text-3xl font-semibold text-secondary">
-                      Better Hair Regrowth by 24.8%
+                      Better Hair Regrowth
                     </h3>
                     <p className="text-indigo-900 text-xl">
-                      24.8% improvement in Global Hair Growth and Quality scores
+                      24.8%* improvement in Global Hair Growth and Quality scores
                       while using the QR678 Suite with QR678 Neo therapy.
                     </p>
                   </div>
@@ -282,7 +282,7 @@ const ProductPage = () => {
                 </div>
               </div>
             </div>
-            <p className="text-primary text-xl mt-4 p-2">
+            <p className="text-primary text-md italic mt-4 p-2">
               *Reference: Kapoor, R., & Shome, D. (2024, August). Evaluation of
               the effectiveness of the QR678 Suite in combination with QR678 Neo
               therapy for managing Androgenetic Alopecia: A prospective clinical
