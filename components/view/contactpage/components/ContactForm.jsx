@@ -135,15 +135,15 @@ export default function ContactForm() {
         LeadEmail: "sample@gmail.com",
         Source: "Contact form",
         CustomProperties: [
-          // { Name: "First name", Value: data.firstName },
-          // { Name: "Last name", Value: data.lastName },
-          // { Name: "State", Value: data.state },
-          // { Name: "City/Town", Value: data.city },
-          // { Name: "Country", Value: data.country },
-          // { Name: "Country Code", Value: data.countryCode },
-          // { Name: "Are you a", Value: data.type },
-          // { Name: "EmailAddress", Value: data.email },
-          // { Name: "MobileNumber", Value: data.phone },
+          { Name: "First name", Value: data.firstName },
+          { Name: "Last name", Value: data.lastName },
+          { Name: "State", Value: data.state },
+          { Name: "City/Town", Value: data.city },
+          { Name: "Country", Value: data.country },
+          { Name: "Country Code", Value: data.countryCode },
+          { Name: "Are you a", Value: data.type },
+          { Name: "EmailAddress", Value: data.email },
+          { Name: "MobileNumber", Value: data.phone },
         ],
       };
   
@@ -152,8 +152,8 @@ export default function ContactForm() {
         payload,
         {
           params: {
-            organizationId: "1234567",
-            authToken: "acbhnsd-dsads-dsad-greh-nghdsajbgkjfnd",
+            organizationId: "8426761",
+            authToken: "0b68191e-3312-4954-8afe-271a10b7df90",
           },
           headers: {
             "Content-Type": "application/json",
