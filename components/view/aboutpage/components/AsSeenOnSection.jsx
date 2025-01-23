@@ -1,3 +1,4 @@
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -11,8 +12,30 @@ const AsSeenOnSection = () => {
           As seen on...
         </h2>
 
-        {/* Logos Section */}
-        <div className="flex flex-wrap justify-center sm:justify-start  gap-4 sm:gap-8 items-center">
+        <ScrollArea className=" max-w-4xl whitespace-nowrap rounded-md">
+          <div className="flex w-max space-x-4 p-4">
+            {PartnersImages.map((partner, index) => (
+              <div
+                key={index}
+                className=" flex flex-wrap items-center justify-center"
+              >
+                <Link href={partner.url} target="_blank" className="w-32 h-32">
+                  {" "}
+                  <Image
+                    src={partner.src || "/assets/png/no-image.png"}
+                    alt={partner.name || `Partner Logo ${index + 1}`}
+                    width={120}
+                    height={40}
+                    className=" h-full w-full object-contain filter grayscale  transition-all"
+                  />
+                </Link>
+              </div>
+            ))}
+          </div>
+          <ScrollBar orientation="horizontal" />
+        </ScrollArea>
+
+        {/* <div className="flex flex-wrap justify-center sm:justify-start  gap-4 sm:gap-8 items-center">
           {PartnersImages.map((partner, index) => (
             <div
               key={index}
@@ -30,7 +53,7 @@ const AsSeenOnSection = () => {
               </Link>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

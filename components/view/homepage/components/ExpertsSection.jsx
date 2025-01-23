@@ -82,7 +82,7 @@ export default function TestimonialsGrid() {
                   </div>
 
                   {/* Quote Content */}
-                  <blockquote className="text-[#6366F1] text-lg leading-relaxed relative flex-grow">
+                  <blockquote className="text-black text-lg leading-relaxed relative flex-grow">
                     {testimonial.quote}
                   </blockquote>
 

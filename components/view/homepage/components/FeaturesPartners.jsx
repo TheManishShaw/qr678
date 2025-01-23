@@ -1,3 +1,5 @@
+"use client";
+import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -8,8 +10,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
-import React from "react";
 
 const FeaturesPartners = () => {
   const partners = [
@@ -38,6 +40,10 @@ const FeaturesPartners = () => {
       logo: "/assets/png/partners/partner-6.png",
     },
   ];
+  const plugin = React.useRef(
+    Autoplay({ delay: 4000, stopOnInteraction: true })
+  );
+  const carouselRef = React.useRef(null);
   return (
     <section className=" py-8 sm:py-12 md:py-16">
       <div className="container mx-auto px-4 ">
@@ -49,10 +55,12 @@ const FeaturesPartners = () => {
           <Card className="p-4 sm:p-6 shadow-none border-none bg-transparent ">
             <div className="">
               <Carousel
+                ref={carouselRef}
                 opts={{
-                  align: "start",
+                  // align: "start",
                   loop: true,
                 }}
+                plugins={[plugin.current]}
                 className="w-full"
               >
                 <CarouselContent className="">
@@ -64,8 +72,8 @@ const FeaturesPartners = () => {
                       <Image
                         src={partner.logo}
                         alt={partner.name}
-                        width={500}
-                        height={200}
+                        width={800}
+                        height={500}
                         className=" md:max-w-52 object-cover self-center "
                       />
                     </CarouselItem>

@@ -11,41 +11,39 @@ export default function FloatingActionButtons() {
       {/* Call Button */}
       <div className="bg-primary  p-4 rounded-tl-3xl">
         <Link href="tel:+919137127855">
-        <button
-          className="group flex flex-col items-center"
-          aria-label="Call us"
-          
-        >
-          <Image
-            src="/floating_call.svg"
-            alt=""
-            width={32}
-            height={32}
-            className=""
-          />
-          <span className="mt-1 text-xs font-medium text-white">Call</span>
-        </button></Link>
+          <button
+            className="group flex flex-col items-center"
+            aria-label="Call us"
+          >
+            <Image
+              src="/floating_call.png"
+              alt=""
+              width={32}
+              height={32}
+              className="rounded-full"
+            />
+            <span className="mt-1 text-xs font-medium text-white">Call</span>
+          </button>
+        </Link>
       </div>
 
       {/* Chat Button */}
       <div className="bg-white p-4 rounded-bl-3xl ">
         {" "}
         <button
-                  className="group flex flex-col items-center"
-                  aria-label="Chat with us"
-                >
-                  <Image
-                    src="/floating_chat.svg"
-                    alt=""
-                    width={32}
-                    height={32}
-                    className=""
-                  />
-                  <span className="mt-1 text-xs font-medium text-primary">Chat</span>
-                </button>
-
-            {/* <ContactDialog/> */}
-         
+          className="group flex flex-col items-center"
+          aria-label="Chat with us"
+        >
+          <Image
+            src="/floating_chat.svg"
+            alt=""
+            width={32}
+            height={32}
+            className=""
+          />
+          <span className="mt-1 text-xs font-medium text-primary">Chat</span>
+        </button>
+        {/* <ContactDialog/> */}
       </div>
     </div>
   );
