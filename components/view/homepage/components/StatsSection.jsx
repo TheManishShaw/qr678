@@ -33,11 +33,11 @@ export default function StatsSection() {
               <Image
                 src={stat.src}
                 alt={stat.title}
-                width={64}
-                height={64}
-                className="mx-auto mb-4"
+                width={70}
+                height={70}
+                className="mx-auto "
               />
-              <h4 className="text-secondary font-extrabold text-base sm:text-lg">
+              <h4 className="text-secondary font-extrabold text-base sm:text-2xl">
                 {stat.title}
               </h4>
               <p className="text-primary text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mt-2">
@@ -54,17 +54,17 @@ export default function StatsSection() {
 const stats = [
   {
     title: "India & USA",
-    src: "/assets/svg/homepage/home-stats-patent.svg",
+    src: "/assets/svg/homepage/home-stats-1.svg",
     description: "Patent",
   },
   {
     title: "16+",
-    src: "/assets/svg/homepage/home-stats-yearofresearch.svg",
+    src: "/assets/svg/homepage/home-stats-2.svg",
     description: "Years of Research",
   },
   {
     title: "13+",
-    src: "/assets/svg/homepage/home-stats-clinical.svg",
+    src: "/assets/svg/homepage/home-stats-3.svg",
     description: "Clinical Studies Published in Peer-Reviewed Journals",
   },
 ];

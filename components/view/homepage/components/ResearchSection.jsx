@@ -14,23 +14,32 @@ import Autoplay from "embla-carousel-autoplay";
 
 const slides = [
   {
-    bgImage: "/assets/svg/homepage/home_hero.svg",
-    title: ["Well Researched.", "Globally Acknowledged."],
-    subtitle: "Our aesthetic products are backed by",
-    highlight: "14+ clinical studies",
+    bgImage: "/assets/svg/homepage/slider-1.svg",
+    title: ["QR678® Shaping the future of hair science"],
+    subtitle: (
+      <>
+        Proven solutions that help{" "}
+        <span className="font-bold">1500+ Doctors</span> make their patients
+        happier
+      </>
+    ),
+    highlight: "",
+    link: "/about-us",
   },
   {
     bgImage: "/assets/svg/homepage/home-research-banner.svg",
-    title: ["Innovative.", "Scientifically Proven."],
-    subtitle: "Our products are developed with",
-    highlight: "Cutting-edge technology",
+    title: [
+      "QRR678 Neo - Change the way you look at hair regrowth in Androgenetic Alopecia",
+    ],
+    subtitle: (
+      <>
+        <span className="font-semibold ">QRR678 Neo</span> - Change the way you
+        look at hair regrowth in Androgenetic Alopecia
+      </>
+    ),
+    highlight: "",
+    link: "/products",
   },
-  // {
-  //   bgImage: "/assets/svg/homepage/home-research-banner-3.svg",
-  //   title: ["Safe.", "Effective."],
-  //   subtitle: "Our treatments are",
-  //   highlight: "Dermatologist approved",
-  // },
 ];
 
 export default function ResearchSection() {
@@ -57,11 +66,11 @@ export default function ResearchSection() {
                 <div
                   className="absolute inset-0 bg-cover bg-center mix-blend-multiply"
                   style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('${slide.bgImage}')`,
+                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('${slide.bgImage}')`,
                   }}
                 />
                 <div className="relative z-10 flex flex-col justify-end min-h-[60vh] md:min-h-screen text-center px-4 sm:px-6 lg:px-8 pb-8 sm:pb-12 lg:pb-16">
-                  <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6 lg:space-y-8">
+                  <div className="max-w-2xl mx-auto space-y-4 sm:space-y-6 lg:space-y-8">
                     <div className="space-y-2 sm:space-y-3 lg:space-y-4">
                       {slide.title.map((line, i) => (
                         <h1
@@ -71,22 +80,24 @@ export default function ResearchSection() {
                           {line}
                         </h1>
                       ))}
-                      <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 font-[200]">
+                      <p className="text-sm max-w-lg mx-auto sm:text-base md:text-lg lg:text-2xl text-gray-200 font-[200]">
                         {slide.subtitle}
                       </p>
-                      <div className="inline-block bg-[#FFD481] px-2 py-1 sm:px-3 sm:py-1 md:px-4">
-                        <p className="text-xs sm:text-sm md:text-base text-gray-900 font-bold">
-                          {slide.highlight}
-                        </p>
-                      </div>
+                      {slide.highlight && (
+                        <div className="inline-block bg-[#FFD481] px-2 py-1 sm:px-3 sm:py-1 md:px-4">
+                          <p className="text-xs sm:text-sm md:text-base text-gray-900 font-bold">
+                            {slide.highlight}
+                          </p>
+                        </div>
+                      )}
                     </div>
-                    <Link href={"/research"}>
+                    <Link href={slide.link}>
                       <Button
                         variant="outline"
                         size="lg"
                         className="mt-4 sm:mt-6 lg:mt-8 bg-white text-primary rounded-md font-bold text-xs sm:text-sm md:text-base px-4 py-2 sm:px-6 sm:py-3"
                       >
-                        View Research
+                        Know more
                       </Button>
                     </Link>
                   </div>

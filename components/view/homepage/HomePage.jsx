@@ -15,6 +15,8 @@ import AsSeenOnSection from "../aboutpage/components/AsSeenOnSection";
 import TestimonialsGrid from "./components/ExpertsSection";
 import FeaturesPartners from "./components/FeaturesPartners";
 import { TransformBeforeAfterCarousel } from "../productpage/components/TransformBeforeAfterCarousel";
+import TestimonialCard from "./components/testimonial-card";
+import VideoTestimonialSlider from "./components/VideoTestimonialSlider";
 
 const HomePage = () => {
   return (
@@ -24,23 +26,17 @@ const HomePage = () => {
       <StatsSection />
       <FeaturesPartners />
       {/* <HappyCustomersSlider/> */}
-
+      <VideoTestimonialSlider />
+      <TransformBeforeAfterCarousel />
       {/* <UntappedSection /> */}
       <ProductSection />
       <AsSeenOnSection />
       {/* <TestimonialsSection /> */}
       <TestimonialsGrid />
-      <section className="py-16 bg-primary/5">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="heading-1 mb-16">
-            Transformed the Life of <span className=" bg-textBg">150,000+</span>{" "}
-            <br /> People and Counting...
-          </h2>
-          <TransformBeforeAfterCarousel />
-        </div>
-      </section>
+
       {/* <ProgramSection /> */}
       {/* <TopSearchSection/> */}
+
       <HomeBottomSection />
     </div>
   );

@@ -16,28 +16,56 @@ import Image from "next/image";
 const FeaturesPartners = () => {
   const partners = [
     {
-      name: "Neo Derma",
-      logo: "/assets/png/partners/partner-1.png",
+      name: "VLCC",
+      logo: "/assets/svg/homepage/feature-partners/Logo-0.svg",
+    },
+    {
+      name: "Kaya",
+      logo: "/assets/svg/homepage/feature-partners/Logo-1.svg",
     },
     {
       name: "Vibes",
-      logo: "/assets/png/partners/partner-2.png",
+      logo: "/assets/svg/homepage/feature-partners/Logo-2.svg",
     },
     {
-      name: "Neo Follicle Transplant",
-      logo: "/assets/png/partners/partner-3.png",
+      name: "Kolors",
+      logo: "/assets/svg/homepage/feature-partners/Logo-3.svg",
     },
     {
-      name: "Ccarewell",
-      logo: "/assets/png/partners/partner-4.png",
+      name: "Kosmoderma",
+      logo: "/assets/svg/homepage/feature-partners/Logo-4.svg",
     },
     {
-      name: "Aayna",
-      logo: "/assets/png/partners/partner-5.png",
+      name: "bodycraft",
+      logo: "/assets/svg/homepage/feature-partners/Logo-5.svg",
     },
     {
-      name: "La Densitae",
-      logo: "/assets/png/partners/partner-6.png",
+      name: "dr.marwah",
+      logo: "/assets/svg/homepage/feature-partners/Logo-6.svg",
+    },
+    {
+      name: "Neo Derma",
+      logo: "/assets/svg/homepage/feature-partners/Logo-7.svg",
+    },
+    {
+      name: "Neo Derma",
+      logo: "/assets/svg/homepage/feature-partners/Logo-8.svg",
+    },
+    {
+      name: "Neo Derma",
+      logo: "/assets/svg/homepage/feature-partners/Logo-9.svg",
+    },
+    {
+      name: "Neo Derma",
+      logo: "/assets/svg/homepage/feature-partners/Logo-10.svg",
+    },
+    {
+      name: "Neo Derma",
+      logo: "/assets/svg/homepage/feature-partners/Logo-11.svg",
+    },
+    {
+      name: "W",
+      logo: "/assets/svg/homepage/feature-partners/Logo-12.svg",
     },
   ];
   const plugin = React.useRef(
@@ -67,14 +95,14 @@ const FeaturesPartners = () => {
                   {partners.map((partner, index) => (
                     <CarouselItem
                       key={index}
-                      className="pl-2 md:pl-4  basis-full sm:basis-2 md:basis-1/4 lg:basis-1/5 self-center"
+                      className="pl-2 md:pl-4  basis-full sm:basis-2 md:basis-1/4 lg:basis-1/6 self-center"
                     >
                       <Image
                         src={partner.logo}
                         alt={partner.name}
                         width={800}
                         height={500}
-                        className=" md:max-w-52 object-cover self-center "
+                        className=" md:max-w-40 object-cover self-center "
                       />
                     </CarouselItem>
                   ))}

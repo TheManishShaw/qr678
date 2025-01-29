@@ -26,7 +26,7 @@ const AsSeenOnSection = () => {
                     alt={partner.name || `Partner Logo ${index + 1}`}
                     width={120}
                     height={40}
-                    className=" h-full w-full object-contain filter grayscale  transition-all"
+                    className=" h-full w-full object-contain  transition-all"
                   />
                 </Link>
               </div>
@@ -63,32 +63,32 @@ export default AsSeenOnSection;
 
 const PartnersImages = [
   {
-    src: "/assets/svg/aboutus/partner-1.svg",
+    src: "/assets/svg/aboutus/as-seen-on/Logo.svg",
     name: "TOI",
     url: "https://timesofindia.indiatimes.com/life-style/beauty/the-future-of-hair-restoration-science-innovation-and-a-holistic-shift/articleshow/116626862.cms",
   },
   {
-    src: "/assets/svg/aboutus/livemint.jpeg",
+    src: "/assets/svg/aboutus/as-seen-on/Logo-1.svg",
     name: "Livemint",
     url: "https://www.livemint.com/mint-lounge/wellness/androgenetic-alopecia-hair-loss-in-youngsters-iceberg-phenomenon-minoxidil-11723909608450.html",
   },
   {
-    src: "/assets/svg/aboutus/tfe.svg",
+    src: "/assets/svg/aboutus/as-seen-on/Logo-2.svg",
     name: "The Financial Express",
     url: "https://www.financialexpress.com/life/90-percent-of-women-aged-18-36-with-pcos-at-risk-of-hair-loss-3596541/",
   },
   {
-    src: "/assets/svg/aboutus/en.svg",
+    src: "/assets/svg/aboutus/as-seen-on/Logo-3.svg",
     name: "ET Now",
     url: "https://health.economictimes.indiatimes.com/news/industry/pcos-impacts-hair-health-increases-susceptibility-to-hair-thinning-loss-study/112896932",
   },
   {
-    src: "/assets/svg/aboutus/femina.svg",
+    src: "/assets/svg/aboutus/as-seen-on/Logo-4.svg",
     name: "FEMINA",
     url: "https://drive.google.com/file/d/11HTBix1ENMTX7uz7Sb92kaQwtCRDARGP/view?usp=sharing",
   },
   {
-    src: "/assets/svg/aboutus/news19.jpg",
+    src: "/assets/svg/aboutus/as-seen-on/Logo-5.svg",
     name: "News9",
     url: "https://www.news9live.com/health/health-news/from-laser-stimulation-to-microneedling-how-hair-restoration-may-change-in-2025-2782444",
   },
