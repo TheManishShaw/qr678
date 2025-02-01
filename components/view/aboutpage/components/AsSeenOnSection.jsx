@@ -6,7 +6,7 @@ import React from "react";
 const AsSeenOnSection = () => {
   return (
     <section className="text-center py-8 px-4 sm:px-8">
-      <div className="container mx-auto flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-8">
+      <div className="container mx-auto block md:flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-8">
         {/* Text Section */}
         <h2 className="text-xl sm:text-2xl font-semibold text-muted-foreground w-full sm:w-auto mb-4 sm:mb-0">
           As seen on...

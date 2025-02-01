@@ -17,6 +17,8 @@ import FeaturesPartners from "./components/FeaturesPartners";
 import { TransformBeforeAfterCarousel } from "../productpage/components/TransformBeforeAfterCarousel";
 import TestimonialCard from "./components/testimonial-card";
 import VideoTestimonialSlider from "./components/VideoTestimonialSlider";
+import { WorldMap } from "../contactpage/components/word-map";
+import ProductShowcase from "./components/ProductShowcase";
 
 const HomePage = () => {
   return (
@@ -36,7 +38,11 @@ const HomePage = () => {
 
       {/* <ProgramSection /> */}
       {/* <TopSearchSection/> */}
-
+      <h2 className="text-5xl font-semibold text-center mb-10 text-secondary">
+        Global Presence
+      </h2>
+      <WorldMap pageType="homePage" />
+      <ProductShowcase />
       <HomeBottomSection />
     </div>
   );

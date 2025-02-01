@@ -1,3 +1,5 @@
+"use client";
+import { teamList } from "@/actions/get-request";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -7,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
 import React from "react";
 
@@ -38,6 +41,20 @@ const LeadershipTeam = () => {
       designation: "Board Advisor - QR678®",
     },
   ];
+
+  const {
+    data: teamData,
+    isLoading,
+    isError,
+    error,
+    refetch,
+  } = useQuery({
+    queryKey: ["teamList"],
+    queryFn: () => teamList(),
+    retry: 5,
+    refetchOnWindowFocus: true,
+  });
+
   return (
     <section className="space-y-8 w-full max-w-7xl mx-auto px-4 py-8 sm:py-12">
       <h2 className="heading-1 text-center text-3xl sm:text-4xl md:text-5xl font-bold">
@@ -51,36 +68,37 @@ const LeadershipTeam = () => {
         className="w-full border border-secondary rounded-md py-6 sm:py-10 px-4 sm:px-6"
       >
         <CarouselContent className="-ml-2 md:-ml-3">
-          {leaders.map((item, index) => (
-            <CarouselItem
-              key={index}
-              className="pl-2 md:pl-2 md:basis-1/2 lg:basis-1/3  xl:basis-1/5"
-            >
-              <Card className="border-none h-full ">
-                <CardContent className="p-2 sm:p-4 flex flex-col items-center text-center">
-                  <div className="w-full md:max-w-[200px] relative mb-3 sm:mb-4">
-                    <Image
-                      src={
-                        item?.image
-                          ? item?.image
-                          : "/assets/png/aboutpage/avatar.png"
-                      }
-                      alt={`Leader ${index + 1}`}
-                      width={200}
-                      height={200}
-                      className="object-cover object-top border border-primary w-full h-[20.5rem] md:h-[14.5rem] rounded-md"
-                    />
-                  </div>
-                  <h4 className="font-semibold text-primary text-sm sm:text-base">
-                    {item.name}
-                  </h4>
-                  <p className="text-xs sm:text-sm text-muted-foreground">
-                    {item.designation}
-                  </p>
-                </CardContent>
-              </Card>
-            </CarouselItem>
-          ))}
+          {teamData &&
+            teamData?.map((item, index) => (
+              <CarouselItem
+                key={index}
+                className="pl-2 md:pl-2 md:basis-1/2 lg:basis-1/3  xl:basis-1/5"
+              >
+                <Card className="border-none h-full ">
+                  <CardContent className="p-2 sm:p-4 flex flex-col items-center text-center">
+                    <div className="w-full md:max-w-[200px] relative mb-3 sm:mb-4">
+                      <Image
+                        src={
+                          item?.photo
+                            ? `https://qr678.ivdata.in/images/team/${item?.photo}`
+                            : "/assets/png/aboutpage/avatar.png"
+                        }
+                        alt={`Leader ${index + 1}`}
+                        width={200}
+                        height={200}
+                        className="object-cover object-top border border-primary w-full h-[20.5rem] md:h-[14.5rem] rounded-md"
+                      />
+                    </div>
+                    <h4 className="font-semibold text-primary text-sm sm:text-base">
+                      {item.name}
+                    </h4>
+                    <p className="text-xs sm:text-sm text-muted-foreground">
+                      {item.position}
+                    </p>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
         </CarouselContent>
         {leaders.length > 1 ? (
           <>

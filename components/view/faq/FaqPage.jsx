@@ -1,13 +1,10 @@
 import React from "react";
 import HeroSection from "./components/hero-section";
 import { FAQSection } from "./components/faq-section";
-import { Button } from "@/components/ui/button";
-
 
 const FaqPage = () => {
   return (
-    <div className="bg-[#F2F2F3]"> 
-   
+    <div className="bg-[#F2F2F3]">
       <HeroSection />
       <FAQSection />
     </div>

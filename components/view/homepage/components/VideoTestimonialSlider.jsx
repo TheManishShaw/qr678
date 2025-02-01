@@ -54,7 +54,9 @@ export default function VideoTestimonialSlider() {
               >
                 <CarouselContent className="pl-4 gap-8">
                   {slides.map((slide, index) => (
-                    <TestimonialCard key={index} />
+                    <div key={index} className="md:flex block gap-5 mx-auto">
+                      <TestimonialCard />
+                    </div>
                   ))}
                 </CarouselContent>
                 <CarouselDots className="self-center pt-4 sm:pt-6" />
