@@ -28,15 +28,9 @@ const slides = [
   },
   {
     bgImage: "/assets/svg/homepage/home-research-banner.svg",
-    title: [
-      "QRR678 Neo - Change the way you look at hair regrowth in Androgenetic Alopecia",
-    ],
-    subtitle: (
-      <>
-        <span className="font-semibold ">QRR678 Neo</span> - Change the way you
-        look at hair regrowth in Androgenetic Alopecia
-      </>
-    ),
+    title: ["Empowering you with science to delight your patients."],
+    subtitle:
+      "Clinically proven solutions to improve efficiency and effectiveness of your hair practice.",
     highlight: "",
     link: "/products",
   },

@@ -17,21 +17,36 @@ export const columns = [
     header: "Clinic Name",
     cell: ({ row }) => {
       const partner = row.original;
-      const title = partner?.title?.rendered || "Unknown Title";
-      const area = partner?.area?.trim();
+      const title = partner?.name || "Unknown Title";
       return (
         <div
-          style={{ display: "flex", flexDirection: "column", gap: "0.25rem" }}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "0.25rem",
+            width: "150px",
+          }}
         >
-          <strong>{title ? title : area}</strong>
+          <strong>{title}</strong>
         </div>
       );
     },
   },
 
   {
-    accessorKey: "location_name",
+    accessorKey: "state",
     header: "Location",
+    cell: ({ row }) => {
+      const location = row.original;
+      const stateLocation = location?.state?.name || "Unknown Location";
+      return (
+        <div
+          style={{ display: "flex", flexDirection: "column", gap: "0.25rem" }}
+        >
+          <p>{stateLocation}</p>
+        </div>
+      );
+    },
   },
 
   {
@@ -39,10 +54,10 @@ export const columns = [
     header: "Address",
   },
   {
-    accessorKey: "phone_no",
+    accessorKey: "phone",
     header: "Contact",
     cell: ({ row }) => {
-      const phoneNo = row.original.phone_no;
+      const phoneNo = row.original.phone;
       return (
         <a
           href={`tel:${phoneNo}`}
@@ -62,7 +77,7 @@ export const columns = [
     id: "id",
     cell: ({ row }) => {
       const partner = row.original;
-      return <CopyButton value={partner.phone_no} />;
+      return <CopyButton value={partner.phone} />;
     },
   },
 ];

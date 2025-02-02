@@ -3,8 +3,6 @@
 import * as React from "react";
 import {
   ColumnDef,
-  ColumnFiltersState,
-  SortingState,
   flexRender,
   getCoreRowModel,
   getFilteredRowModel,
@@ -32,92 +30,102 @@ import { Button } from "@/components/ui/button";
 
 export function DataTable({ columns, data }) {
   const [sorting, setSorting] = React.useState([]);
-  const [columnFilters, setColumnFilters] = React.useState([]);
+  const [selectedState, setSelectedState] = React.useState("");
+  const [searchTerm, setSearchTerm] = React.useState("");
   const [locations, setLocations] = React.useState([]);
-  const [pageSize, setPageSize] = React.useState(10); // Default page size
+  const [pageSize, setPageSize] = React.useState(10);
+
+  // Extract unique states from API response
+  React.useEffect(() => {
+    if (data?.length) {
+      const uniqueStates = Array.from(
+        new Set(data.map((clinic) => clinic.state.name))
+      );
+      setLocations(uniqueStates);
+    }
+  }, [data]);
+
+  // Filter Data based on selected state and search term
+  const filteredData = React.useMemo(() => {
+    return data.filter((clinic) => {
+      const matchesState = selectedState
+        ? clinic.state.name === selectedState
+        : true;
+      const matchesSearch = searchTerm
+        ? clinic.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          clinic.state.name.toLowerCase().includes(searchTerm.toLowerCase()) // ✅ Now checks state names too!
+        : true;
+      return matchesState && matchesSearch;
+    });
+  }, [data, selectedState, searchTerm]);
 
   const table = useReactTable({
-    data,
+    data: filteredData,
     columns,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
-    onSortingChange: setSorting,
     getSortedRowModel: getSortedRowModel(),
-    onColumnFiltersChange: setColumnFilters,
-    getFilteredRowModel: getFilteredRowModel(),
-    state: {
-      sorting,
-      columnFilters,
-    },
-    initialState: {
-      pagination: {
-        pageSize: pageSize, // Set initial page size
-      },
-    },
+    state: { sorting },
   });
 
-  const memoizedData = React.useMemo(() => data, [data]);
-
-  React.useEffect(() => {
-    const locationString = data
-      .map((clinic) => clinic.location_name)
-      .join(", ");
-    const locationArray = [
-      ...new Set(locationString.split(",").map((loc) => loc.trim())),
-    ];
-    setLocations(locationArray);
-  }, [memoizedData]);
+  // Clear Filters
+  const clearFilters = () => {
+    setSelectedState("");
+    setSearchTerm("");
+  };
 
   return (
     <div>
       <div className="flex flex-col gap-4 py-4 md:flex-row">
+        {/* Search Input */}
         <Input
-          placeholder="Filter clinics..."
-          value={table.getColumn("area")?.getFilterValue() ?? ""}
-          onChange={(event) =>
-            table.getColumn("area")?.setFilterValue(event.target.value)
-          }
+          placeholder="Search clinic or state..."
+          value={searchTerm}
+          onChange={(event) => setSearchTerm(event.target.value)}
           className="max-w-sm"
         />
+
+        {/* State Filter Dropdown */}
         <div className="flex gap-2">
           <Select
-            value={table.getColumn("location_name")?.getFilterValue() ?? ""}
-            onValueChange={(value) =>
-              table.getColumn("location_name")?.setFilterValue(value)
-            }
+            value={selectedState}
+            onValueChange={(value) => setSelectedState(value)}
           >
             <SelectTrigger className="w-[180px]">
               <SelectValue placeholder="Select State" />
             </SelectTrigger>
             <SelectContent>
-              {locations
-                ?.filter((location) => location.trim() !== "") // Ensure no empty or whitespace-only values
-                .map((location, index) => (
-                  <SelectItem key={index} value={location}>
-                    {location}
-                  </SelectItem>
-                ))}
+              {locations.map((location, index) => (
+                <SelectItem key={index} value={location}>
+                  {location}
+                </SelectItem>
+              ))}
             </SelectContent>
           </Select>
+
+          {/* Clear Filter Button */}
+          <Button variant="outline" onClick={clearFilters}>
+            Clear Filter
+          </Button>
         </div>
       </div>
+
+      {/* Table */}
       <div className="rounded-md border">
         <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
-                {headerGroup.headers.map((header) => {
-                  return (
-                    <TableHead className="text-primary" key={header.id}>
-                      {header.isPlaceholder
-                        ? null
-                        : flexRender(
-                            header.column.columnDef.header,
-                            header.getContext()
-                          )}
-                    </TableHead>
-                  );
-                })}
+                {headerGroup.headers.map((header) => (
+                  <TableHead className="text-primary" key={header.id}>
+                    {header.isPlaceholder
+                      ? null
+                      : flexRender(
+                          header.column.columnDef.header,
+                          header.getContext()
+                        )}
+                  </TableHead>
+                ))}
               </TableRow>
             ))}
           </TableHeader>
@@ -152,10 +160,9 @@ export function DataTable({ columns, data }) {
           </TableBody>
         </Table>
       </div>
-      <div className="flex items-center justify-end space-x-2 py-4">
-        {/* Page Size Selector */}
 
-        {/* Pagination Buttons */}
+      {/* Pagination */}
+      <div className="flex items-center justify-end space-x-2 py-4">
         <div className="flex items-center space-x-2">
           <Button
             variant="outline"
