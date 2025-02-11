@@ -35,7 +35,7 @@ export const columns = [
 
   {
     accessorKey: "state",
-    header: "Location",
+    header: "State",
     cell: ({ row }) => {
       const location = row.original;
       const stateLocation = location?.state?.name || "Unknown Location";
@@ -44,6 +44,21 @@ export const columns = [
           style={{ display: "flex", flexDirection: "column", gap: "0.25rem" }}
         >
           <p>{stateLocation}</p>
+        </div>
+      );
+    },
+  },
+  {
+    accessorKey: "city",
+    header: "City",
+    cell: ({ row }) => {
+      const location = row.original;
+      const cityLocation = location?.city || "Unknown Location";
+      return (
+        <div
+          style={{ display: "flex", flexDirection: "column", gap: "0.25rem" }}
+        >
+          <p>{cityLocation}</p>
         </div>
       );
     },

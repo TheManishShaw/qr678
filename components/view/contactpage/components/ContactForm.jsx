@@ -29,6 +29,8 @@ import {
 
 import { countries, states, cities } from "@/lib/location-data";
 import { toast } from "sonner";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { contactFormService } from "@/actions/post-request";
 
 const formSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
@@ -49,7 +51,6 @@ const formSchema = z.object({
 
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = React.useState(false);
-
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -78,106 +79,67 @@ export default function ContactForm() {
     form.setValue("city", "");
   }, [watchState, form]);
 
-  // async function onSubmit(data) {
-  //   setIsSubmitting(true);
-  //   try {
-  //     const payload = {
-  //       BotName: "QR678_Kolkata",
-  //       LeadPhone: data.phone,
-  //       LeadEmail: data.email,
-  //       Source: "Contact form",
-  //       CustomProperties: [
-  //         { Name: "First name", Value: data.firstName },
-  //         { Name: "Last name", Value: data.lastName },
-  //         { Name: "State", Value: data.state },
-  //         { Name: "City/Town", Value: data.city },
-  //         { Name: "Country", Value: data.country },
-  //         { Name: "Country Code", Value: data.countryCode },
-  //         { Name: "Are you a", Value: data.type },
-  //         { Name: "EmailAddress", Value: data.email },
-  //         { Name: "MobileNumber", Value: data.phone },
-  //       ],
-  //     };
-
-  //     const response = await axios.post(
-  //       "https://www.kenyt.ai/dashboardApi/api/crm/create-deal",
-  //       payload,
-  //       {
-  //         params: {
-  //           organizationId: "8426761",
-  //           authToken: "0b68191e-3312-4954-8afe-271a10b7df90",
-  //         },
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //           "Access-Control-Allow-Origin": "*",
-  //         },
-  //       }
-  //     );
-
-  //     console.log("API Response:", response.data);
-
-  //     toast.success("Form submitted successfully We'll get back to you soon!");
-  //     form.reset();
-  //   } catch (error) {
-  //     console.error("Submission error:", error);
-  //     toast.error("Failed to submit form. Please try again.");
-  //   } finally {
-  //     setIsSubmitting(false);
-  //   }
-  // }
-
-  async function onSubmit(data) {
-    setIsSubmitting(true);
-    try {
-      const payload = {
-        BotName: "Kenyt_Product",
-        LeadPhone: "9988778844",
-        LeadEmail: "sample@gmail.com",
-        Source: "Contact form",
-        CustomProperties: [
-          { Name: "First name", Value: data.firstName },
-          { Name: "Last name", Value: data.lastName },
-          { Name: "State", Value: data.state },
-          { Name: "City/Town", Value: data.city },
-          { Name: "Country", Value: data.country },
-          { Name: "Country Code", Value: data.countryCode },
-          { Name: "Are you a", Value: data.type },
-          { Name: "EmailAddress", Value: data.email },
-          { Name: "MobileNumber", Value: data.phone },
-        ],
-      };
-  
-      const response = await axios.post(
-        "https://www.kenyt.ai/dashboardApi/api/crm/create-deal",
-        payload,
-        {
-          params: {
-            organizationId: "8426761",
-            authToken: "0b68191e-3312-4954-8afe-271a10b7df90",
-          },
-          headers: {
-            "Content-Type": "application/json",
-          },
-        },
+  const mutation = useMutation({
+    mutationFn: async (data) => {
+      const response = await contactFormService(data);
+      return response;
+    },
+    onSuccess: () => {
+      toast.success(
+        `Form submitted successfully! Team will contact you soon.!`
       );
-  
-      console.log("API Response:", response.data);
-  
-      toast.success("Form submitted successfully We'll get back to you soon!");
-      form.reset();
-    } catch (error) {
-      console.error("Submission error:", error);
-      toast.error("Failed to submit form. Please try again.");
-    } finally {
       setIsSubmitting(false);
-    }
-  }
+      form.reset();
+    },
+    onError: (error) => {
+      console.error("Mutation Error:", error);
+      setIsSubmitting(false);
+      const errorMessage =
+        error.response?.data?.message ||
+        error.message ||
+        `An error occurred while adding the Booking.`;
 
+      toast.error(errorMessage);
+      // onClose();
+      setIsSubmitting(false);
+    },
+  });
+  const onSubmit = (values) => {
+    console.log("values", values);
+    // setIsSubmitting(true);
+    const formData = new FormData();
+    formData.append("name", values.firstName);
+    formData.append("email", values.email);
+    formData.append("message", "nothing");
 
+    const attributes = [
+      { key: "firstName", value: values.firstName },
+      { key: "lastName", value: values.lastName },
+      { key: "country", value: values.country },
+      { key: "countryCode", value: values.countryCode },
+      { key: "state", value: values.state },
+      { key: "city", value: values.city },
+      { key: "areYouAa", value: values.type },
+      { key: "phoneNo", value: values.phone },
+      { key: "address", value: values.address },
+      { key: "authorise", value: values.authorise },
+    ].filter((attr) => attr.value != null && attr.value !== "");
+
+    attributes.forEach((attr, index) => {
+      formData.append(`attributes[${index}][key]`, attr.key);
+      formData.append(`attributes[${index}][value]`, attr.value);
+    });
+    // Object.entries(values).forEach(([key, value]) => {
+    //   formData.append(key, value);
+    // });
+    mutation.mutate(formData);
+    //
+    console.log("formData", formData);
+  };
   return (
-    <Card  className="w-full border border-secondary max-w-4xl mx-auto">
+    <Card className="w-full border border-secondary max-w-4xl mx-auto">
       <CardContent className="p-6">
-        <div id="contactForm"  className="text-center mb-8">
+        <div id="contactForm" className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl font-semibold text-primary">
             Get in Touch with Us
           </h1>

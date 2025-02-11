@@ -80,7 +80,7 @@ const LeadershipTeam = () => {
                       <Image
                         src={
                           item?.photo
-                            ? `https://qr678.ivdata.in/images/team/${item?.photo}`
+                            ? item?.photo
                             : "/assets/png/aboutpage/avatar.png"
                         }
                         alt={`Leader ${index + 1}`}
