@@ -1,22 +1,20 @@
+import { getMetaDataService } from "@/actions/get-request";
 import { Metadata } from "next";
 
-export const metadata = {
-  "title": "Our Products - QR678",
-  "description": "Discover our advanced products for hair growth and reduced hair fall. Achieve thicker, healthier hair with clinically proven solutions. Shop now!",
-  "keywords": [
-    "hair growth products",
-    "reduce hair fall",
-    "anti-hair fall solutions",
-    "hair care",
-    "hair loss treatment",
-    "thicker hair",
-    "healthy hair",
-    "hair regrowth products",
-    "hair serum",
-    "hair treatment"
-  ],
-  "author": "Author"
-};
+async function getMetadata(slug) {
+  const res = await getMetaDataService(slug);
+  return res;
+}
+
+export async function generateMetadata() {
+  const metadata = await getMetadata("product");
+  return {
+    title: metadata?.title,
+    description: metadata?.meta_description,
+    keywords: metadata?.meta_keywords,
+    authors: [{ name: "Authors" }],
+  };
+}
 
 const Layout = ({ children }) => {
   return <>{children}</>;

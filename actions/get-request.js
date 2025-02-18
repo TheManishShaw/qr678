@@ -36,3 +36,13 @@ export const clinicStateList = async () => {
     throw error;
   }
 };
+export const getMetaDataService = async (slug) => {
+  console.log("slug", slug);
+  try {
+    const response = await axiosInstance.get(`/site/meta-content?slug=${slug}`);
+    return response.data;
+  } catch (error) {
+    console.error("GET Error:", error);
+    throw error;
+  }
+};

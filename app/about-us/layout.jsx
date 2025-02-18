@@ -1,16 +1,19 @@
+import { getMetaDataService } from "@/actions/get-request";
 
+async function getMetadata(slug) {
+  const res = await getMetaDataService(slug);
+  return res;
+}
 
-export const metadata = {
-    title:
-      "QR678 - About Company",
-    description:
-      "Learn about QR678, a revolutionary hair regrowth solution rooted in science and innovation. Discover our journey, mission, and commitment to advanced hair care.",
-    keywords: [
-       "About QR678",
-          "QR678 Info"
-    ],
-    author: "Author",
+export async function generateMetadata() {
+  const metadata = await getMetadata("about-us");
+  return {
+    title: metadata?.title,
+    description: metadata?.meta_description,
+    keywords: metadata?.meta_keywords,
+    authors: [{ name: "Authors" }],
   };
+}
 
 const Layout = ({ children }) => {
   return <>{children}</>;

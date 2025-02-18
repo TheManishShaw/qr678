@@ -1,14 +1,20 @@
+import { getMetaDataService } from "@/actions/get-request";
 import { Metadata } from "next";
 
-export const metadata = {
-  "title": "FAQ about QR678",
-  "description": "Find answers to your questions about QR678 hair regrowth solution. Explore FAQs on treatments, benefits, safety, and results for healthier hair.",
-  "keywords": [
-    "FAQ Qr678",
-    "QR678 queries"
-  ],
-  "author": "Author"
-};
+async function getMetadata(slug) {
+  const res = await getMetaDataService(slug);
+  return res;
+}
+
+export async function generateMetadata() {
+  const metadata = await getMetadata("faq");
+  return {
+    title: metadata?.title,
+    description: metadata?.meta_description,
+    keywords: metadata?.meta_keywords,
+    authors: [{ name: "Authors" }],
+  };
+}
 
 const Layout = ({ children }) => {
   return <>{children}</>;
